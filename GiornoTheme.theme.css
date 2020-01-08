@@ -1,0 +1,17 @@
+//META{"name":"Giorno Theme","description":"A semi-compact customizable Discord Theme. Keep in mind that the settings bar is at the top!","source":"https://github.com/Notiphiliac/Source-Codes","author":"Notiphiliac","version":"1.1"}*//
+@import url("https://raw.githack.com/Notiphiliac/Source-Codes/master/Giorno.theme.css");
+/*----variables----*/
+:root {
+    /*-Background Image-*/
+    --background: url(https://pbs.twimg.com/media/D8KwJPcXUAAX_Tr.jpg);
+    /*-Accents-*/
+    --accent-1: #9696fa;
+    --accent-2: rgb(124,164,213);
+    /*transparency*/
+    --transparent-1: rgba(0, 0, 0, 0.3);
+    --transparent-2: rgba(0, 0, 0, 0.5);
+    --transparent-3: rgba(0, 0, 0, 0.7);
+    --transparent-4: rgba(0, 0, 0, 0.9);
+}
+
+/*--put additional code below--*/
