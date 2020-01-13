@@ -1,10 +1,10 @@
-//META{"name":"test","description":"test theme","author":"Notiphiliac","version":"0.9"}*//
+//META{"name":"Bebop","description":"Quick test theme","author":"Notiphiliac","version":"1.0"}*//
 
 /*----variables----*/
 :root {
     /*-Background-*/
     --image-background: url(https://cdn.discordapp.com/attachments/638627857324834826/665030025443278850/spikeheader_0.png);
-    --colour-background: red;
+    --colour-background: charcoal;
     /*-Colours-*/
     --servers: rgba(0,0,0,0.5);
     --sidebar: rgba(0,0,0,0.5);
@@ -198,9 +198,20 @@ background-color: var(--accent)!important
 .theme-dark .themed-OHr7kt.item-PXvHYJ, .theme-light .tabBar-1E2ExX .item-3HpYcP {
 background-color: transparent!important
 }
+/*--status--*/
+.menu-Sp6bN1, .theme-dark .root-1gCeng, .theme-light .root-1gCeng {
+    border-radius: 13px;
+    background: rgba(0,0,0,0.9);
+    padding: 0;
+    margin: 0px;
+    box-shadow: none;
+}
 /*--chat--*/
 .themeDark-3Ap_7i, .da-app .chat-3bRxxu {
     background: var(--chat);
+    border-radius: 13px;
+}
+.privateChannelMessages-3f72E- {
     border-radius: 13px;
 }
 .scrollableContainer-2NUZem {
@@ -208,12 +219,25 @@ background-color: transparent!important
     max-height: 144px;
     border-radius: 13px;
     position: relative;
-    bottom: 5px
+    bottom: 5px;
 }
 .children-19S4PO {
     background-color: var(--semi-transparent);
     border-radius: 13px;
     border: 1px solid var(--accent);
+}
+.form-2fGMdU {
+    border-top: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.chat-3bRxxu form {
+	margin: -2px 10px -24px 0px;
+}
+.base-gE7OpD {
+    position: absolute;
+    bottom: 20px;
+    scale: (0.1);
 }
 .messageGroupBlocked-3wrQQX {
     background-color: var(--semi-transparent)!important;
@@ -230,6 +254,10 @@ background-color: transparent!important
 .clickable-3rdHwn .icon-22AiRD {
     border: 1px solid var(--accent);
     border-radius: 10px;
+}
+.embedFull-2tM8-- {
+    border-left: 2px solid var(--accent)!important;
+    background: var(--semi-transparent);
 }
 
 /*--new/old/load messages--*/
@@ -287,12 +315,29 @@ box-shadow:0 0 0 2px var(--accent);
 .voiceUser-14U_Ns .content-3xS9Lh:hover {
     background-color: transparent!important;
 }
+.theme-dark .wrapper-29NfPK, .theme-light .wrapper-29NfPK {
+    background-color: transparent;
+    border-radius: 0 0 13px 13px;
+    border-bottom: 1px solid var(--accent);
+}
 .video-1FfuMD {
 	background: var(--semi-transparent) !important;
-	-webkit-box-shadow: none !important;
 	box-shadow: none !important;
 }
-
+.lookFilled-1Gx00P.colorRed-1TFJan {
+    background-color: var(--accent);
+}
+.lookFilled-1Gx00P.colorRed-1TFJan:hover {
+    background-color: var(--accent);
+    filter: hue-rotate(340deg);
+}
+.incomingCallInner-2VmFiR {
+    border-radius: 13px;
+    border: none;
+    background: var(--accent);
+    filter: opacity(0.7);
+    box-shadow: none;
+}
 /*--pins--*/
 .messagesPopoutWrap-1MQ1bW, .messagesPopout-24nkyi, .header-ykumBX {
     background: var(--transparent-1)!important;
