@@ -197,6 +197,10 @@
     margin: 0px;
     box-shadow: none;
 }
+.panels-j1Uci_ {
+    background: var(--sidebar);
+}
+
 /*--chat--*/
 .themeDark-3Ap_7i, .da-app .chat-3bRxxu {
     background: var(--chat);
