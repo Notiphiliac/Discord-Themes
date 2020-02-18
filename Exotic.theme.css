@@ -1,0 +1,13 @@
+//META{"name":"Σxotic","description":"A tropical experience right inside Discord! Customizable.","author":"Notiphiliac","version":"1.0"}*//
+@import url("https://raw.githack.com/Notiphiliac/Discord-Themes/master/source/Exotic.theme.css");
+/*-----variables-----*/
+:root {
+    --background: url(https://img5.goodfon.com/wallpaper/nbig/7/59/mmmmmm-nnnnnn-bbbbbb-vvvvvvvvvvvvvv.jpg);
+    --profile-background: url(https://wallpaperaccess.com/full/1205753.jpg);
+    --accent-1: #faf0e8; /*scrollbar+link colour*/
+    --accent-2: #2a4f34; /*main decorative colour*/
+    --transparent-1: rgba(0, 0, 0, 0.3);
+    --transparent-2: rgba(0, 0, 0, 0.5);
+    --transparent-3: rgba(0, 0, 0, 0.7);
+}
+
