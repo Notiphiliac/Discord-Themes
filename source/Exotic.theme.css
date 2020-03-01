@@ -1,4 +1,4 @@
-//META{"name":"Σxotic Tester","description":"A tropical experience right inside Discord! Customizable. This theme will not update automatically, if something is broken, I recommend re-downloading it. Settings bar located at top.","author":"Notiphiliac","version":"1.0"}*// {}
+//META{"name":"Σxotic Tester","description":"A tropical experience right inside Discord! Customizable. This theme does not update automatically!","author":"Notiphiliac","version":"1.0"}*// {}
 /*-----variables-----*/
 :root {
     --background: url(https://img5.goodfon.com/wallpaper/nbig/7/59/mmmmmm-nnnnnn-bbbbbb-vvvvvvvvvvvvvv.jpg);
@@ -18,12 +18,12 @@
     --background-secondary-alt: var(--transparent-1);
     --background-floating: var(--transparent-3);
 }
-.theme-light .footer-3rDWdC, .theme-dark .footer-3rDWdC, .input-cIJ7To, .themeDark-3Ap_7i, .da-app .chat-3bRxxu, .theme-dark .container-1D34oG, .theme-light .container-1D34oG, .themed-OHr7kt.item-PXvHYJ,  .theme-dark .separator-XqIyoz , .da-option::after, .da-option.da-selected::after, .da-searchResultsWrap .da-searchResult::before, .da-searchResultsWrap .da-searchResult::after, .theme-dark .applicationStore-1pNvnv, .theme-dark .itemBackground-1jfD8p, .theme-light .applicationStore-1pNvnv, .theme-light .itemBackground-1jfD8p, .da-calendarPicker .react-datepicker, .da-calendarPicker .react-datepicker .react-datepicker__header, .theme-dark .da-calendarPicker .react-datepicker__day--outside-month, .theme-dark .da-calendarPicker .react-datepicker__day--outside-month:hover, .theme-dark .da-calendarPicker .react-datepicker__day.react-datepicker__day--disabled, .theme-dark .da-calendarPicker .react-datepicker__day.react-datepicker__day--disabled:hover, .theme-light .da-calendarPicker .react-datepicker__day--outside-month, .theme-light .da-calendarPicker .react-datepicker__day--outside-month:hover, .theme-light .da-calendarPicker .react-datepicker__day.react-datepicker__day--disabled, .theme-light .da-calendarPicker .react-datepicker__day.react-datepicker__day--disabled:hover, .da-searchResultsWrap .da-channelSeparator .da-channelName, .layer-3QrUeG, .standardSidebarView-3F1I7i, .theme-dark .standardSidebarView-3F1I7i .contentRegion-3nDuYy, .theme-dark .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN, .theme-light .standardSidebarView-3F1I7i .contentRegion-3nDuYy, .theme-light .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN, .theme-dark .payment-xT17Mq, .mentioned-xhSam7  {
+.theme-light .footer-3rDWdC, .theme-dark .footer-3rDWdC, .input-cIJ7To, .themeDark-3Ap_7i, .da-app .chat-3bRxxu, .theme-dark .container-1D34oG, .theme-light .container-1D34oG, .themed-OHr7kt.item-PXvHYJ,  .theme-dark .separator-XqIyoz , .da-option::after, .da-option.da-selected::after, .da-searchResultsWrap .da-searchResult::before, .da-searchResultsWrap .da-searchResult::after, .theme-dark .applicationStore-1pNvnv, .theme-dark .itemBackground-1jfD8p, .theme-light .applicationStore-1pNvnv, .theme-light .itemBackground-1jfD8p, .da-calendarPicker .react-datepicker, .da-calendarPicker .react-datepicker .react-datepicker__header, .theme-dark .da-calendarPicker .react-datepicker__day--outside-month, .theme-dark .da-calendarPicker .react-datepicker__day--outside-month:hover, .theme-dark .da-calendarPicker .react-datepicker__day.react-datepicker__day--disabled, .theme-dark .da-calendarPicker .react-datepicker__day.react-datepicker__day--disabled:hover, .theme-light .da-calendarPicker .react-datepicker__day--outside-month, .theme-light .da-calendarPicker .react-datepicker__day--outside-month:hover, .theme-light .da-calendarPicker .react-datepicker__day.react-datepicker__day--disabled, .theme-light .da-calendarPicker .react-datepicker__day.react-datepicker__day--disabled:hover, .da-searchResultsWrap .da-channelSeparator .da-channelName, .layer-3QrUeG, .standardSidebarView-3F1I7i, .theme-dark .standardSidebarView-3F1I7i .contentRegion-3nDuYy, .theme-dark .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN, .theme-light .standardSidebarView-3F1I7i .contentRegion-3nDuYy, .theme-light .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN, .theme-dark .payment-xT17Mq, .mentioned-xhSam7, .childWrapper-anI2G9 {
     background-color: transparent!important;
     border: none;
     background-image: none;
 }
-.bg-AYqtMd, .theme-dark .or-3THJsp, .theme-light .or-3THJsp, .form-2fGMdU:before, .children-19S4PO:after  {
+.bg-AYqtMd, .theme-dark .or-3THJsp, .theme-light .or-3THJsp, .form-2fGMdU:before, .children-19S4PO:after, .separator-2zcjq8, .statusIconText-3b4TkH .mask-1qbNWk + div, .statusItem-2uzPIV .helper-2c73HK {
     display: none
 }
 
@@ -33,7 +33,6 @@
     background-color: var(--accent-2);
 }
 .childWrapper-anI2G9 {
-    background-color: transparent;
     color: var(--accent-1);
 }
 /*--background--*/
@@ -45,7 +44,6 @@
     left: 5px;
     right: 15px;
     top: 1px;
-    border-radius: 10px;
 }
 
 /*--scrollers--*/
@@ -75,17 +73,17 @@
     --interactive-muted: lightgray;
     --textbox-markdown-syntax: gray;
 }
-
+::placeholder, body, button, input, select, textarea {
+    font-family: sans-serif;
+    text-rendering: optimizeLegibility;
+}
 /*--titlebar--*/
 .typeWindows-1za-n7 {
     height: 20px !important;
     background-color: var(--transparent-1);
     border-radius: 13px;
-    padding-bottom: 4px;
-    margin-bottom: 4px;
     position: relative;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 4px 10px 4px 10px;
 }
 .winButton-iRh8-Z {
     top: 1px;
@@ -93,11 +91,8 @@
 }
 
 /*--servers--*/
-.wrapper-1Rf91z {
+.wrapper-1Rf91z, .da-wrapper.guilds-1SWlCJ, .da-expandedFolderBackground, .folder-21wGz3, .da-folderIconWrapper {
     background-color: var(--transparent-1);
-    border-radius: 13px;
-}
-.da-wrapper.guilds-1SWlCJ, .da-expandedFolderBackground, .folder-21wGz3, .da-folderIconWrapper {
     border-radius: 13px;
 }
 .theme-dark #bd-pub-li .wrapper-25eVIn, .theme-light #bd-pub-li .wrapper-25eVIn {
@@ -155,8 +150,7 @@
 .sidebar-2K8pFh {
     background-color: var(--transparent-1);
     flex-direction: column-reverse;
-    margin-right: 4px;
-    margin-left: 4px;
+    margin: 0 4px;
     border-radius: 13px!important;
     width:50px;
     transition-duration:300ms;
@@ -172,17 +166,12 @@
 }
 .container-2Pjhx- {
     padding: 0px;
-    margin: -2px 0px -2px 0px;
+    margin: -2px 0;
 } 
-.clickable-1JJAn8.container-2Pjhx-:active, .selected-aXhQR6 .layout-2DM8Md, .selected-aXhQR6.container-2Pjhx- {
+.clickable-1JJAn8.container-2Pjhx-:active, .selected-aXhQR6 .layout-2DM8Md, .selected-aXhQR6.container-2Pjhx-, .clickable-1JJAn8.container-2Pjhx-:hover, .clickable-1JJAn8:hover .layout-2DM8Md {
     background: linear-gradient(90deg,transparent,var(--transparent-1));
     box-shadow: inset 0 0 0 0.5px var(--accent-2);
     max-width: 100%!important;
-}
-.clickable-1JJAn8.container-2Pjhx-:hover, .clickable-1JJAn8:hover .layout-2DM8Md {
-    background: linear-gradient(90deg,transparent,var(--transparent-1));
-    box-shadow: inset 0 0 0 0.5px var(--accent-2);
-    max-width: 100%;
 }
 .searchBar-6Kv8R2 {
     height: 20px;
@@ -200,6 +189,15 @@
     color: var(--accent-1);
     border: 0.5px solid white;
     border-radius: 13px;
+}
+.channel-2QD9_O[href="/library"], .channel-2QD9_O[href="/store"] {
+    display: inline-block;
+    width: 50%;
+    margin-bottom: 3px;
+}
+.channel-2QD9_O[href="/channels/@me"] .content-3QAtGj .name-uJV0GL {
+position: relative;
+left: 45px;
 }
 
 /*--quick switcher--*/
@@ -252,7 +250,45 @@
     padding: 0;
     margin: 0px;
     box-shadow: none;
+    backdrop-filter: blur(1.5px);
 }
+.statusItem-2uzPIV {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.status-3Kz6VS {
+    margin-right: 0px;
+}
+.statusIconText-3b4TkH .mask-1qbNWk {
+    display: block;
+    transform: scale(3);
+}
+.menu-Sp6bN1[role=listbox] {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr; 
+    grid-template-rows: 1fr 1fr;
+    width: 100%; 
+    grid-gap: 10px 10px;
+}
+.item-1GzJrl {
+    grid-row: 3;
+    grid-column: 1/3;
+}
+.customStatusContentIcon-2sionu {
+    font-size: 0;
+}
+.customStatusEmoji-2NpCsS {
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+}
+.customStatusContentIcon-2sionu:after {
+content: "Custom";
+font-size: 16px;
+font-style: italic
+}
+
 .theme-dark .footer-3rDWdC, .theme-light .footer-3rDWdC {
     background-color: var(--transparent-1);
     box-shadow: none;
@@ -269,8 +305,8 @@
 }
 
 /*--messages+chat--*/
-.messages-3amgkR {
-    border-radius: 0 0 13px 13px;
+.messages-3amgkR, .chat-3bRxxu, .form-2fGMdU {
+    border-radius: 13px;
 }
 .scroller-3sQKXg:after {
     height: 5px;
@@ -280,7 +316,8 @@
     bottom: 60px;
 }
 .form-2fGMdU {
-    margin: 10px 10px -24px -12px;
+    margin: 10px 5px -24px 0px;
+    padding: 0
 }
 .scrollableContainer-2NUZem {
     background-color: transparent;
@@ -313,6 +350,13 @@
     border-radius: 13px 0 0 13px;
     background: linear-gradient(45deg, rgba(250, 166, 26, 0.3), transparent);
     width: 100%;
+}
+.attachWrapper-2TRKBi {
+    height: 44px;
+    border-color: blue;
+    margin-top: 2px;
+    margin-bottom: 0;
+    padding: 0
 }
 
 /*--avatars--*/
@@ -393,6 +437,9 @@
     background-color: var(--accent-2);
     color: white;
 }
+.theme-dark .message-2qRu38, .theme-light .message-2qRu38 {
+    background-color: var(--transparent-1)
+}
 
 /*--add friends--*/
 .theme-dark .modal-yWgWj-, .theme-light .modal-yWgWj-, .theme-dark .friendSelected-1sa4bG, .theme-light .friendSelected-1sa4bG {
@@ -454,7 +501,6 @@
 .da-searchResultMessage .da-container:last-of-type .da-divider {
 	margin: 0 0 -5px 0 !important;
 }
-
 .theme-dark .da-calendarPicker .react-datepicker__day.react-datepicker__day--selected:hover, .theme-dark .da-calendarPicker .react-datepicker__day:hover, .theme-light .da-calendarPicker .react-datepicker__day.react-datepicker__day--selected:hover, .theme-light .da-calendarPicker .react-datepicker__day:hover {
 	background-color: var(--accent-2) !important;
 }
@@ -462,6 +508,7 @@
     background: none !important;
     background-image: none !important;
 }
+
 /*--upload--*/
 .theme-dark .uploadModal-2ifh8j, .theme-light .uploadModal-2ifh8j, .theme-dark .footer-3mqk7D, .theme-light .footer-3mqk7D {
     background-color: var(--transparent-2);
@@ -488,9 +535,9 @@
     background-color: var(--transparent-3);
 }
 .theme-light .selectorSelected-1_M1WV, .theme-dark .selectorSelected-1_M1WV {
-	background-color: rgba(250,250,250,0.2);
-	transition: background-color .3s;
-	border-radius: 7px;
+    background-color: rgba(250,250,250,0.2);
+    transition: background-color .3s;
+    border-radius: 7px;
 }
 
 /*--members list--*/
@@ -695,3 +742,19 @@ clickable-2ap7je .header-2o-2hj {
 }
 
 /*test code*/
+.image-1GzsFd {
+    filter: brightness(2);
+    opacity: 0.5;
+}
+[src*="avatars/338104839978614795/"] + .username-1A8OIy::after {
+    content: "Cutie";
+    cursor: pointer;
+    text-decoration-color: transparent;
+    pointer-events: none;
+    background: hotpink;
+    color: #fff;
+    margin-left: 5px;
+    border-radius: 10px;
+    padding: 0 5px;
+    border: 1px dashed #fff;
+}
