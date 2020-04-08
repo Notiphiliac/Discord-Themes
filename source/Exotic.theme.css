@@ -1,4 +1,4 @@
-//META{"name":"Σxotic Tester","description":"A tropical experience right inside Discord! Customizable. This theme does not update automatically!","author":"Notiphiliac","version":"1.0"}*// {}
+//META{"name":"Σxotic Tester","description":"A tropical experience right inside Discord! Customizable.","author":"Notiphiliac","version":"1.0"}*// {}
 /*-----variables-----*/
 :root {
     --background: url(https://img5.goodfon.com/wallpaper/nbig/7/59/mmmmmm-nnnnnn-bbbbbb-vvvvvvvvvvvvvv.jpg);
@@ -18,7 +18,7 @@
     --background-secondary-alt: var(--transparent-1);
     --background-floating: var(--transparent-3);
 }
-.theme-light .footer-3rDWdC, .theme-dark .footer-3rDWdC, .input-cIJ7To, .themeDark-3Ap_7i, .da-app .chat-3bRxxu, .theme-dark .container-1D34oG, .theme-light .container-1D34oG, .themed-OHr7kt.item-PXvHYJ,  .theme-dark .separator-XqIyoz , .da-option::after, .da-option.da-selected::after, .da-searchResultsWrap .da-searchResult::before, .da-searchResultsWrap .da-searchResult::after, .theme-dark .applicationStore-1pNvnv, .theme-dark .itemBackground-1jfD8p, .theme-light .applicationStore-1pNvnv, .theme-light .itemBackground-1jfD8p, .da-calendarPicker .react-datepicker, .da-calendarPicker .react-datepicker .react-datepicker__header, .theme-dark .da-calendarPicker .react-datepicker__day--outside-month, .theme-dark .da-calendarPicker .react-datepicker__day--outside-month:hover, .theme-dark .da-calendarPicker .react-datepicker__day.react-datepicker__day--disabled, .theme-dark .da-calendarPicker .react-datepicker__day.react-datepicker__day--disabled:hover, .theme-light .da-calendarPicker .react-datepicker__day--outside-month, .theme-light .da-calendarPicker .react-datepicker__day--outside-month:hover, .theme-light .da-calendarPicker .react-datepicker__day.react-datepicker__day--disabled, .theme-light .da-calendarPicker .react-datepicker__day.react-datepicker__day--disabled:hover, .da-searchResultsWrap .da-channelSeparator .da-channelName, .layer-3QrUeG, .standardSidebarView-3F1I7i, .theme-dark .standardSidebarView-3F1I7i .contentRegion-3nDuYy, .theme-dark .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN, .theme-light .standardSidebarView-3F1I7i .contentRegion-3nDuYy, .theme-light .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN, .theme-dark .payment-xT17Mq, .mentioned-xhSam7, .childWrapper-anI2G9 {
+.theme-light .footer-3rDWdC, .theme-dark .footer-3rDWdC, .input-cIJ7To, .themeDark-3Ap_7i, .da-app .chat-3bRxxu, .theme-dark .container-1D34oG, .theme-light .container-1D34oG, .themed-OHr7kt.item-PXvHYJ,  .theme-dark .separator-XqIyoz , .da-option::after, .da-option.da-selected::after, .da-searchResultsWrap .da-searchResult::before, .da-searchResultsWrap .da-searchResult::after, .theme-dark .applicationStore-1pNvnv, .theme-dark .itemBackground-1jfD8p, .theme-light .applicationStore-1pNvnv, .theme-light .itemBackground-1jfD8p, .da-calendarPicker .react-datepicker, .da-calendarPicker .react-datepicker .react-datepicker__header, .theme-dark .da-calendarPicker .react-datepicker__day--outside-month, .theme-dark .da-calendarPicker .react-datepicker__day--outside-month:hover, .theme-dark .da-calendarPicker .react-datepicker__day.react-datepicker__day--disabled, .theme-dark .da-calendarPicker .react-datepicker__day.react-datepicker__day--disabled:hover, .theme-light .da-calendarPicker .react-datepicker__day--outside-month, .theme-light .da-calendarPicker .react-datepicker__day--outside-month:hover, .theme-light .da-calendarPicker .react-datepicker__day.react-datepicker__day--disabled, .theme-light .da-calendarPicker .react-datepicker__day.react-datepicker__day--disabled:hover, .da-searchResultsWrap .da-channelSeparator .da-channelName, .layer-3QrUeG, .standardSidebarView-3F1I7i, .theme-dark .standardSidebarView-3F1I7i .contentRegion-3nDuYy, .theme-dark .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN, .theme-light .standardSidebarView-3F1I7i .contentRegion-3nDuYy, .theme-light .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN, .theme-dark .payment-xT17Mq, .mentioned-xhSam7, .childWrapper-anI2G9, .video-1FfuMD, .video-1kutKI {
     background-color: transparent!important;
     border: none;
     background-image: none;
@@ -45,7 +45,9 @@
     right: 15px;
     top: 1px;
 }
-
+html {
+    color: var(--accent);
+}
 /*--scrollers--*/
 .da-scrollerWrap .da-scroller::-webkit-scrollbar { 
     width: 6px;
@@ -154,35 +156,31 @@
     border-radius: 13px!important;
     width:50px;
     transition-duration:300ms;
+    transition-timing-function: cubic-bezier(0.21, 0.04, 0.61, 1.26);
 }
 .sidebar-2K8pFh:hover {width:244px;}
 .layout-2DM8Md {
-    height: 38px;
+    height: 41px;
     padding: 0 1px;
 }
 .channel-2QD9_O {
     max-width: 224px;
     margin-left: 2px;
 }
-.container-2Pjhx- {
-    padding: 0px;
-    margin: -2px 0;
-} 
+
+.headerText-2F0828 {margin-top: 4px;}
+.privateChannelRecipientsInviteButtonIcon-3A3uTc {margin-top: 2px;}
 .clickable-1JJAn8.container-2Pjhx-:active, .selected-aXhQR6 .layout-2DM8Md, .selected-aXhQR6.container-2Pjhx-, .clickable-1JJAn8.container-2Pjhx-:hover, .clickable-1JJAn8:hover .layout-2DM8Md {
     background: linear-gradient(90deg,transparent,var(--transparent-1));
     box-shadow: inset 0 0 0 0.5px var(--accent-2);
     max-width: 100%!important;
 }
 .searchBar-6Kv8R2 {
-    height: 20px;
+    height: 30px;
 }
 .searchBar-6Kv8R2 .searchBarComponent-32dTOx {
    color: var(--accent-1);
    text-overflow: clip!important;
-}
-.header-zu8eWb {
-    padding: 1px 8px 4px 18px;
-    height: 20px;
 }
 .container-2ax-kl {
     text-align: center;
@@ -190,16 +188,16 @@
     border: 0.5px solid white;
     border-radius: 13px;
 }
-.channel-2QD9_O[href="/library"], .channel-2QD9_O[href="/store"] {
-    display: inline-block;
-    width: 50%;
+.privateChannelsHeaderContainer-3NB1K1 {
+    padding: 0px 15px;
+    height: 25px;
     margin-bottom: 3px;
 }
-.channel-2QD9_O[href="/channels/@me"] .content-3QAtGj .name-uJV0GL {
-position: relative;
-left: 45px;
+.button-14-BFJ.enabled-2cQ-u7:hover {
+    background-color: transparent;
+    transform: rotate(360deg);
 }
-
+.button-14-BFJ.enabled-2cQ-u7 {transition-duration: 1s}
 /*--quick switcher--*/
 .theme-dark .quickswitcher-3JagVE, .theme-light .quickswitcher-3JagVE, .theme-light .input-2VB9rf, .theme-dark .input-2VB9rf  { 
     background-color: var(--transparent-1); 
@@ -305,9 +303,10 @@ font-style: italic
 }
 
 /*--messages+chat--*/
-.messages-3amgkR, .chat-3bRxxu, .form-2fGMdU {
+.chat-3bRxxu {
     border-radius: 13px;
 }
+.messages-3amgkR {border-radius: 0 0 13px 13px!important; }
 .scroller-3sQKXg:after {
     height: 5px;
 }
@@ -404,15 +403,10 @@ font-style: italic
 .theme-dark .wrapper-29NfPK, .theme-light .wrapper-29NfPK {
     background-color: transparent;
 }
-.video-1FfuMD, .video-1kutKI, .theme-dark .tiles-2aXG_k, .theme-light .tiles-2aXG_k {
-    background: var(--transparent-1) !important;
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important;
-}
 .list-2bwCXU {
     padding-left: 3px;
 }
-.theme-dark .wrapper-29NfPK.minimum-2d6zH6 .actions-2vadYq .center-1Vp33r, .theme-light .wrapper-29NfPK.minimum-2d6zH6 .actions-2vadYq .center-1Vp33r {
+.wrapper-KXM2i0, .theme-dark .wrapper-29NfPK.minimum-2d6zH6 .actions-2vadYq .center-1Vp33r, .theme-light .wrapper-29NfPK.minimum-2d6zH6 .actions-2vadYq .center-1Vp33r {
     border: none!important;
     background-color: var(--transparent-2);
     padding: 6px 4px!important;
@@ -420,6 +414,16 @@ font-style: italic
 .wrapper-29NfPK.fullScreen-3DKbL8 .actions-2vadYq .center-1Vp33r:first-of-type, .wrapper-29NfPK.fullScreen-3DKbL8 .actions-2vadYq .side-kO0bwV:first-of-type, .wrapper-29NfPK.noChat-2qlG4B .center-1Vp33r:first-of-type, .wrapper-29NfPK.noChat-2qlG4B .side-kO0bwV:first-of-type, .wrapper-29NfPK.normal-2GSW0u .center-1Vp33r:first-of-type, .wrapper-29NfPK.normal-2GSW0u .side-kO0bwV:first-of-type {
     background: var(--transparent-1);
     border: 1px solid var(--accent-2)
+}
+.transition-2LXqa4:hover {
+    transform: scale(1.15)!important;
+}
+.transition-2LXqa4 {
+    transition-duration: 0.8s;
+    transition-timing-function: cubic-bezier(0.21, 0.04, 0.61, 1.60);
+}
+.justifyCenter-3D2jYp.da-justifyCenter {
+    overflow: visible!important;
 }
 
 /*--pins--*/
@@ -472,9 +476,14 @@ font-style: italic
 .da-searchResultsWrap .da-searchResult.da-expanded .da-searchResultMessage.da-hit, .da-searchHeader, .da-searchFilter, .da-option.da-selected, .theme-light .da-searchFilter, .da-option.da-selected, .da-popout .da-queryContainer, .theme-dark .da-searchResultsWrap, .theme-light .da-searchResultsWrap, .theme-dark .searchResult-3pzFAB .searchResultMessage-2VxO12.hit-NLlWXA, .theme-light .searchResult-3pzFAB .searchResultMessage-2VxO12.hit-NLlWXA {
     background-color: var(--transparent-1)!important;
 }
-.theme-dark .da-popout .da-container, .theme-light .da-popout .da-container, .theme-dark .searchAnswer-3Dz2-q, .theme-dark .searchFilter-2ESiM3, .theme-light .searchAnswer-3Dz2-q, .theme-light .searchFilter-2ESiM3 {
-    background-color: var(--transparent-3); 
-    border: none 
+.queryContainer-RKFJW-.focused-2bY0OD {
+  background: var(--transparent-1);
+  overflow: hidden;
+  border: none;
+}
+.theme-dark .container-3ayLPN, .theme-light .container-3ayLPN {
+  background: var(--transparent-3);
+  margin-left: -50px;
 }
 .theme-dark .searchResult-3pzFAB .searchResultMessage-2VxO12.after-2g0jjc, .theme-dark .searchResult-3pzFAB .searchResultMessage-2VxO12.before-1x1q5S, .theme-light .searchResult-3pzFAB .searchResultMessage-2VxO12.after-2g0jjc, .theme-light .searchResult-3pzFAB .searchResultMessage-2VxO12.before-1x1q5S {
     opacity: .3;
@@ -604,7 +613,7 @@ font-style: italic
     background-color: var(--transparent-2);
     box-shadow: none;
 }
-.theme-dark .keyboardShortcutsModal-3piNz7 {
+.theme-dark .keyboardShortcutsModal-3piNz7, .theme-light .keyboardShortcutsModal-3piNz7, .theme-dark .quickSelectPopout-X1hvgV, .theme-light .quickSelectPopout-X1hvgV {
     background-color: var(--transparent-3)
 }
 
@@ -658,7 +667,13 @@ background: var(--transparent-3)!important;
 .radioGroup-1GBvlr .item-26Dhrx .checkboxWrapper-SkhIWG {
   margin-left: 10px;
 }
-
+.themeDefault-24hCdX {
+    background-color: rgb(75,75,75);
+}
+.themeDefault-24hCdX:hover {
+    background: linear-gradient(90deg,rgb(75,75,75),var(--accent-2));
+    transition-duration: 0.5s;
+}
 /*--server settings--*/
 clickable-2ap7je .header-2o-2hj {
     height: 26px;
@@ -742,19 +757,15 @@ clickable-2ap7je .header-2o-2hj {
 }
 
 /*test code*/
-.image-1GzsFd {
-    filter: brightness(2);
-    opacity: 0.5;
+
+.banner-3Kac2g {
+   background: var(--accent-2)!important;
+   opacity: 0.5;
 }
-[src*="avatars/338104839978614795/"] + .username-1A8OIy::after {
-    content: "Cutie";
-    cursor: pointer;
-    text-decoration-color: transparent;
-    pointer-events: none;
-    background: hotpink;
-    color: #fff;
-    margin-left: 5px;
-    border-radius: 10px;
-    padding: 0 5px;
-    border: 1px dashed #fff;
+.symbol-3ffeCr img {
+    display: none
+}
+.symbol-3ffeCr {
+    background: url(https://media2.giphy.com/media/IQ47VvDzlzx9S/giphy.gif) center;
+    background-repeat: no-repeat;
 }
