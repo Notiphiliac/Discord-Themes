@@ -6,7 +6,7 @@ Keep in mind the source of each theme will not update automatically and you will
 
 	How to download them and get them working:
 
-		▻ Open the raw code and either press Ctrl+S to save it as a file or paste the theme into a text file.
+		▻ Open the raw code, either press Ctrl+S to save it as a file or paste into a text file.
 		▻ Make sure that the file is named something like "name.theme.css".
 		▻ Open the themes folder:
 			Windows: %appdata%/BetterDiscord/themes
