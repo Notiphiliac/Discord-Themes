@@ -7,13 +7,13 @@
  * @source https://github.com/Notiphiliac/Discord-Themes
  * @invite cscGjg2
 */
-@import url("https://raw.githack.com/Notiphiliac/Discord-Themes/master/source/Exotic.theme.css");
+@import url("https://notiphiliac.github.io/Discord-Themes/Imports/exotic.theme.css");
 /*-----variables-----*/
 :root {
     --background: url(https://img5.goodfon.com/wallpaper/nbig/7/59/mmmmmm-nnnnnn-bbbbbb-vvvvvvvvvvvvvv.jpg);
     --popup-background: url(https://image.freepik.com/free-vector/tropical-flowers-wallpaper_23-2148523155.jpg);
-    --accent-1: #faf0e8;
-    --accent-2: #2a4f34;
+    --accent-1: #faf0e8; /*scroller and link colours*/
+    --accent-2: #2a4f34; /*main accent colours*/
     --transparent-1: rgba(0, 0, 0, 0.3);
     --transparent-2: rgba(0, 0, 0, 0.5);
     --transparent-3: rgba(0, 0, 0, 0.7);
