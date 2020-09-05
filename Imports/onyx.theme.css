@@ -1,0 +1,129 @@
+/**
+ * @name O𝒏𝒚𝔁 
+ * @author Notiphiliac
+ * @authorId 207335168430702602
+ * @version  β 0.1.0
+ * @description A blue and grey Discord theme.
+ * @source https://github.com/Notiphiliac/Discord-Themes
+ * @invite cscGjg2
+*/
+
+/*variables*/
+:root {
+    --background-primary: #2e2e2e;
+    --background-secondary: #252525;
+    --background-secondary-alt: #212121;
+    --background-tertiary: #1a1a1a;
+    --channeltextarea-background: #212121;
+    --background-modifier-selected: #313861;
+    --background-modifier-hover: #31386180;
+    --text-link: #93c9d7;
+ }
+ /*background*/
+ /*friends lists*/ 
+ #app-mount .container-1D34oG {background-color: var(--background-primary);}
+ .peopleListItem-2nzedh, .peopleListItem-2nzedh.active-rhSpJJ, .peopleListItem-2nzedh:hover {
+    border-radius: 0;
+    margin: 0; padding: 0;
+ }
+ .colorDefault-2K3EoJ.focused-3afm-j {background-color: var(--background-modifier-hover);}
+ /*bottom textbox*/
+ .typing-2GQL18 {top: 0;}
+ .form-2fGMdU > div {bottom: 0;}
+ .channelTextArea-rNsIhG {margin: 24px 0 0px}
+ .scrollerSpacer-avRLaA, .form-2fGMdU:before {display: none;}
+ .form-2fGMdU {padding: 0;}
+ .scrollableContainer-2NUZem {border-radius: 0; height: 52px;}
+ .chat-3bRxxu form {margin: 0;}
+ 
+ /*settings*/
+ #app-mount .layer-3QrUeG[aria-label*=SETTINGS] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    transform: none !important;
+ }
+ #app-mount .layer-3QrUeG.baseLayer-35bLyl {
+    opacity: 1 !important;
+    transform: scale(1) !important;
+ }
+ #app-mount .layer-3QrUeG[aria-label*=SETTINGS] .standardSidebarView-3F1I7i {
+    position: relative;
+    width: 90%;
+    height: 80%;
+    z-index: 3!important;
+ }
+ .sidebar-CFHs9e {padding: 0}
+ .contentColumnDefault-1VQkGM {padding: 0 10px}
+ 
+ 
+ /*stuff*/
+ ::-webkit-scrollbar-track-piece {
+    background: transparent!important;
+    border: none!important;
+    border-radius: 0!important;
+  }
+  :not(.scroller-2TZvBN)::-webkit-scrollbar-thumb {
+    background: var(--background-modifier-selected)!important;
+    border: none!important;
+    border-radius: 0!important;
+  }
+  ::-webkit-scrollbar-track-piece {
+    background: transparent!important;
+    border: none!important;
+    border-radius: 0!important;
+  }
+  :not(:hover)::-webkit-scrollbar-thumb, :not(:hover)::-webkit-scrollbar-track-piece {
+ opacity: 0!important;
+  }
+  ::-webkit-scrollbar {width: 5px!important;}
+  .content-98HsJk {
+    flex-direction: row-reverse;
+ }
+ .typeWindows-1za-n7 {
+    position: absolute;
+    width: calc(100% - 240px);
+    z-index: 1;
+    flex-direction: row;
+ }
+ .wordmarkWindows-1v0lYD {display: none}
+ .winButton-iRh8-Z {width: 24px; z-index: 3!important;}
+ .wrapper-1Rf91z {top: 30px}
+ .searchBar-6Kv8R2, .container-2Rl01u .header-2o-2hj, .container-1r6BKw.themed-ANHk51, .container-1r6BKw  {
+    height: 30px;
+    z-index: 3;
+    padding: 0 2px;
+ }
+ 
+ .container-2Rl01u {
+    position: absolute!important;
+    left: -240px; 
+    top: 30px;
+    width: 240px;
+    z-index: 4; 
+    background: var(--background-secondary-alt);}
+ .name-3YKhmS {width: inherit; overflow: visible;}
+ .header-2o-2hj {width: 100%; overflow: hidden;}
+ .header-2o-2hj{
+ box-shadow: none!important;}
+ .appMount-3lHmkl, .base-3dtUhz, .chat-3bRxxu, .content-98HsJk, .layers-3iHuyZ>.layer-3QrUeG, .layers-3q14ss, .sidebar-2K8pFh {overflow: visible!important;}
+ .scroller-2wx7Hm, .privateChannels-1nO12o {margin-top: 33px;}
+ .container-PNkimc {background-color: var(--background-secondary-alt);}
+ 
+ .channel-2QD9_O[href="/channels/@me"], .channel-2QD9_O[href="/store"] {display: inline-block; width: 50%;}
+ .channel-2QD9_O[href="/library"] {display: none;}
+ .channel-2QD9_O {max-width: 100%; width: 100%; margin:0;}
+ [href*="/channels/@me/"] .content-3QAtGj {width: 100px;}
+ .privateChannelsHeaderContainer-3NB1K1 {padding: 0; height: 16px;}
+ .channel-2QD9_O[href="/channels/@me"] .name-uJV0GL, .channel-2QD9_O[href="/store"] .name-uJV0GL {font-size: 0;}
+ .container-3baos1 {
+    height: 30px; width: 240px;
+    padding: 0;
+    position: absolute;
+    right: 0;top: 0; 
+    z-index: 4!important;
+ }
+ .members-1998pB, .members-1998pB>div {margin-top: 5px;}
+ .noticeStreamerMode-2TSQpg {height: 30px!important; max-height: 30px; border-radius: 0;}
+ .lookFilled-1Gx00P.colorGreen-29iAKY, .buttonActive-3FrkXp {background-color: var(--background-modifier-selected)!important;}
