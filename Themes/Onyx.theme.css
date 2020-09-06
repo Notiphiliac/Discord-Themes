@@ -2,20 +2,24 @@
  * @name O𝒏𝒚𝔁 
  * @author Notiphiliac
  * @authorId 207335168430702602
- * @version  β 0.1.0
+ * @version  β 0.2.0
  * @description A blue and grey Discord theme. In Beta! Many things will be changed over time!
  * @source https://github.com/Notiphiliac/Discord-Themes
  * @invite cscGjg2
 */
 @import url("https://notiphiliac.github.io/Discord-Themes/Imports/onyx.theme.css");
 /*variables*/
-:root {
-    --background-primary: #2e2e2e;
-    --background-secondary: #252525;
-    --background-secondary-alt: #212121;
-    --background-tertiary: #1a1a1a;
-    --channeltextarea-background: #212121;
-    --background-modifier-selected: #313861;
-    --background-modifier-hover: #31386180;
-    --text-link: #93c9d7;
- }
+:root { --accent: 49, 56, 97}
+#app-mount {
+   --background-primary: #2e2e2e;
+   --background-secondary: #252525;
+   --background-secondary-alt: #212121;
+   --background-tertiary: #1a1a1a;
+   --background-floating: #1f1f1f;
+   --channeltextarea-background: #212121;
+   --background-modifier-selected: rgba( var(--accent));
+   --background-modifier-active: rgba( var(--accent));
+   --background-modifier-hover: rgba(var(--accent), 0.5);
+   --text-link: #93c9d7;
+   --background-accent: rgba( var(--accent));
+}
