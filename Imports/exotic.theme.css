@@ -130,10 +130,7 @@ html {
 }
 
 /*--popouts--*/
-.container-3cGP6G {
-    background-color: var(--transparent-2);
-    box-shadow: none;
-}
+
 .theme-dark .keyboardShortcutsModal-3piNz7, .theme-light .keyboardShortcutsModal-3piNz7, .theme-dark .quickSelectPopout-X1hvgV, .theme-light .quickSelectPopout-X1hvgV {
     background-color: var(--transparent-3)
 }
@@ -277,6 +274,8 @@ html {
     height: 25px;
     padding: 0px 15px; margin-bottom: 3px;
 }
+.modeSelected-1zApJ_ .children-Bmpf2Q {display: none;}
+.modeSelected-1zApJ_:hover .children-Bmpf2Q {display: flex;}
 
 /*quick switcher*/
 #app-mount .quickswitcher-3JagVE { 
@@ -521,9 +520,9 @@ html {
 .searchResultMessage-1fxgXh, #app-mount .option-96V44q:after, .searchResult-9tQ1uo:after, .searchResult-9tQ1uo:before {
 	background: none;
 	border: none!important; border-radius: 13px !important;
-    box-shadow: none!important;
+
 }
-       
+    
 #app-mount .calendarPicker-2yf6Ci .react-datepicker__day.react-datepicker__day--selected:hover,
 #app-mount .calendarPicker-2yf6Ci .react-datepicker__day:hover,
 #app-mount .calendarPicker-2yf6Ci .react-datepicker__day.react-datepicker__day--selected:after,

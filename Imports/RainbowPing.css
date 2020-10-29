@@ -5,7 +5,6 @@
     --colour-3: rgba(255,255,0,.2); /*base value: rgba(255,255,0,.2)*/
     --colour-4: rgba(255,0,0,.2); /*base value: rgba(255,0,0,.2)*/
 }
-/*theme*/
 .mentioned-xhSam7 .messageContent-2qWWxC {
 	background: linear-gradient(90deg,var(--colour-1),var(--colour-2),var(--colour-3),var(--colour-4));;
 	border-radius: 8px;
@@ -15,12 +14,6 @@
     width: calc(100% + 48px);
 }
 .mentioned-xhSam7, .mentioned-xhSam7.selected-2P5D_Z,  .mentioned-xhSam7:hover {background: transparent!important;}
-.cozy-3raOZG.wrapper-2a6GCs.mentioned-xhSam7 {
-    padding-left: 0;
-    margin-left: 72px;
-}
-.groupStart-23k01U.mentioned-xhSam7 .avatar-1BDn8e {left: -56px;}
-.cozy-3raOZG.mentioned-xhSam7 .timestamp-3ZCmNB.alt-1uNpEt {left:-72px}
-.mentioned-xhSam7:before {width: calc(100% + 72px); left:-72px; background: transparent; z-index: 1;}
+.mentioned-xhSam7:before {width: calc(100% + 72px); left:-72px; background: transparent;}
 .mentioned-xhSam7:hover:before {background: var(--background-message-hover);}
 .wrapper-3WhCwL, #app-mount .mentioned-xhSam7 .mention {background: rgba(114,137,218,0.1)!important;}
