@@ -1,0 +1,122 @@
+/**
+ * @name Streamline
+ * @author Notiphiliac
+ * @authorId 207335168430702602
+ * @version  0.3.0
+ * @description A dark and compact Discord theme. Same as Onyx, but less intrusive.
+ * @source https://github.com/Notiphiliac/Discord-Themes
+ * @invite cscGjg2
+*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+:root { --accent-rgb: 49, 56, 97}
+#app-mount {
+   --background-primary: #2e2e2e;
+   --background-secondary: #252525;
+   --background-secondary-alt: #212121;
+   --background-tertiary: #1a1a1a;
+   --background-floating: #1f1f1f;
+   --channeltextarea-background: #212121;
+   --background-modifier-selected: rgba( var(--accent-rgb));
+   --background-modifier-active: rgba( var(--accent-rgb));
+   --background-modifier-hover: rgba(var(--accent-rgb), 0.5);
+   --text-link: #93c9d7;
+   --background-accent: rgba( var(--accent-rgb));
+}
+body, div, span, textarea, ::-webkit-input-placeholder {font-family: 'Montserrat', serif;}
+.name-3Vmqxm span, .username-h_Y3Us, .channelName-3KPsGw, .title-3XlmeX {font-weight: 400; font-size: 17px; text-decoration: underline;}
+.name-3Vmqxm span:hover, .username-h_Y3Us:hover, .channelName-3KPsGw:hover, .title-3XlmeX:hover {font-weight: bolder;}
+.hljs, .inline,
+.hljs :-webkit-any(ol, li, span),
+.editor-wrapper :-webkit-any(textarea, div, span) {font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;}
+
+/*background*/
+
+/*scroller*/
+::-webkit-scrollbar {width: 0px!important;}
+
+/*friends list*/
+
+.peopleList-2VBrVI > div {
+display: grid;
+grid-template-columns: 33% 33% 33%;
+}
+.peopleListItem-u6dGxF {
+padding: 4px;
+margin: 4px;
+border-radius: 4px;
+background-color: var(--background-secondary-alt);
+border: none;
+}
+.peopleListItem-u6dGxF.active-2UF8Zh, .peopleListItem-u6dGxF:hover {
+background: var(--background-secondary-alt);
+border-radius: 4px;
+padding: 4px;
+margin: 4px;
+}
+.text-MPIeXO, .actionButton-3-B2x-:first-child {
+   display: none;
+}
+.actionButton-3-B2x- {
+   width: 32px; height: 32px;
+}
+.peopleListItem-u6dGxF {
+   height: 55px!important;
+}
+.searchBar-2aylmZ {
+   margin: 10px 4px;
+}
+.title-x4dI75 {
+   margin: 4px;
+   text-align: center;
+}
+.discordTag-3HiQI9 {
+   align-items: center;
+}
+.wrapper-1VLyxH.avatar-2MSPKk {
+   height: 55px!important;
+   width: 55px!important;
+   margin: -4px 4px -4px -4px ;
+   border-radius: 0 ;
+}
+.peopleListItem-u6dGxF.active-2UF8Zh .wrapper-1VLyxH.avatar-2MSPKk, .peopleListItem-u6dGxF:hover .wrapper-1VLyxH.avatar-2MSPKk {
+   background: var(--background-accent); 
+}
+.peopleListItem-u6dGxF.active-2UF8Zh .wrapper-1VLyxH.avatar-2MSPKk::before, .peopleListItem-u6dGxF:hover .wrapper-1VLyxH.avatar-2MSPKk::before {
+   content: "";
+   position: absolute;
+   margin-left: 55px;
+   width: 0;
+   height: 0;
+   border-top: 27px solid transparent;
+   border-left: 30px solid var(--background-accent);
+   border-bottom: 28px solid transparent;
+}
+.text-3j8t_e {
+   z-index: 2;
+}
+.avatar-2MSPKk svg.mask-1FEkla.svg-2azL_l {
+position: relative;
+margin: 11px;
+}
+/*active now section*/
+.padded-2NSY6O, .section-3G9aLW, .scroller-hE2gWq {
+   padding: 4px!important;
+   border-radius: 4px!important;
+}
+
+/*gift/gif/sticker/emoji*/
+
+[aria-label*="sticker"], [aria-label*="gift"], [aria-label*="Video"] {
+ display: none;
+}
+.webkit-QgSAqd .buttons-uaqb-5 {
+   margin-right: 0px;
+}
+.button-3BaQ4X {
+   margin: 0;
+}
+/* library and nitro tab */
+[href*="library"], [href*="store"] {
+    display: none;
+}
