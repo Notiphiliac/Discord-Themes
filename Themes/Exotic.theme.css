@@ -5,9 +5,8 @@
  * @description A tropical experience right inside Discord! No longer being updated - May have some issues.
  * @authorId 207335168430702602
  * @source https://github.com/Notiphiliac/Discord-Themes
- * @invite cscGjg2
 */
-@import url("https://notiphiliac.github.io/Discord-Themes/Imports/exotic.theme.css");
+@import url("https://notiphiliac.github.io/Discord-Themes/src/exotic.theme.css");
 /*-----variables-----*/
 :root {
     --background: url(https://img5.goodfon.com/wallpaper/nbig/7/59/mmmmmm-nnnnnn-bbbbbb-vvvvvvvvvvvvvv.jpg);

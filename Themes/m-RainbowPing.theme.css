@@ -5,9 +5,8 @@
  * @description Recreates pings to look like Discord's 2018 April Fool's event. May not work with all other themes.
  * @authorId 207335168430702602
  * @source https://github.com/Notiphiliac/Discord-Themes
- * @invite cscGjg2
 */
-@import url("https://notiphiliac.github.io/Discord-Themes/Imports/RainbowPing.css");
+@import url("https://notiphiliac.github.io/Discord-Themes/src/RainbowPing.css");
 :root {
     --colour-1: rgba(0,0,255,.2); /*base value: rgba(0,0,255,.2). Change the .2 to change the opacity.*/
     --colour-2: rgba(0,255,0,.2); /*base value: rgba(0,255,0,.2)*/

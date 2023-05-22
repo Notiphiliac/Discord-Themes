@@ -1,0 +1,188 @@
+/**
+ * @name Astra
+ * @author Notiphiliac
+ * @authorId 207335168430702602
+ * @version  0.1.0
+ * @description A dark and minimalist space theme.
+ * @source https://github.com/Notiphiliac/Discord-Themes
+*/
+@import url(https://nfld99.github.io/Better-Discord/Source_Code/Addons/Use_Fonts/DiscordFont.css);
+/* - Custom Watermark - */
+.wordmarkWindows-2dq6rw:after {
+    content: "astra";
+    font-size: 14px;
+    font-weight: 700;
+    white-space: nowrap;
+    font-family: "Discord";
+}
+.wordmarkWindows-2dq6rw svg {
+  display:none;
+}
+.wordmarkWindows-2dq6rw {
+    max-width:90vw;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+/* - Channels - */
+.iconContainer-21RCa3:not([aria-label*="Voice"])::after {
+   content: "✩";
+   font-size: 125%;
+   color: var(--channels-default);
+}
+.modeUnread-3Cxepe .iconContainer-21RCa3:not([aria-label="Voice"])::after, .modeSelected-3DmyhH .iconContainer-21RCa3:not([aria-label*="Voice"]):after {
+   content: "★";
+   font-size: 125%;
+}
+.modeMuted-2T4MDZ .iconContainer-21RCa3::after {
+   color: var(--interactive-muted);
+}
+.modeUnread-3Cxepe .iconContainer-21RCa3::after {
+color: var(--interactive-active);
+}
+.iconContainer-21RCa3:not([aria-label*="Voice"]) svg, .unreadRelevant-2f-VSK {
+   display: none;
+}
+.content-1gYQeQ, .mainContent-20q_Hp {margin: 0 2px;}
+
+/* - Status Shapes - */
+/* .pointerEvents-2KjWnj {mask:none;} */
+
+.wrapper-3Un6-K foreignObject {
+   mask: none!important;
+}
+.avatar-2e8lTP {border-radius: 0;}
+.avatar-3QF_VA, .avatarHoverTarget-1zzfRL {
+   border-radius: 0;
+   padding: 5px;
+   background: linear-gradient(var(--profile-gradient-primary-color),var(--profile-gradient-secondary-color) 300%);
+   }
+.bannerSVGWrapper-2CLfzN circle {display: none;}
+
+/* - Recolour Blurple - */
+html {
+   --brand-experiment: #7F5A83;
+   --brand-500: #7F5A83!important;
+   --brand-experiment-560: crimson;
+   --brand-experiment-600: purple;
+   --background-primary: #222!important;
+   --background-secondary:  #111!important;
+   --background-secondary-alt: var(--background-tertiary)!important;
+   --bg-overlay-app-frame: #000;
+   --background-tertiary: #020202!important;
+   --channeltextarea-background: var(--background-secondary-alt)!important;
+}
+
+/* .standardSidebarView-E9Pc3j {
+   display: flex;
+   flex-direction: column;
+}
+.sidebarRegion-1VBisG, .sidebarRegionScroller-FXiQOh, .side-1lrxIh {
+   min-height: 23vh!important;
+   max-height: 23vh;
+}
+.sidebarRegionScroller-FXiQOh {
+   overflow: scroll hidden!important;
+}
+.sidebar-nqHbhN, .contentRegion-3HkfJJ, .contentRegionShownSidebar-fHXkEg, .contentColumn-1C7as6, .contentColumn-1C7as6 > div, .customColumn-2n-oKU div {
+   width: 100%!important; 
+   max-width: 100%!important;
+   margin: 0 2px;
+   }
+.side-1lrxIh {
+   width: 200px!important;
+   flex-wrap: wrap;
+}
+.side-1lrxIh > * {
+   width: 150px;
+   padding: 5px!important;
+   margin: 2px;
+}
+.side-1lrxIh .separator-2N511j {padding: 0!important;}
+.contentColumnDefault-3eyv5o {padding-top: 30px;}
+*/
+/* server list */
+.guilds-2JjMmN {
+position: absolute;
+z-index: 3;
+height: 58px;
+transition-duration: 1.25s;
+border-radius: 5px 0 0 5px;
+box-shadow: var(--elevation-low);
+}
+.listItem-3SmSlK {
+   height: 0;
+   overflow: hidden;
+   margin: 0;
+   transition-duration: 1.25s;
+}
+.guilds-2JjMmN:hover .listItem-3SmSlK, .listItem-3SmSlK:has(.selected-3a1QGn), .listItem-3SmSlK:has(.selected-3c78Ai) {
+   height: 48px;
+   margin: 0 0 8px;
+}
+.listItem-3SmSlK:has(.guildSeparator-a4uisj) {
+   display: none;
+}
+.guilds-2JjMmN:hover {
+height: 91.5vh;
+border-radius: 5px 0 5px 5px;
+}
+.searchBar-3TnChZ, .container-1-ERn5 {
+   margin-left: 72px;
+   height: 58px;
+   background-color: var(--background-tertiary);
+
+}
+.header-3OsQeK, .title-31SJ6t {
+   height: 58px;
+}
+.searchBar-3TnChZ .searchBarComponent-3N7dCG {
+   background-color: var(--background-secondary);
+}
+.linkButton-2NshQj {padding: 0;}
+.channel-1Shao0:has(svg.linkButtonIcon-7rsZcu:not(.activitiesBirthdayIcon-1Ou-De)) {
+   width: 30%;
+   display: inline-block;
+   justify-self: center;
+   padding: 0!important;
+   margin: 3px;
+}
+.channel-1Shao0:has(svg.linkButtonIcon-7rsZcu:not(.activitiesBirthdayIcon-1Ou-De)) .avatar-1HDIsL {
+   margin: 0;
+}
+.channel-1Shao0:has(svg.linkButtonIcon-7rsZcu:not(.activitiesBirthdayIcon-1Ou-De)) .layout-1LjVue {
+   justify-content: center;
+}
+.channel-1Shao0:has(svg.linkButtonIcon-7rsZcu:not(.activitiesBirthdayIcon-1Ou-De)) .content-66wMin {
+ display: none;
+}
+
+/* - Message box - */
+.form-3gdLxP {
+   display: flex;
+   flex-direction: column-reverse;
+   padding: 0;
+}
+.base-3bcbY3 {position: relative;}
+.channelTextArea-1FufC0, .scrollableContainer-15eg7h {
+   margin: 0;
+   border-radius: 0 5px 5px 0;
+}
+.container-YkUktl { /* user panel */
+height: 44px;
+}
+
+/* ---- */
+img[src*="263419169620492288"] {
+   border-radius: 50%;
+}
+
+/* background */
+.messagesWrapper-RpOMA3 {
+   background: url("https://wallpapercave.com/wp/wp2088351.jpg");
+   border-radius: 20px;
+   overflow: hidden!important;
+   margin-bottom: 8px;
+}
+.scroller-kQBbkU {
+   background-color: #00000090;
+}

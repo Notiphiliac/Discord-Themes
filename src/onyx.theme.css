@@ -179,13 +179,17 @@ div + .content-1jQy2l {
 /* User Info */
 .avatarWrapper-1B9FTW .wrapper-1VLyxH foreignObject {mask: none;}
 .container-YkUktl {
-   width: 72px;
+   width: 72px!important;
    padding: 0;
    display: flex;
    flex-direction: column;
    position: absolute;
    left: -75px;
    bottom: 100px;
+}
+.avatarWrapper-1B9FTW.withTagAsButton-OsgQ9L {
+   min-width: 0!important;
+   max-width: 72px!important;
 }
 .nameTag-sc-gpq.canCopy-IgTwyV {
     background-color: black;

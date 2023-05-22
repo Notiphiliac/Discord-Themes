@@ -5,9 +5,8 @@
  * @version  β 0.2.0
  * @description A compact and square Discord theme
  * @source https://github.com/Notiphiliac/Discord-Themes
- * @invite cscGjg2
 */
-@import url("https://notiphiliac.github.io/Discord-Themes/Imports/onyx.theme.css");
+@import url("https://notiphiliac.github.io/Discord-Themes/src/onyx.theme.css");
 /*variables*/
 :root { --accent: 49, 56, 97}
 #app-mount {
