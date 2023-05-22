@@ -19,7 +19,7 @@ Keep in mind the source code of each theme will not update automatically and you
 There are no previews for themes yet! Once more themes are added, I will eventually add previews and info for each theme.
 
 ## Support
-Many questions will be answered in [FAQ](https://github.com/Notiphiliac/Discord-Themes/blob/master/README.md#faq), but if there is anything that you still need assistance with feel free to enter my [server](https://discord.gg/cscGjg2). 
+Many questions will be answered in [FAQ](https://github.com/Notiphiliac/Discord-Themes/blob/master/README.md#faq), but if there is anything that you still need assistance with feel free to DM me on Discord at "Pastel Love#3525". 
 	If you have an issue with the theme:
 		▻ If a part of the theme is left unthemed: 
 		    create an issue on the GitHub page or report it on the Discord support server.
