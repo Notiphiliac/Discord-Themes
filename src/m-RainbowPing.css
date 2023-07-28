@@ -1,0 +1,26 @@
+:root {
+  --colour-1: 0,0,255; /*base value: 0,0,255*/
+  --colour-2: 0,255,0; /*base value: 0,255,0*/
+  --colour-3: 255,255,0; /*base value: 255,255,0*/
+  --colour-4: 255,0,0; /*base value: 255,0,0*/
+	--opacity: .2;  /*Change the number to change the transparency, base value: 0.2*/
+	--opacity-hover: 0.3; /*base value: 0.4*/;
+}
+.mentioned-Tre-dv:before {
+  display: none;
+}
+.mentioned-Tre-dv, .mentioned-Tre-dv:hover, .message-2CShn3.mentioned-Tre-dv.selected-2LX7Jy, .mouse-mode.full-motion .mentioned-Tre-dv:hover {
+	background-color: transparent;
+}
+.mentioned-Tre-dv :not(.repliedTextPreview-1bvxun) > .messageContent-2t3eCI, .mentioned-Tre-dv .container-2sjPya {
+  padding-left: 0;
+  margin-left: 0;
+  border-radius: 8px;
+  background: linear-gradient(90deg, rgba(var(--colour-1),var(--opacity)), rgba(var(--colour-2),var(--opacity)), rgba(var(--colour-3),var(--opacity)), rgba(var(--colour-4),var(--opacity)));
+}
+.mentioned-Tre-dv :not(.repliedTextPreview-1bvxun) > .messageContent-2t3eCI:hover, .mentioned-Tre-dv .container-2sjPya:hover {
+  padding-left: 0;
+  margin-left: 0;
+  border-radius: 8px;
+  background: linear-gradient(90deg,rgba(var(--colour-1),var(--opacity-hover)), rgba(var(--colour-2),var(--opacity-hover)), rgba(var(--colour-3),var(--opacity-hover)), rgba(var(--colour-4),var(--opacity-hover)));
+}
