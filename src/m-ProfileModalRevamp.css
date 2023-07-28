@@ -36,6 +36,11 @@
 	width: 200px;
 	pointer-events: none;
 }
+.avatar-3QF_VA foreignObject {mask: none;}
+.avatar-3QF_VA img {
+	border-radius: var(--border);
+	overflow: hidden;
+}
 .userProfileInnerThemedNonPremium-2AJg-H .header-S26rhB {
 	margin-top: -106px;
 }
