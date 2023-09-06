@@ -7,8 +7,8 @@
 ## Previews and Info
 ### Info
 A complete list of themes I've created, including the source code for each of them. They work fine with [BetterDiscord](http://betterdiscord.net), a Discord add-on.
-
-Themes with the prefix "m-" are mini-themes and do not alter Discord's appearance significantly. They will modify 1 or 2 parts of Discord.
+> [!NOTE]  
+> Themes with the prefix "m-" are mini-themes and do not alter Discord's appearance significantly. They will modify 1 or 2 parts of Discord.
 
 Keep in mind the source code of each theme will not update automatically and you will have to either maintain it yourself or update them manually. 
 	Please do not pass off my themes as your own work, 
