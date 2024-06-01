@@ -1,0 +1,762 @@
+/**
+  * @name ReFresh
+  * @version 0.9.0
+  * @author Pastel Love
+  * @description A compact theme that brings a fresh look to Discord
+  */
+  :root {
+	--spacing: 5px;
+	--border: 5px;
+}
+/* Border Radius stuff */
+button {
+	border-radius: var(--border) !important;
+	overflow: hidden;
+}
+/* Scrollers */
+#app-mount ::-webkit-scrollbar-track-piece {
+	background: transparent !important;
+	border: none !important;
+}
+::-webkit-scrollbar-thumb {
+	background: var(--accent-2) !important;
+	border: none !important;
+	border-radius: var(--border) !important;
+}
+::-webkit-scrollbar {width: var(--spacing) !important;}
+.scroller-2TZvBN::-webkit-scrollbar,
+.["unreadMentionsFixedFooter","scroller"].scroller::-webkit-scrollbar {
+	width: 0 !important;
+}
+
+/* Friends list */
+.["topPill"].topPill {
+	background-color: var(--background-tertiary);
+	border-radius: var(--border);
+	padding: var(--spacing) 0;
+}
+.["nowPlayingColumn","tabBar"].tabBar .["tabBody","item"].item {
+	margin: 0 var(--spacing);
+	padding: var(--spacing);
+}
+.["nowPlayingColumn","tabBar"].tabBar .["addFriend"].addFriend.["addFriend"].addFriend.["addFriend"].addFriend[aria-selected=true] {
+	background-color: var(--brand-500);
+	color: #fff;
+}
+.["title","!icon","!lighten","!subtitle","!wrapper","!arrowAlignmentMiddle","!arrowAlignmentTop","!background","!body","!bodyCenter","!bodyLeft","!bottom","!buttonContainer","!buttonSkipCenterAlign","!buttonSkipLeftAlign","!content","!contentNarrowMedia","!contentNarrowNoMedia","!contentNarrowWithMedia","!contentNoMedia","!contentWideNoMedia","!contentWideWithMedia","!contentWithMedia","!left","!leftArrow","!mediaContainer","!popoutRoot","!right","!rightArrow","!titleCenter","!titleLeft","!top","!topArrow","!code","!defaultColor","!defaultMarginh1","!defaultMarginh2","!defaultMarginh3","!defaultMarginh4","!defaultMarginh5","!defaultMarginlabel","!defaultMarginlegend","!disabled","!display-lg","!display-md","!display-sm","!error","!errorMessage","!errorSeparator","!eyebrow","!faded","!fontScaling","!h1","!h2","!h3","!h4","!h5","!heading-deprecated-12/bold","!heading-deprecated-12/extrabold","!heading-deprecated-12/medium","!heading-deprecated-12/normal","!heading-deprecated-12/semibold","!heading-lg/bold","!heading-lg/extrabold","!heading-lg/medium","!heading-lg/normal","!heading-lg/semibold","!heading-md/bold","!heading-md/extrabold","!heading-md/medium","!heading-md/normal","!heading-md/semibold","!heading-sm/bold","!heading-sm/extrabold","!heading-sm/medium","!heading-sm/normal","!heading-sm/semibold","!heading-xl/bold","!heading-xl/extrabold","!heading-xl/medium","!heading-xl/normal","!heading-xl/semibold","!heading-xxl/bold","!heading-xxl/extrabold","!heading-xxl/medium","!heading-xxl/normal","!heading-xxl/semibold","!label","!legend","!redesign/channel-title/bold","!redesign/channel-title/medium","!redesign/channel-title/normal","!redesign/channel-title/semibold","!redesign/heading-18/bold","!redesign/message-preview/bold","!redesign/message-preview/medium","!redesign/message-preview/normal","!redesign/message-preview/semibold","!required","!text-lg/bold","!text-lg/medium","!text-lg/normal","!text-lg/semibold","!text-md/bold","!text-md/medium","!text-md/normal","!text-md/semibold","!text-sm/bold","!text-sm/medium","!text-sm/normal","!text-sm/semibold","!text-xs/bold","!text-xs/medium","!text-xs/normal","!text-xs/semibold","!text-xxs/bold","!text-xxs/medium","!text-xxs/normal","!text-xxs/semibold","!authBox","!authBoxExpanded","!avatar","!block","!button","!centeringWrapper","!description","!discordLogo","!downloadButtonSubtext","!image","!inputError","!inviteIcon","!inviteLargeIcon","!inviteSmallIcon","!joiningAs","!joiningAsAvatar","!joiningAsUsername","!linkButton","!pill","!pillFlat","!pillIcon","!pillIconOnline","!pillIconTotal","!pillMessage","!pillOnline","!spinnerVideo","!subText","!avatar","!body","!button","!buttonContainer","!clickBlocker","!clickable","!container","!content","!details","!dismissButton","!dismissIcon","!divider","!footer","!hintSubtleText","!hintText","!innerText","!keybind","!keybindMessage","!themeBrand","!themeDanger","!themePrimary","!animationContainer","!description","!error","!field","!phoneVerificationModal","!container","!control","!disabled","!dividerDefault","!labelRow","!note","!titleDefault","!titleMini","!added","!container","!date","!fixed","!footer","!image","!improved","!lead","!marginTop","!premiumBanner","!premiumIcon","!progress","!socialLink","!video","!body","!container","!content","!contentBase","!icon","!keybind","!links","!problems","!problemsText","!ready","!slideIn","!statusLink","!text","!tip","!tipTitle","!twitterLink","!header","!logo","!browser","!browserChrome","!browserDiscord","!browserFirefox","!browserItem","!browserItemText","!browserList","!browserOpera","!btn","!message","!unsupportedBrowser","!wrap","!animationContainer","!body","!container","!emailVerificationModal","!fullWidthButton","!caret","!children","!clickable","!container","!divider","!hamburger","!icon","!iconBadge","!iconWrapper","!scrollable","!selected","!themed","!themedMobile","!titleWrapper","!toolbar","!transparent","!upperContainer","!action","!description","!gatedContent","!image","!separator","!body","!container","!email","!footer","!footerAction","!footerBullet","!image","!isMobile","!logoutButton","!phone","!verification","!verificationBlock","!flexWrapper","!image","!note","!text","!wrapper","!actionButtons","!avatar","!card","!cardHeader","!cardPlaceholder","!cardWithTags","!description","!dotOffline","!dotOnline","!guildBadge","!guildIcon","!guildInfo","!guildName","!iconMask","!loaded","!loading","!memberCount","!memberInfo","!placeholderPulse","!spinner","!splash","!splashImage","!splashImageHeight","!submitting","!image","!text","!wrapper","!body","!boostCard","!boostCardContainer","!boostCardCount","!boostCardGem","!boostCardIcon","!boostCardInfo","!boostCardSubtitle","!boostCardTitle","!clickable","!emojiStickersPersonalizedContainer","!nonPersonalizedGraphic","!personalizedEmoji","!profileAvatar","!profileAvatarTier1","!profileBanner","!profileCard","!profileCardTier1","!profileInner","!profileNameTag","!profileNameTagUsername","!profilePremiumIcon","!profileUserInfo","!profileUserInfoTier1","!spinner","!subtitle","!textSingleLineEllipsis","!whatYouLoseItem","!whatYouLoseItemContainer","!whatYouLoseItemLearnMore","!whatYouLoseItemLeftColumn","!whatYouLoseItemRightColumn","!addChannelButton","!author","!authorRow","!backgroundVideo","!closeButton","!closeIcon","!container","!contentContainer","!contentImageContainer","!contentMediaContainer","!contentRow","!contentRowOne","!contentRowTwo","!contentTextContainer","!contentVideoContainer","!footer","!forumPostControls","!header","!headerRow","!helpCenterLink","!helpCenterLinkIcon","!highlightVideo","!icon","!mediaChannelTag","!mediaChannelTagsContainer","!messageCountBox","!messageCountIcon","!postCreationTimestamp","!previewEmbedImage","!reactionBox","!rowGroup","!secondaryImage","!secondaryVideo","!serverSubPill","!video","!videoPreview","!visibilityInfo","!art","!body","!linkCalloutContainer","!actionButton","!actionButtonsContainer","!addFormField","!addFormFieldContainer","!addFormFieldText","!backgroundContainer","!button","!clickable","!containerFooter","!containerPadding","!containerTitle","!containerTopHat","!containerTopHatText","!dragContainer","!dragIcon","!dragIconContainer","!dropHovered","!errorText","!fieldBackground","!fieldFooterContainer","!fieldPadding","!formFieldContainer","!guildVerificationText","!icon","!iconContainer","!iconInteractive","!iconInteractiveContainer","!leftRailIconContainer","!leftRailIconContainerDescription","!leftRailIconContainerTitle","!multipleChoiceFixedTextColor","!removeButton","!spacingContainer","!termsFieldCaretIcon","!verificationContainer","!verificationLevelHook","!verificationLevelTitle","!withFooter","!avatar","!channelName","!channelTextArea","!chat","!chatContent","!content","!cursorPointer","!editPartyIcon","!followButton","!form","!forumPostTitle","!guildBreadcrumbContainer","!guildBreadcrumbIcon","!guildSidebar","!loader","!noChat","!parentChannelName","!status","!subtitleContainer","!threadSidebarFloating","!threadSidebarOpen","!titleWrapper","!typing","!uploadArea","!accountBtn","!accountBtnInner","!application","!applicationIcon","!applicationNameContainer","!applicationNameText","!applicationsContainer","!applicationsHeader","!connectionsContainer","!container","!header","!searchBar","!contentContainer","!subtitle","!birthday","!confirmContainer","!confirmFooter","!confirmTitle","!container","!img","!count","!description","!feature","!featureFlushRight","!featureIcon","!featureText","!featureTextIcon","!features","!featuresTooltip","!header","!heading","!monospace","!newTag","!timerIcon","!channelList","!container","!emptyStateContainer","!header","!image","!left","!right","!scrollIcon","!showAll","!subtitle","!avatar","!button","!center","!close","!closeIcon","!container","!header","!image","!imageContainer","!live","!location","!locationContainer","!locationIcon","!message","!noImageTitle","!participants","!pill","!pillIcon","!pillLabel","!content","!header","!headerImage","!modalCloseButton","!modalFooter","!channelPrompt","!closeButton","!guildName","!header","!skipButton","!subtitle","!checkbox","!close","!content","!description","!header","!switch","!contentExpanded","!contentInteractable","!cta","!ctaClaimReward","!description","!details","!heroAsset","!heroAssetWrapper","!questAcceptedContent","!questAcceptedContentCopySubheading","!questAcceptedContentHeading","!questProgressRewardTile","!questPromoContent","!questUnacceptedContent","!rewardTile","!submenuIcon","!submenuWrapper","!utils","!avatar","!bullet","!more","!name","!popout","!row","!timestamp","!body","!bulletPoint","!bulletPointText","!bulletPoints","!bulletPointsContainer","!bulletedValueProp","!closeButton","!container","!discordConsentBody","!footer","!footerButton","!header","!illustration","!launchIcon","!modal","!stepHeader","!valueProp","!valuePropContainer","!valuePropIconContainer","!valueProps","!actionButtons","!body","!bottom","!channelName","!channelSeparator","!closeIcon","!emptyPlaceholder","!footer","!guildName","!hasMore","!header","!image","!jumpButton","!loading","!loadingMore","!loadingPlaceholder","!messageGroupCozy","!messageGroupWrapper","!messagesPopout","!messagesPopoutWrap","!scrollingFooterWrap","!spinner","!visible","!description","!erroredContainer","!erroredContent","!erroredHeader","!footer","!footerSeparator","!header","!headerSeparator","!list","!remindContainer","!remindHeader","!searchbar","!separator","!submit","!titleImage","!bio","!emptyContainer","!emptyHeader","!emptyIcon","!emptyPage","!error","!header","!helpText","!newBadge","!pageBody","!profile","!profileCard","!prompt","!promptOptions","!promptTitle","!required","!requiredBadge","!returnButton","!returnButtonText","!returnIcon","!role","!roleDot","!roles","!scroller","!scrollerContainer","!sectionSeparator","!separator","!username","!container","!divider","!icon","!line","!subtitle","!avatar","!container","!guildIcon","!subtitle","!templateIcon","!usagePill","!userText","!verifiedCheck","!verifiedCheckContainer","!verifiedIcon","!verifiedNameContainer","!avatar","!column","!columnLabel","!content","!editEmojiRolesButton","!editEmojiRolesIcon","!emojiAliasInput","!emojiAliasInputDisabled","!emojiAliasPlaceholder","!emojiAliasPlaceholderContent","!emojiColumn","!emojiDisabled","!emojiImage","!emojiInput","!emojiRemove","!emojiRow","!emojiRowText","!emojiSettings","!emojiTable","!emojiUploadContainer","!emojiUploadUploadRequirementsHeading","!emojiUploadUploadRequirementsList","!empty","!spinner","!uploader","!actionButton","!actions","!icon","!last","!mainChannelInfo","!preview","!previewButton","!previewCamera","!previewChannelHeader","!previewRoot","!root","!subtitle","!titleGroup","!wrapper","!bodyContent","!footerButton","!container","!subtitle","!button","!envelope","!invite","!inviteContainer","!message","!notice","!circle","!container","!emptyContainer","!errorTitle","!icon","!interactiveRow","!listAvatar","!listDiscriminator","!listName","!listRow","!listRowCircle","!listScroller","!selected","!spinner","!acrobat","!ae","!ai","!archive","!audio","!bgScale","!cancelAllButton","!channelTextAreaUpload","!code","!comment","!crossOne","!crossTwo","!description","!destination","!document","!droppable","!error","!expandable","!file","!filename","!filesize","!footer","!footerRightAlign","!hasSpoilers","!icon","!icons","!image","!inner","!instructions","!label","!lightOne","!lightTwo","!one","!optional","!photoshop","!popOne","!ps","!sketch","!sparkleOne","!sparkleTwo","!spreadsheet","!subtitle","!three","!two","!unknown","!uploadArea","!uploadDropModal","!uploadIconAnimateIn","!uploadIconAnimateInLeft","!uploadIconAnimateInMiddle","!uploadIconAnimateInRight","!uploadModal","!uploadModalBounce","!uploadModalBounceTransition","!uploadModalIn","!uploadModalShake","!uploadTextFadeIn","!video","!webcode","!wrapOne","!wrapThree","!wrapTwo","!captchaContainer","!close","!container","!content","!modal","!container","!description","!micTest","!micTestCaption","!background","!container","!dotOnline","!emptyContent","!emptyHeaderTitle","!emptyHomeContainer","!guildDescription","!guildInfo","!guildInfoText","!headerBarInner","!homeContainer","!homeContainerCollapsed","!homeContent","!mainContent","!maxWidthWrapper","!placeholderImage","!resourceChannel","!resourceChannelsList","!resourceImage","!resourceImageBase","!sidebar","!sidebarCard","!sidebarCardHeader","!sidebarCardWrapper","!connectCTA","!error","!formTitle","!header","!input","!inputForm","!inputInner","!contentExpanded","!contentExpandedAccepted","!contentInteractable","!cta","!ctaClaimReward","!ctaContainer","!description","!details","!divider","!flex","!headerText","!heroAsset","!heroAssetWrapper","!iconButton","!interactiveNormal","!promotedBadge","!promotedBadgeIcon","!promotedBadgeWrapper","!questAcceptedContent","!questAcceptedContentCopySubheading","!questAcceptedContentHeading","!questAcceptedHeader","!questProgressRewardTile","!questPromoContent","!questUnacceptedContent","!rewardTile","!shareIcon","!shine","!submenuIcon","!submenuWrapper","!utils","!white","!addRole","!container","!disabledTitleText","!dragAfter","!dragBefore","!helpSeparator","!helpText","!list","!lock","!row","!sidebar","!titleContainer","!titleElevated","!titleText","!tooltip","!verifiedRoleIcon","!button","!closeButton","!error","!form","!headerImage","!inputSection","!modalHeader","!textArea","!titleRow","!customizationSection","!customizationSectionBackground","!customizationSectionBorder","!disabled","!errorMessage","!hideDivider","!sectionDescription","!showBorder","!withDivider","!button","!closeButton","!content","!image","!subtitle","!content","!description","!formItem","!image","!modal","!body","!container","!content","!form","!gutter","!minorContainer","!modalContent","!primaryButton","!secondaryAction","!secondaryButton","!buttons","!content","!description","!header","!headerImage","!help","!modalCloseButton","!password","!subtitle","!backButton","!continueButton","!loginForm","!mainLoginContainer","!navRow","!needAccount","!paddingResetLeft","!subtitle","!checkbox","!linkCalloutContainer","!warningText","!monitor","!overflowContainer","!rate","!sparkChart","!text","!active","!closeIcon","!container","!createButton","!divider","!header","!searchBox","!searchIcon","!spacer","!tab","!tabBar","!threadIcon","!cancel","!content","!discriminatorChangeWarning","!header","!icon","!lowercase","!modalCloseButton","!multiInput","!multiInputField","!multiInputFirst","!multiInputLast","!password","!questionMark","!subtitle","!btn","!channelNotice","!close","!closeIcon","!image","!imageContainer","!message","!buttonWrapper","!content","!description","!footer","!formItem","!logo","!bodyText","!errorBody","!errorFooter","!errorImage","!promotionAccountIdentifier","!promotionAccountIdentifierAvatar","!promotionAccountIdentifierBody","!promotionAccountIdentifierError","!promotionBody","!promotionBodyWrapper","!promotionConfirmUpgrade","!promotionImage","!body","!clydeMoreInfo","!body","!button","!content","!footer","!guildContainer","!guildInfo","!guildName","!header","!headerImage","!modal","!subtitle","!author","!closeIcon","!container","!discordIcon","!infoIcon","!inline","!notice","!separator","!arrow","!container","!grid","!header","!icon","!text","!header","!headings","!premiumIcon","!presets","!art","!body","!modalContent","!backButton","!closeButton","!header","!optionsList","!skip","!subtitle","!buttonContainer","!container","!deleteButton","!divider","!inviteImage","!launchToJoinContainer","!launchToJoinText","!metaContainer","!primaryButton","!primaryRow","!secondaryRow","!subtitle","!buttons","!checkboxes","!closeIcon","!collapseButton","!container","!containerFocused","!dragContainer","!dragIcon","!dropIndicatorAfter","!dropIndicatorBefore","!example","!examples","!examplesSection","!options","!optionsHeader","!questionNumber","!removeButton","!titleInput","!body","!channelIcon","!channelLocation","!clickable","!creator","!cursorPointer","!description","!divider","!externalLocation","!guildBadge","!guildIcon","!header","!icon","!interestedCount","!linkText","!locationText","!row","!barLoader","!barTitle","!buildDetails","!buildInfo","!button","!buttonLoader","!buttonSize","!content","!copied","!copyLink","!copyLinkIcon","!disabledButtonOverride","!icon","!infoIcon","!infoLink","!subHead","!titleRegion","!wrapper","!backButton","!closeButton","!createGuild","!creationIntentCheckbox","!creationIntentText","!descriptionInput","!formItemSpaced","!guidelines","!header","!nameInput","!subtitle","!uploadIcon","!art","!artContainer","!container","!ctaButton","!mainColumn","!content","!description","!header","!headerImage","!help","!modalCloseButton","!modalFooter","!password","!subtitle","!tooltip","!applicationCommand","!auditLog","!autoModerationBlockMessage","!autoModerationRule","!avatar","!change","!changeDetails","!changeStr","!colorHook","!dash","!detail","!discrim","!divider","!expand","!expandForeground","!header","!headerClickable","!headerDefault","!headerExpanded","!icon","!onboardingChangeLogContainer","!onboardingChangeLogItemChanges","!onboardingChangeLogItemTitle","!overflowEllipsis","!prefix","!subListItem","!targetAll","!targetBan","!targetChannel","!targetEmoji","!targetGuild","!targetGuildHome","!targetGuildScheduledEvent","!targetGuildSoundboard","!targetIntegration","!targetInvite","!targetMember","!targetMemberRole","!targetMessage","!targetOnboarding","!targetPermission","!targetRole","!targetStageInstance","!targetSticker","!targetVanityUrl","!targetWebhook","!targetWidget","!themeOverrideDark","!themeOverrideLight","!thread","!timeWrap","!timestamp","!typeCreate","!typeDelete","!typeUpdate","!userHook","!compactPreview","!firstMessage","!forcedColorsWarning","!preview","!themeTitle","!button","!closeIcon","!container","!dropImgPreStreamNotice","!dropImgProgressTracker","!dropImgQuestCompletion","!linkButton","!linkButtonContainer","!pointer","!progressBarContainer","!progressBarCount","!progressBarInner","!progressBarOuter","!spinner","!subTitle","!viewerCount","!actionIcon","!actionText","!betaTag","!description","!developerPortalCta","!developerPortalCtaText","!developerPortalCtaWrapper","!divider","!dividerInline","!guildAnalyticsDivider","!insightAction","!insightsActions","!insightsHeader","!insightsIcon","!insightsTitle","!insightsTooltip","!insightsTooltipIcon","!link","!memberInsightsContainer","!notEnoughMembersError","!overviewData","!placeholderImage","!ratingBad","!ratingGood","!ratingNeutral","!ratingVeryGood","!tips","!art","!body","!modalContent","!activityCount","!appGuildName","!appIcon","!appIconSize","!appIn","!avatar","!compactAvatar","!container","!directInviteSubTitle","!guildBadge","!guildContainer","!guildIcon","!icon","!inviteResolvingGuildName","!acronym","!avatar","!card","!cardDisabled","!cardHeader","!cardPlaceholder","!cardSmall","!defaultIcon","!description","!dotOffline","!dotOnline","!guildIcon","!guildInfo","!guildName","!iconMask","!memberCount","!memberDot","!memberInfo","!placeholderPulse","!splash","!splashImage","!splashLoaded","!verifiedIcon","!icon","!benefits","!closeButton","!content","!description","!footer","!goBackButton","!headerImage","!closeButton","!content","!avatar","!avatarWrapper","!customIcon","!divider","!editIcon","!editIconColor","!helpText","!icon","!iconGroup","!iconWidget","!iconsContainer","!newBadge","!onboarding","!optionButton","!options","!outline","!popout","!popoutBackground","!popoutWrapper","!selectedWidget","!setCustomButton","!statusButtonRegion","!statusIcon","!statusWidget","!body","!headerIcon","!headerIconContainer","!iconBackground","!subtitle","!art","!body","!closeButton","!emojiErrorItem","!errors","!fileIcon","!fileInfo","!fileName","!header","!modalContent","!modalHeader","!channelIcon","!channelName","!channelNameContainer","!container","!featuredPostContainer","!featuredPostIcon","!featuredPostText","!messageItemBody","!postHeaderMenuLeft","!postHeaderMenuRight","!tags","!titleContainer","!container","!content","!emptyContainer","!emptyStateButton","!emptyStateImage","!media","!messageContent","!obscured","!obscuredTag","!row","!thumbnailContainer","!caret","!content","!descriptionContainer","!dropdown","!emptyState","!emptyStateSubtext","!emptyStateText","!expirationDate","!header","!headerIconWrapper","!icon","!iconBackground","!iconContainer","!incidentTimeBase","!itemDetail","!itemDetailNew","!items","!newBadge","!paginationButton","!stars","!timestamp","!cancel","!content","!header","!modalCloseButton","!newPassword","!subtitle","!container","!count","!dot","!feedbackContainer","!icon","!rowHeader","!rowHeaderLeft","!subtitle","!thumbIcon","!timestamp","!unreadPill","!button","!description","!modalContent","!spinner","!card","!accountIdentifier","!bodyText","!errorBody","!errorFooter","!errorImage","!loader","!circle","!container","!icon","!roleTip","!subtitle","!art","!buttonBody","!choiceLine","!choiceTitle","!choiceWrapper","!closeButton","!conflictArt","!conflictButton","!conflictButtonInner","!conflictDownloadArt","!conflictTitle","!conflictUploadArt","!description","!errorArt","!linkButton","!linkButtonSize","!modal","!retryButton","!timestamp","!content","!header","!headerImage","!infoFilledIcon","!modalCloseButton","!modalFooter","!tooltip","!tooltipText","!icon","!mentionIcon","!option","!options","!addMemberError","!addMembersContainer","!background","!channelNameNote","!channelTypeDescription","!clone","!closeButton","!createError","!description","!emptyRoles","!error","!footer","!foreground","!header","!icon","!inputInner","!inputPrefix","!inputWrapper","!modal","!modalContent","!modalFooter","!name","!newBadge","!owner","!permissionsTitle","!radioBar","!radioBarIcon","!radioBarLabel","!radioItemName","!radioLabelDescription","!radioLabelName","!sectionTitle","!storeChannelOptionSelector","!subtitle","!subtitleIcon","!switchIcon","!type","!username","!description","!feature","!featureBorder","!icon","!actionButtonsContainer","!addEntryCard","!addServerText","!avatar","!card","!cardHeader","!description","!dotOffline","!dotOnline","!forceButtonsShow","!guildBadge","!guildIcon","!guildInfo","!guildName","!icon","!iconMask","!joinButton","!memberCount","!memberInfo","!overflowIcon","!splash","!splashImage","!statusDot","!actions","!birthdayReferral","!buttonContainer","!container","!description","!invalid","!invalidWrapper","!media","!metadata","!referral","!tagline","!tile","!actionBar","!alignCenter","!attachment","!bottomSeparator","!browser","!bullet","!chatInput","!container","!fakeReactions","!following","!forumPostIcon","!header","!icon","!inline","!inlineTag","!message","!messageContainer","!opTag","!post","!posts","!preview","!previewContainer","!tag","!tags","!topSeparator","!container","!day","!errors","!inputs","!month","!year","!img","!subtitle","!accessoryContainer","!body","!channelSubtitle","!collapsedLayout","!container","!containerCard","!details","!fillerCard","!fillerText","!icon","!iconContainer","!loadingContainer","!loadingUser","!previewButton","!previewContainer","!previewHover","!previewImage","!previewName","!streamPreview","!subtitle","!typingIndicator","!addText","!checkmark","!clickable","!content","!contentLabel","!enterToSearchText","!errorText","!fixedWidthSidebar","!flex","!icon","!iconSmall","!input","!inputContainer","!interestsCategory","!interestsCategoryTitle","!interestsTag","!introTitle","!languageSelect","!mainPanelContainer","!maxWidthContainer","!optionalTag","!playstyleOption","!playstyleSelect","!playstyleTitle","!plusIcon","!selectableOption","!selectedOption","!slideContent","!slideContentWithSidebar","!stepNum","!subtitle","!timeSelection","!timeSelectorRow","!twoColumn","!utilityTagIcon","!wildcardInput","!wildcardRow","!button","!closeIcon","!container","!defaultDropImage","!linkButton","!linkButtonContainer","!pointer","!subTitle","!closeButton","!footer","!footerButton","!footerTitle","!header","!optionHeader","!subtitle","!templatesList","!bottomMargin","!content","!dragIcon","!draggableStartArea","!draggingHeader","!faded","!gameIcon","!hidden","!icon","!interactive","!locked","!preview","!priority","!prioritySpeaking","!speakerIcon","!streamerContent","!streamerControls","!streamerIcon","!streamerIconWrapper","!streamerInfo","!streamerInner","!streaming","!topMargin","!unpinned","!username","!voiceIcon","!voiceList","!voiceUserList","!voiceUserWrapper","!container","!sliderContainer","!divider","!animation","!button","!buttonContainer","!content","!countdown","!image","!innerButton","!text","!wrapper","!body","!button","!closeButton","!content","!image","!bottomSeparator","!scrollWrapper","!scrollerInner","!card","!cardHeader","!inModal","!authorContainer","!authorName","!bodyContainer","!channelTextArea","!channelTextAreaInner","!channelTextAreaInnerError","!characterCount","!closeIcon","!closeIconDisabled","!collapsed","!container","!contentContainer","!controls","!controlsContainer","!expressionPicker","!form","!formContainer","!forumPostFormButton","!forumPostFormButtonActive","!horizontalPadding","!loader","!loaderAnimation","!mediaButton","!mediaIcon","!pencilIcon","!prefixElement","!previewForm","!previewModeIndicator","!previewTextArea","!searchIcon","!submitButton","!submitButtonInner","!submitIcon","!tagList","!tagListInner","!tagsButton","!tagsButtonInner","!tagsButtonPlaceholder","!tagsContainer","!tagsDivider","!tagsIcon","!titleContainer","!uploadInput","!wrappedControls","!button","!closeButton","!content","!image","!imageContainer","!noScroll","!root","!text","!container","!content","!image","!imageContainer","!betaTag","!betaTagContainer","!easterEggSelection","!fadeOut","!header","!headings","!premiumIcon","!presets","!scale-bounce-wiggle","!sparkles","!allowSelection","!avatar","!channelItem","!channelName","!divider","!graph","!item","!itemValue","!kvContainer","!sectionHeader","!username","!valueIcon","!videoPreview","!videoWrapper","!closeButton","!error","!examplesForm","!footer","!formTitle","!header","!input","!inputForm","!inputInner","!rowArrow","!rowContainer","!rowIcon","!rowText","!rowTextContainer","!sampleLink","!header","!icon","!name","!container","!img","!subtitle","!container","!img","!subtitle","!closeCircle","!closeCircleButton","!editor","!editorAnimate","!editorBody","!editorFooter","!editorHeader","!footerButton","!premiumIcon","!selectionGroup","!slidein","!accountProfileCard","!badge","!button","!code","!display-lg","!display-md","!display-sm","!displayNameContainer","!displayNameHeight","!eyebrow","!fetchText","!finishTitle","!finishTitlePadding","!fontScaling","!formMessage","!formMessageNegative","!formMessagePositive","!header","!heading-deprecated-12/bold","!heading-deprecated-12/extrabold","!heading-deprecated-12/medium","!heading-deprecated-12/normal","!heading-deprecated-12/semibold","!heading-lg/bold","!heading-lg/extrabold","!heading-lg/medium","!heading-lg/normal","!heading-lg/semibold","!heading-md/bold","!heading-md/extrabold","!heading-md/medium","!heading-md/normal","!heading-md/semibold","!heading-sm/bold","!heading-sm/extrabold","!heading-sm/medium","!heading-sm/normal","!heading-sm/semibold","!heading-xl/bold","!heading-xl/extrabold","!heading-xl/medium","!heading-xl/normal","!heading-xl/semibold","!heading-xxl/bold","!heading-xxl/extrabold","!heading-xxl/medium","!heading-xxl/normal","!heading-xxl/semibold","!infoContainer","!infoIcon","!infoItem","!infoItemSpacing","!infoPicture","!inputContainer","!legacyUsernameBadge","!legacyUsernameBadgeContainer","!link","!lowercaseUsername","!memberText","!messageContainer","!profileCard","!prompt","!promptFinish","!redesign/channel-title/bold","!redesign/channel-title/medium","!redesign/channel-title/normal","!redesign/channel-title/semibold","!redesign/heading-18/bold","!redesign/message-preview/bold","!redesign/message-preview/medium","!redesign/message-preview/normal","!redesign/message-preview/semibold","!reflect","!shiny","!shinyCard","!spinnerIcon","!subtitle","!subtitleFinish","!subtitleInfo","!text-lg/bold","!text-lg/medium","!text-lg/normal","!text-lg/semibold","!text-md/bold","!text-md/medium","!text-md/normal","!text-md/semibold","!text-sm/bold","!text-sm/medium","!text-sm/normal","!text-sm/semibold","!text-xs/bold","!text-xs/medium","!text-xs/normal","!text-xs/semibold","!text-xxs/bold","!text-xxs/medium","!text-xxs/normal","!text-xxs/semibold","!textPadding","!userCard","!userCardAvatar","!userCardContainer","!userCardHeight","!userCardInput","!userCardMuted","!body","!container","!image","!accentRed","!auditLog","!bullet","!change","!changeDetails","!changeStr","!colorHook","!dash","!detail","!discrim","!expand","!expandForeground","!header","!headerClickable","!headerDefault","!headerExpanded","!meta","!overflowEllipsis","!prefix","!subListItem","!tag","!tagString","!timeWrap","!timestamp","!typeCreate","!typeDelete","!typeUpdate","!userHook","!username","!author","!authorRow","!bodyMedia","!bodyMediaFrame","!bullet","!container","!content","!contentPreview","!controlsGroup","!dots","!focusTarget","!footer","!forumPostControls","!header","!imageContain","!imageContainStretched","!imageCover","!isOpen","!mediaContainer","!mediaIcon","!mediaIconsRow","!mediaPostContainer","!mediaPostThumbnail","!messageCountContainer","!moreImagesPill","!moreImagesPillIcon","!moreImagesPillText","!mosaicMediaContainer","!newBadge","!noTags","!obscured","!obscuredTag","!obscuredTagContainer","!postBody","!postCreationTimestamp","!rowGroup","!tagPill","!tagsRow","!textContentFooter","!textContentRead","!textContentUnread","!thumbnailOverride","!typing","!typingUsers","!body","!img","!achievementContainer","!achievementIconContainer","!achievementTextContainer","!divider","!enableAnimation","!enableAnimationOverlay","!enableAnimationOverlayHidden","!enableAnimationOverlayVisible","!formItem","!hideButton","!rightCaretIcon","!slideAnimator","!sliderDescription","!actionIconContainer","!checkmark","!container","!content","!contextMenu","!createdAt","!disabled","!emptyBody","!emptyContainer","!emptyIcon","!icon","!iconContainer","!overflowMenuContainer","!pagination","!placeholder","!placeholderAvatar","!placeholderCreatedAt","!placeholderPulse","!placeholderUsername","!plus","!selected","!siblingSelected","!spinnerContainer","!star","!userDetails","!description","!disabled","!error","!image","!infoWrapper","!option","!optionalCount","!optionalHeader","!optionalNames","!optionals","!source","!usageWrapper","!wrapper","!closeButton","!evidenceOffset","!header","!learnMore","!modalContent","!optionHeader","!policyContainer","!radioItem","!subtitle","!emptyCard","!cancelButton","!content","!headerIcon","!iconBackground","!subtitle","!button","!closeIcon","!container","!defaultDropImage","!linkButton","!linkButtonContainer","!pointer","!subTitle","!buttonContainer","!content","!description","!header","!help","!root","!subtitle","!back","!backHeader","!backIcon","!clickable","!closeContent","!closeIcon","!closeWrapper","!content","!developerResources","!directoryContainer","!directoryContainerMobile","!directoryContainerTablet","!header","!logo","!titleContainer","!image","!spacedButton","!subtitle","!container","!empty","!health","!line","!marker","!profile","!status","!statusLabel","!statusOption","!buttons","!content","!description","!header","!headerImage","!help","!modalCloseButton","!password","!subtitle","!betaTag","!button","!icon","!queryInput","!root","!settingsButton","!settingsIcon","!sortInput","!emptyState","!header","!closeButton","!footer","!header","!optionHeader","!subtitle","!templatesList","!container","!content","!description","!form","!gutter","!hero","!minorAction","!minorContainer","!modalContent","!primaryButton","!arrow","!button","!buttonInner","!finishEmoji","!headerSeparator","!helpText","!helpTextItem","!leftButtons","!navButtons","!overlay","!prompt","!promptContent","!promptOptions","!questionHeader","!rightButtons","!scrollerContent","!selectValuePill","!subtitle","!termsCheckbox","!termsFieldBody","!termsRow","!termsRowContent","!bottomControls","!chatButton","!chatButtonShowing","!chatOpen","!controlSection","!gradientBottom","!gradientContainer","!gradientTop","!idle","!root","!screenMessage","!supportingText","!topControls","!videoControls","!actions","!description","!media","!mediaHorizontal","!tagline","!tile","!tileHorizontal","!clickableGuildRow","!closeButton","!emptyContainer","!emptyImage","!emptyText","!footer","!footerButton","!footerTitle","!guildList","!guildName","!guildRow","!header","!overflowIcon","!selectedTab","!subtitle","!tabBar","!tabBarItem","!trashIcon","!activityCount","!appGuildName","!appIcon","!appIconSize","!appIn","!avatar","!container","!directInviteSubTitle","!guildBadge","!guildContainer","!guildIcon","!inviteJoinContainer","!inviteJoinText","!inviterIconWrapper","!charterBodyText","!charterHeaderText","!chatPreview","!clanTagChiplet","!content","!ctaButton","!ctaButtonInner","!ctaButtonSigned","!divider","!establishedDate","!fakeMessage","!gameSection","!infoSide","!modal","!previewSection","!previewText","!scrollContentsContainer","!scrollMainContainer","!settingSection","!subtitle","!titlesContainer","!userName","!bottomDivider","!channelList","!channelRow","!contentPadding","!divider","!emptyStateContainer","!friendsList","!icon","!radioIcon","!searchBar","!subtitle","!topDivider","!userRow","!username","!cancelButton","!content","!icon","!iconBackground","!subtitle","!debugButton","!debugTitle","!description","!divider","!emptyState","!experimentDate","!group","!pre","!addConfirmButton","!buttonRow","!closeButton","!createConfirmButton","!createSecondaryButton","!header","!subTitle","!card","!freeTrialActivatedPillInline","!freeTrialPill","!freeTrialPillInline","!freeTrialPillInlineBlock","!freeTrialPillText","!freeTrialPillTextInverted","!freeTrialPillTextTier0","!freeTrialPillTextTier2","!freeTrialPillTier0GradientFill","!freeTrialPillTier2GradientFill","!freeTrialPillTier2OldGradientFill","!freeTrialPillWithSparkles","!icon","!item","!lightBackgroundPill","!listItems","!listItemsBasic","!mostPopularPill","!mostPopularText","!newCircleIcon","!newTagItem","!premiumCards","!price","!rimGlowTier0","!rimGlowTier2","!sparkleStar1","!sparkleStar2","!sparkleStar3","!sparkleStar4","!sparkleStar5","!subscriptionPlanInfo","!tier0","!tier0Title","!tier2","!tier2Title","!tierCardFocused","!tierCardHidden","!topRimPill","!trialHeader","!trialOfferPill","!withCardHover","!withTier0Rim","!withTier2Rim","!wumpusImageContainer","!root","!userCountIcon","!userCountPill","!userItem"][6].title {
+	margin: var(--spacing);
+	text-align: center;
+}
+.["clearButton","emptyStateContainer","searchEmptyState","searchBar"].searchBar {
+	margin: var(--spacing);
+}
+.["peopleList"].peopleList {
+	margin: 0;
+	padding: 0;
+}
+.["peopleList"].peopleList>div {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+.["peopleListItem"].peopleListItem {
+	margin: var(--spacing) !important;
+	padding: var(--spacing) !important;
+	border: none;
+	border-radius: var(--border);
+	background-color: var(--background-secondary);
+}
+.["actions","!activityActivityFeed","!activityBiteSizePopout","!activityDetails","!activityName","!activityProfile","!activityProfileV2","!activitySimplifiedProfile","!activityStreamPreview","!activityUserPopout","!activityUserPopoutV2","!activityVoiceChannel","!assets","!assetsHangStatus","!assetsLargeImage","!assetsLargeImageActivityFeed","!assetsLargeImageActivityFeedTwitch","!assetsLargeImageActivityFeedXbox","!assetsLargeImageBiteSizePopout","!assetsLargeImageBiteSizePopoutXbox","!assetsLargeImageProfile","!assetsLargeImageProfileTwitch","!assetsLargeImageProfileV2","!assetsLargeImageProfileV2Twitch","!assetsLargeImageProfileV2Xbox","!assetsLargeImageProfileXbox","!assetsLargeImageSimplifiedProfile","!assetsLargeImageSimplifiedProfileTwitch","!assetsLargeImageSimplifiedProfileXbox","!assetsLargeImageSpotify","!assetsLargeImageStreamPreview","!assetsLargeImageStreamPreviewXbox","!assetsLargeImageUserPopout","!assetsLargeImageUserPopoutV2","!assetsLargeImageUserPopoutV2Xbox","!assetsLargeImageUserPopoutXbox","!assetsLargeImageVoiceChannel","!assetsLargeMaskActivityFeed","!assetsLargeMaskBiteSizePopout","!assetsLargeMaskProfile","!assetsLargeMaskProfileV2","!assetsLargeMaskSimplifiedProfile","!assetsLargeMaskStreamPreview","!assetsLargeMaskUserPopout","!assetsLargeMaskUserPopoutV2","!assetsLargeMaskVoiceChannel","!assetsProfile","!assetsProfileV2","!assetsSimplifiedProfile","!assetsSmallImage","!assetsSmallImageActivityFeed","!assetsSmallImageActivityFeedWithoutLargeImage","!assetsSmallImageBiteSizePopout","!assetsSmallImageBiteSizePopoutWithoutLargeImage","!assetsSmallImageProfile","!assetsSmallImageProfileV2","!assetsSmallImageProfileV2WithoutLargeImage","!assetsSmallImageProfileWithoutLargeImage","!assetsSmallImageSimplifiedProfile","!assetsSmallImageSimplifiedProfileWithoutLargeImage","!assetsSmallImageStreamPreview","!assetsSmallImageStreamPreviewWithoutLargeImage","!assetsSmallImageUserPopout","!assetsSmallImageUserPopoutV2","!assetsSmallImageUserPopoutV2WithoutLargeImage","!assetsSmallImageUserPopoutWithoutLargeImage","!assetsSmallImageVoiceChannel","!assetsSmallImageVoiceChannelWithoutLargeImage","!body","!bodyAlignCenter","!bodyLink","!bodyNormal","!clickableDetails","!content","!contentGameImageBiteSizePopout","!contentGameImageProfile","!contentGameImageProfileV2","!contentGameImageSimplifiedProfile","!contentGameImageStreamPreview","!contentGameImageUserPopout","!contentGameImageUserPopoutV2","!contentGameImageVoiceChannel","!contentImagesActivityFeed","!contentImagesBiteSizePopout","!contentImagesProfile","!contentImagesProfileV2","!contentImagesSimplifiedProfile","!contentImagesStreamPreview","!contentImagesUserPopout","!contentImagesUserPopoutV2","!contentImagesVoiceChannel","!contentNoImagesActivityFeed","!contentNoImagesBiteSizePopout","!contentNoImagesProfile","!contentNoImagesProfileV2","!contentNoImagesSimplifiedProfile","!contentNoImagesStreamPreview","!contentNoImagesUserPopout","!contentNoImagesUserPopoutV2","!contentNoImagesVoiceChannel","!details","!detailsWrap","!ellipsis","!gameIcon","!guildDetails","!guildIcon","!headerContainer","!headerText","!headerTextEmptyBody","!headerTextNormal","!icon","!name","!nameNormal","!namePlatformIconMarginBiteSizePopout","!nameWrap","!platformIcon","!playTime","!screenshareIcon","!state","!streamGame","!streamName","!streamUsername","!textRow","!timeBarActivityFeed","!timeBarBiteSizePopout","!timeBarProfile","!timeBarProfileV2","!timeBarSimplifiedProfile","!timeBarUserPopout","!timeBarUserPopoutV2","!timeBarVoiceChannel","!timestamp","!twitchBackgroundImage","!twitchImageContainer","!twitchImageOverlay","!voiceChannelInfo","!wrap","!disabled","!icon","!iconWrapper","!value","!avatar","!button","!container","!discriminator","!messagePreview","!tagContainer","!timestampWithPreview","!userContainerWithPreview","!userPreview","!username","!clipContainer","!closeButton","!closeIcon","!container","!createThreadButton","!mentionButton","!mentionIcon","!name","!replyBar","!replyLabel","!separator","!text","!threadSuggestionBar","!chooseAccountAuthBox","!chooseAccountHelpText","!actionButton","!icon","!last","!mainChannelInfo","!preview","!previewButton","!previewCamera","!previewChannelHeader","!previewRoot","!root","!subtitle","!title","!titleGroup","!wrapper","!activeGame","!addGamePopout","!cancelButton","!detectedApplication","!fill","!game","!gameName","!gameNameInput","!gameNameLastPlayed","!gameVerifiedIcon","!lastPlayed","!notDetected","!nowPlaying","!nowPlayingAdd","!overlayStatusText","!overlayWarningIcon","!removeGame","!toggleContainer","!toggleIcon","!toggleIconOff","!toggleIconOn","!categoryIcon","!clickableContainer","!container","!content","!ellipsis","!facePileItem","!facepile","!fadeIn","!gameIcon","!image","!imageIcon","!inline","!joinButton","!joinButtonInner","!joinButtonWhatWrapper","!joinButtonWhoWrapper","!liveBadge","!multiLineTitle","!othersCount","!pill","!pillContainer","!pillIcon","!singleLineTitle","!streamContainer","!streamPlaceholder","!streamPreview","!subtitle","!animated","!arrow","!button","!container","!darkElevationBorderHigh","!educationUpsell","!educationUpsellArrow","!educationUpsellRoot","!elevationBorderHigh","!elevationBorderLow","!elevationHigh","!elevationLow","!flexContainer","!hidden","!jiggle","!lightElevationBorderHigh","!lightElevationBorderLow","!lightElevationHigh","!lightElevationLow","!next","!noticeRegion","!wumpus","!accountRow","!actionSection","!activityCounterRow","!activityOverview","!card","!connectedCounter","!container","!content","!emptyActivity","!header","!headerText","!icon","!loadMore","!loadMoreBar","!sectionDescription","!sectionHeader","!select","!spinner","!tooltip","!compact","!mainContainer","!compact","!embed","!mainContainer","!avatar","!button","!container","!discriminator","!messagePreview","!tagContainer","!timestamp","!timestampWithPreview","!userContainer","!userContainerWithPreview","!userPreview","!username","!clock","!container","!disabledMessage","!from","!guildIcon","!headerText","!loadButton","!messageContent","!messageHeader","!messageInfo","!messagePreview","!notes","!reminderActions","!unloadedMessage","!userAvatar","!activityName","!body","!channel","!clickableGameWrapper","!dropsBadge","!dropsBadgeWrapper","!gameIcon","!gameIconWrapper","!gameName","!gameWrapper","!info","!infoWithDrops","!liveBadge","!liveIndicator","!panel","!panelButtonContainer","!perksDemoContainer","!perksDemoText","!sparkleContainer","!sparkles","!birthdayReferral","!buttonContainer","!container","!description","!invalid","!invalidWrapper","!media","!metadata","!referral","!tagline","!tile","!title","!moreMutualGuildsBtn","!mutualGuilds","!staffIndicator","!tableHeader","!tableHeaderText","!userInfo","!container","!darkElevationBorderHigh","!elevationBorderHigh","!elevationBorderLow","!elevationHigh","!elevationLow","!flexContainer","!lightElevationBorderHigh","!lightElevationBorderLow","!lightElevationHigh","!lightElevationLow","!message","!notice","!resetButton","!shrinkingContainer","!addClan","!buttonPill","!chevron","!filterPill","!filterPillActive","!filterPillContents","!filterPillIcon","!filterPillText","!filterTooltip","!filterTooltipAutoWidth","!filterTooltipContent","!gamesTooltip","!preferences","!toolbar","!tooltipContentWrapper","!tooltipHoverBridge","!trait","!traitsTooltip","!header","!infoMessage","!modal","!modalCloseButton","!subheaderText","!button","!buttonInner","!card","!disabled","!participants","!button","!container","!content","!action","!actionRemove","!content","!contentRemoving","!icon","!relatedEmoji","!spinner","!sticker","!stickerName","!user","!userAvatar","!wrapper","!wrapperDisabled","!description","!media","!mediaHorizontal","!tagline","!tile","!tileHorizontal","!title","!container","!details"][1].actions,
+.["listItemContents","tableHeader","moreMutualGuildsBtn","actions"].actions {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--background-tertiary);
+	border-radius: var(--border);
+}
+.["actionButtonMobile","disabled","icon","actionButton"].actionButton {
+	margin: var(--spacing) !important;
+	height: 20px;
+	width: 20px;
+	border-radius: var(--border);
+	&:hover {background-color: var(--brand-500);}
+}
+.["voiceSectionAssets","wrapper"].wrapper {
+	padding: var(--spacing);
+	border-radius: var(--border);
+	margin-top: var(--spacing);
+}
+/* User Profile Section (DMs) */
+.["userPanelInnerThemed"].userPanelInnerThemed {
+	.["auto","content","customTheme","disableScrollAnchor","fade","managedReactiveScroller","none","pointerCover","scrollerBase","scrolling","thin"][0].none>div:first-of-type {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.["avatarHintInner","avatarWrapper"].avatarWrapper,.["badgelistGroup"].badgelistGroup {
+		display: inline;
+		align-self: flex-start;
+		justify-self: start;
+	}
+	.["badgelistGroup"].badgelistGroup {margin: 0;}
+	.["badgelistGroup","badgeList"].badgeList {
+		width: 22px;
+		height: 80px;
+		margin: var(--spacing) 0;
+		padding: 0 var(--spacing);
+		box-sizing: content-box;
+		justify-items: center;
+		align-items: center;
+		&:has(*:nth-child(4)) {width: 44px;}
+		&:has(*:nth-child(7)) {width: 66px;
+		}
+	}
+	.["lastSection","section"].section {
+		background-color: var(--profile-body-background-color);
+		border-radius: var(--border);
+		padding: var(--spacing);
+		margin: 0 var(--spacing) var(--spacing);
+		&:has(.["markup"].markup) {
+			margin-bottom: 0;
+			border-radius: var(--border) var(--border) 0 0;
+		}
+		&:has(.["clydeMoreInfo","body"].body) {border-radius: 0 0 var(--border) var(--border);}
+	}
+	& div:not(.["userCardOuter","overlayBackground"].overlayBackground)+.["userProfileOuter","overlayBackground"].overlayBackground>.["lastSection","section"].section:first-child {
+		height: 80px !important;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		position: absolute;
+		top: calc((var(--spacing) * 2 + 80px) * -1);
+		left: calc(var(--spacing) * 3 + 80px);
+		padding: 0 var(--spacing);
+		margin: var(--spacing);
+		width: calc(100% - (var(--spacing) * 7 + 80px));
+	}
+	& div:has(.["badgelistGroup","badgeList"].badgeList *)+.["userProfileModalOverlayBackground","overlayBackground"].overlayBackground .["lastSection","section"].section:first-child {
+    left: calc(var(--spacing) * 6 + 80px + 22px);
+    width: calc(100% - (var(--spacing) * 10 + 80px + 22px))
+  }
+  & div:has(.["badgelistGroup","badgeList"].badgeList *:nth-child(4)) .["lastSection","section"].section.["headerBotTagWithNickname","container"].container:first-child {
+    left: calc(var(--spacing) * 6 + 80px + 44px);
+    width: calc(100% - (var(--spacing) * 10 + 80px + 44px))
+  }
+  & div:has(.["badgelistGroup","badgeList"].badgeList a:nth-child(7)) .["lastSection","section"].section:first-child {
+    left: calc(var(--spacing) * 6 + 80px + 66px);
+    width: calc(100% - (var(--spacing) * 10 + 80px + 66px))
+  }
+}
+.userPanelOverlayBackground_a2b6ae, .["appListThemedContainer","overlay"].overlay {
+	padding: 0;
+	margin: 0 0;
+}
+.["userProfileInnerThemedWithBanner","overlayBackground"].overlayBackground {
+	background-color: transparent;
+	overflow: visible;
+}
+.["divider","!autocomplete","!autocompleteInner","!autocompletePlaceholder","!autocompleteRow","!autocompleteRowContent","!autocompleteRowContentPrimary","!autocompleteRowContentSecondary","!autocompleteRowHeading","!autocompleteRowHorizontal","!autocompleteRowIcon","!autocompleteRowSubheading","!autocompleteRowVertical","!autocompleteRowVerticalSmall","!base","!clickable","!contentTitle","!descriptionDiscriminator","!dividerContainer","!emojiImage","!emojiRaw","!icon","!iconForeground","!roleDot","!button","!categoryTitle","!container","!headerBar","!headerCaret","!headerText","!progressBarInner","!progressBarOuter","!row","!rowIcon","!rowIconChecked","!rowIconEmpty","!rowText","!avatar","!body","!button","!buttonContainer","!clickBlocker","!clickable","!container","!content","!details","!dismissButton","!dismissIcon","!footer","!hintSubtleText","!hintText","!innerText","!keybind","!keybindMessage","!themeBrand","!themeDanger","!themePrimary","!title","!moreList","!moreListClosed","!moreListItem","!moreListItemActive","!moreListItemInactive","!moreListLink","!moreListLinkCopy","!moreListOpen","!caret","!children","!clickable","!container","!hamburger","!icon","!iconBadge","!iconWrapper","!scrollable","!selected","!themed","!themedMobile","!title","!titleWrapper","!toolbar","!transparent","!upperContainer","!popoutList","!popoutListEmpty","!popoutListInput","!blurb","!confirmation","!giftBox","!giftCodeSection","!giftRecipient","!giftRecipientInputError","!giftRecipientInputWrapper","!giftRecipientName","!giftRecipientRowAvatar","!giftRecipientSection","!giftRecipientTag","!giftSentMessage","!header","!headerCustomGifting","!sendToRecipientButton","!subtext","!subtextError","!confirmation","!confirmationHeader","!content","!endCap","!hasContent","!isUnread","!unreadPill","!unreadPillCap","!unreadPillCapStroke","!activityDetailsContainer","!activityImage","!brokenLaunchImage","!detailItem","!detailItemText","!detailsDescription","!detailsDetails","!detailsTitle","!heroVideo","!heroVideoContainer","!imagesContainer","!launchImage","!launcherInnerContainer","!launcherOuterContainer","!scrollContainer","!scroller","!shareIconButton","!singleRowShareContainer","!changelog","!changelogImage","!header","!safetyChecklist","!safetyStepContent","!safetyStepRow","!updatesDescription","!updatesHeader","!activityIcon","!avatar","!channelStatus","!channelStatusClickable","!container","!eventStatusText","!hoverable","!participants","!pencilIcon","!playingText","!subtitleContainer","!betaTag","!channelContainer","!channelIcon","!descriptionContainer","!headerContainer","!settingsRowHeader","!settingsRowSubsection","!settingsRowSubsectionItem","!setupAutomodButton","!setupAutomodIcon","!setupContainer","!setupGroup","!switchItem","!switchItemTextContent","!altText","!barBase","!barButtonAlt","!barButtonBase","!barButtonIcon","!barButtonMain","!clickCTA","!containerMarginTop","!disableInteractions","!dividerContent","!dividerRed","!flexEnd","!flexStart","!hasMore","!imageContainer","!imageContent","!jumpToPresentBar","!jumpToPresentButton","!jumpToPresentButtonContainer","!jumpToPresentButtonIcon","!jumpToPresentSpinner","!jumpToPresentSpinnerItem","!loadingMore","!mediaMosaicAltText","!mediaMosaicAltTextContainer","!mediaMosaicAltTextPopout","!mediaMosaicAltTextPopoutDescription","!mediaMosaicAltTextPopoutTitle","!messageGroupBlocked","!messageGroupBlockedBtn","!messagesErrorBar","!newMessagesBar","!newMessagesClear","!newMessagesClearIcon","!newMessagesPill","!newMessagesPillContainer","!newTopicsBarCaret","!newTopicsBarCenter","!newTopicsBarCompact","!newTopicsBarContainer","!newTopicsBarIcon","!newTopicsBarInitial","!newTopicsBarText","!newTopicsBarTextClickable","!newTopicsBarTextSelected","!newTopicsBarTextUnselected","!newTopicsBarTopicSection","!popout-loading","!popoutContainer","!popoutLoadingBackground","!popoutLoadingForeground","!revealed","!span","!spinner","!spinnerItem","!summariesBetaTag","!tooltip","!tooltipEmojiName","!topicsCaretLeft","!topicsCaretRight","!topicsChatBubbleIcon","!topicsDotSpacer","!topicsDropdown","!topicsDropdownBase","!topicsDropdownClose","!topicsDropdownHeading","!topicsDropdownHeadingText","!topicsMessageCount","!topicsPill","!topicsPillCaret","!topicsPillCaretDisabled","!topicsPillCarets","!topicsPillContainer","!topicsPillDropdownCaret","!topicsPillHeadingIcon","!topicsPillMiddle","!topicsPillSummaryIcon","!topicsPillText","!topicsPillTextSelected","!topicsPillTextTitle","!topicsPillTextUnselected","!topicsScroller","!topicsSubtitle","!topicsTimeAgo","!topicsTopicTitle","!cancelButton","!contentContainer","!context","!copy","!countdownText","!countdownTextInSetting","!footer","!gradientUpsellWrapper","!gradientUpsellWrapperTier0","!gradientUpsellWrapperTier2","!gradientUpsellWrapperWithBottomMargin","!heading","!logo","!logoIcon","!logoWordmark","!messageLengthBrandedContainer","!messageLengthUpsellAppearAnimation","!messageLengthUpsellContainer","!messageLengthUpsellHeader","!premiumTrialUpsellForModal","!subscribeButton","!subscribeButtonWide","!topRimPill","!trialBadge","!trialBadgeGradientTier0","!trialBadgeGradientTier2","!trialBadgeInner","!tryOutUpsellContainer","!upsellButton","!upsellClose","!upsellImage","!zoomInFromBottomRight","!discordIcon","!memberSince","!memberSinceWrapper","!channelAttachmentArea","!card","!iconWrapper","!permissionHeader","!permissionList","!rolePills","!tag","!animation","!animationAndSparklesContainer","!applicationIcon","!applicationIconContainer","!centerContent","!clanGdmConsentCheckbox","!closeButton","!confirmation","!confirmationButton","!confirmationButtonColumn","!confirmationButtonRow","!confirmationContent","!container","!content","!disclaimerFooter","!dot","!dotMembers","!dotOnline","!emoji","!emojisContainer","!footer","!formItem","!guildDescription","!guildIcon","!guildIconNoIcon","!guildName","!guildSidebar","!header","!modal","!modalContent","!notice","!onlineCount","!rejectionReason","!rejectionReasonLabel","!resendButton","!sequencer","!sparkleBottom","!sparkleIcon","!sparkleTop","!subheader","!submitButton","!colorDescription","!colorPicker","!descriptionIcon","!descriptionTitle","!messageContainer","!noticeContainer","!previewContainer","!scroller","!avatarUploader","!avatarUploaderDisabled","!avatarUploaderInner","!avatarUploaderInnerEmpty","!badgedItem","!error","!flexFormTitle","!flexRow","!guildFeatureAvailabilityIndicator","!guildSettingsOverviewNotice","!iconError","!marginBottom20","!marginBottom8","!marginTop16","!marginTop20","!marginTop8","!premiumUpsellBadge","!progressBarImage","!upsell","!upsellButton","!addPrompt","!caret","!channel","!channelCoverage","!channelCoverageDetails","!channelCoverageHint","!channelPill","!channels","!coverageHeader","!coverageProgress","!coverageTitle","!dot","!dropIndicatorAfter","!dropIndicatorBefore","!enableBar","!header","!links","!plusIcon","!progressContainer","!prompts","!separatorSection","!subtitle","!warning","!warningTextContainer","!active","!activeNotifTab","!bigMenu","!caret","!channel","!channelIcon","!channelName","!channels","!channelsSection","!container","!containerInner","!control","!controlPlaceholder","!controls","!fadeChannels","!fadeOtherChannels","!grey","!guildName","!header","!hidden","!icon","!leftMenu","!menu","!menuItem","!modalHeader","!nodot","!notifModal","!notifTab","!notifTabs","!openCaret","!rightMenu","!selected","!serversSection","!showBigMenu","!showLeftMenu","!showModal","!showRightMenu","!switchOff","!switchOn","!tab","!tabBackground","!tabs","!tip","!tipChannels1","!tipChannels2","!tipLine","!tipServers2","!benefitsList","!benefitsSection","!cardContainerWithoutTopIndicator","!container","!emojiList","!emojiListEmoji","!roleMessagePreview","!sectionHeader","!subscriptionPerks","!tierDescriptionTruncate","!tierInfoContainer","!tierTopIndicator","!tierTrialIndicator","!tierTrialIndicatorIcon","!toggleTruncationButton","!toggleTruncationButtonIcon","!toggleTruncationButtonInner","!closeButton","!closeIcon","!container","!fieldText","!numericalRuleInput","!numericalRuleSubItemContainer","!numericalRuleSubText","!ruleContainer","!ruleContainerLabel","!ruleItemHeader","!ruleItemSwitch","!verifiedIcon","!verifiedRow","!verifiedRowWithMetadata","!verifiedText","!applicationButtonHack","!applicationIcon","!applicationRow","!applicationRowContainer","!applicationRowContent","!applicationText","!headingContainer","!image","!modal","!modalContent","!modalError","!modalFooter","!modalHeader","!spinner","!emptyGuildUpsell","!footerActions","!packHeader","!packHeaderShop","!packHeaderShopActions","!packHeaderShopWrapper","!searchSuggestion","!searchSuggestions","!shopDivider","!sticker","!tipWithSearch","!wrapper","!closeButton","!content","!demo","!description","!earningsImage","!header","!arrowIcon","!arrowIconExpanded","!changePlanNotice","!container","!guildName","!headerContainer","!headerSubtitleContainer","!headerTextContainer","!infoCard","!infoCardIcon","!infoCardLabel","!infoCardLabelContainer","!infoCardValue","!paymentDueBadge","!paymentSourceDropdown","!paymentSourceDropdownOption","!rowButton","!rowButtonArrow","!rowButtonContent","!rowButtonLabel","!subscriptionInfoCards","!tierName","!accentColorContainer","!buttonPreview","!contentRegion","!disabled","!enableSwitch","!error","!hideColorButtons","!iconContainer","!iconSwitchLabel","!inputCheckmark","!openPageButton","!premiumMemberCountIcon","!premiumMemberCountSwitchContainer","!trailerInput","!trailerInputWithCheckmark","!trailerInputWrapper","!button","!content","!header","!icon","!iconButton","!button","!chatButtonSpacer","!last","!lastButton","!speaker","!container","!icon","!line","!subtitle","!title","!channelActivitiesText","!channelInfo","!channelItemActivities","!channelName","!speakerIcon","!voiceUserContainer","!advanced","!content","!header","!help","!helpSeparator","!notice","!review","!reviewActions","!reviewHeader","!reviewHeaderText","!rolesWarning","!subheader","!warningIcon","!wumpus","!categoryTitle","!checklist","!container","!headerBar","!headerCaret","!headerText","!progressBarInner","!progressBarOuter","!row","!rowIcon","!rowIconChecked","!rowIconEmpty","!rowText","!disabled","!entryActions","!entryIcon","!entryItem","!entryName","!listHeader","!listHeaderName","!noItemsSelected","!removeActions","!removeContainer","!removeIcon","!tooltip","!list","!overlay","!chatPreview","!fakeMessage","!previewSection","!previewText","!settingSection","!userName","!header","!linkButton","!modal","!modalInner","!phoneNumber","!sectionBody","!subHeader","!attachmentGrid","!attachmentsContainer","!attachmentsContainerMultiple","!benefitsContainer","!close","!container","!dotSeparator","!footer","!header","!modal","!productTypeContainer","!purchaseSummarInfo","!purchaseSummaryContainer","!purchaseSummaryImage","!purchaseSummaryPrice","!availableUntil","!betaTagIcon","!dropCard","!dropContainer","!dropCriteria","!dropCriteriaText","!dropLearnMore","!dropRewardImage","!dropsHeaderContainer","!dropsHelpText","!emptyState","!emptyStateHeader","!emptyStateImage","!emptyStateSubtext","!feedback","!loading","!mainPromotionCardContainer","!promotionCard","!promotionCardButton","!promotionCardDescriptionWithCode","!promotionCardLeftContainer","!promotionIcon","!promotionIconImage","!promotionLegalese","!redeemTooltipContent","!skuCard","!eventName","!eventSchedule","!separator","!questCards","!questsContainer","!questsHeading","!questsHeadingLearnMore","!questsIcon","!questsListContainer","!sectionHeader","!spinner","!uploadRequirementsList","!upsellButton","!upsellButtonPrimary","!upsellButtons","!upsellContainer","!upsellDescription","!upsellHeader","!back","!backButton","!bringToFront","!caret","!check","!clickable","!disabled","!header","!itemBodyContainer","!itemBodyInner","!itemContent","!itemWrapper","!noPadding","!simpleItemWrapper","!switch","!tooltip","!valuePill","!warning","!banner","!bannerPremium","!biteSizeBanner","!biteSizeBannerPremium","!cancelModalBanner","!clickable","!closeIcon","!editIcon","!fullSizeBanner","!fullSizeBannerPremium","!gifTag","!modalBanner","!modalBannerPremium","!panelBanner","!pencilContainer","!pencilContainerDark","!pencilIcon","!popoutBanner","!popoutBannerPremium","!popoutNoBannerPremium","!premiumIcon","!premiumIconTooltipContent","!premiumIconWrapper","!profileBanner","!profileBannerPremium","!reducedMotion","!roundedBanner","!settingsBanner","!visible","!background","!container","!content","!loading","!customWidth","!headerSpacing","!image","!input","!inputContainer","!secret","!spacing","!subHeader","!topSpacing","!content","!customHeader","!formTitle","!listContainer","!row","!scroller","!spinner","!emptyState","!emptyStateHeader","!emptyStateIcon","!emptyStateIconContainer","!emptyStateStars","!emptyStateSubtext","!instructions","!private","!contentExpanded","!contentExpandedAccepted","!contentInteractable","!cta","!ctaClaimReward","!ctaContainer","!description","!details","!flex","!headerText","!heroAsset","!heroAssetWrapper","!iconButton","!interactiveNormal","!promotedBadge","!promotedBadgeIcon","!promotedBadgeWrapper","!questAcceptedContent","!questAcceptedContentCopySubheading","!questAcceptedContentHeading","!questAcceptedHeader","!questProgressRewardTile","!questPromoContent","!questUnacceptedContent","!rewardTile","!shareIcon","!shine","!submenuIcon","!submenuWrapper","!title","!utils","!white","!active","!addReactButton","!button","!buttonInner","!buttons","!container","!header","!loading","!reactButtons","!reactions","!showOnHover","!category","!channel","!channelIcon","!channelText","!channelsWrapper","!guidelines","!icon","!previewSection","!protip","!protipText","!role","!roleCircle","!roleName","!rolesWrapper","!sectionHeader","!applicationIcon","!applicationName","!arrowIcon","!arrowIconExpanded","!changePlanNotice","!container","!deletedHelpMessage","!guildIcon","!headerContainer","!headerSubtitleContainer","!headerTextContainer","!infoCard","!infoCardIcon","!infoCardLabel","!infoCardLabelContainer","!infoCardValue","!paymentDueBadge","!paymentSourceDropdown","!paymentSourceDropdownOption","!rowButton","!rowButtonArrow","!rowButtonContent","!rowButtonLabel","!subscriptionInfoCards","!tierName","!action","!avatar","!avatarContainer","!avatarMask","!container","!mobileButtons","!mobileContainer","!mobileMutualGuilds","!mutualGuilds","!paymentSourceNoticeCopy","!chatPreview","!content","!ctaText","!fakeMessage","!modal","!postscript","!previewSection","!previewText","!settingSection","!subtitle","!tagPreview","!tagText","!userName","!bar","!container","!containerWithMargin","!count","!flowerStar","!goalText","!goalTextContainer","!progressBar","!progressBarContainer","!progressBarContainerComplete","!progressFraction","!progressPulse","!tadaIcon","!textArea","!tier0Icon","!tier1Icon","!tier2Icon","!tier3Icon","!giftNitro","!giftNitroImage","!contentContainer","!description","!disabled","!featuredTag","!featuredTagText","!flexContainerRow","!footer","!guildIcon","!guildInfoContainer","!guildName","!headerContainer","!icon","!rightJustifiedContent","!speakers","!topicText","!appAvatar","!authedApp","!botTag","!deleteApp","!disclosureIcon","!externalLinkIcon","!headerInfo","!infoBox","!link","!permission","!permissionCheckmark","!privacy","!searchContainer","!tos","!tosPrivacy","!twoWayWarning","!twoWayWarningIcon","!active","!closeIcon","!container","!createButton","!header","!searchBox","!searchIcon","!spacer","!tab","!tabBar","!threadIcon","!title","!newBadge","!tabBar","!tabBarItem","!emptyStateCard","!emptyStateImage","!emptyStateSearchCard","!emptyStateSearchImage","!emptyStateText","!emptyStateWrapper","!footerImage","!footerPlaceholder","!infoIcon","!platformIcon","!searchContainer","!sectionHeader","!caret","!checkbox","!content","!createAccountTemplateHeader","!errorMessage","!flex","!goBackButton","!horizontalAuthBox","!messageNegative","!messagePositive","!button","!buttonInner","!buttons","!emojiButton","!icon","!staticButtons","!staticDivider","!staticIcon","!staticToolbar","!toolbar","!automodMessage","!backgroundFlash","!beforeGroup","!buttons","!buttonsInner","!channelTextArea","!cozyMessage","!disableInteraction","!ephemeral","!groupStart","!hasContent","!highlightContainer","!highlightIcon","!highlighted","!interactionSending","!jump","!mentioned","!message","!messageListItem","!quotedChatMessage","!replying","!selected","!systemMessage","!spacingLarge","!avatar","!benefitTypeHeader","!channelBenefitIcon","!channelBenefitRow","!channelBenefitTagline","!channelBenefitText","!container","!content","!intangibleBenefitIcon","!intangibleBenefitRow","!listingInfoRow","!listingRoleRow","!perksHeader","!roleColor","!roleIcon","!tierDescription","!tierName","!customStatusSection","!lastEditedByContainer","!profileMutuals","!scroller","!scrollerSeparator","!usernameSection","!content","!errorBlock","!form","!modal","!modalTitle","!sequencer","!closeButton","!container","!descriptionInput","!emojiContainer","!emojiQuestionContainer","!emojiQuestionText","!footerButtons","!header","!nameContainer","!nameHeader","!notice","!noticeIcon","!noticeMessage","!questionNumber","!removeButton","!rightButtons","!rolesHeader","!rolesInputHelp","!searchInput","!dividerContent","!buttonContainer","!container","!deleteButton","!inviteImage","!launchToJoinContainer","!launchToJoinText","!metaContainer","!primaryButton","!primaryRow","!secondaryRow","!subtitle","!title","!body","!channelIcon","!channelLocation","!clickable","!creator","!cursorPointer","!description","!externalLocation","!guildBadge","!guildIcon","!header","!icon","!interestedCount","!linkText","!locationText","!row","!title","!active","!boostingIconWrapper","!browserUnsupportedDialog","!buttons","!emoji","!empty","!emptyText","!helpText","!requirements","!row","!soundEdit","!soundEditContainer","!soundEditIcon","!soundName","!soundPreviewIcon","!soundRemove","!soundTable","!soundUpdate","!tableHeader","!tableHeaders","!tableTitle","!uploaderAvatar","!uploaderName","!jumpButton","!message","!messageContainer","!messages","!avatarContainer","!avatarName","!banner","!bannerClubs","!bannerContainer","!bannerGaming","!bannerHobbies","!bannerOut","!button","!callout","!container","!introBody","!profileCard","!roleDot","!roleTag","!roleText","!roles","!rolesRow","!section","!body","!overlay","!root","!tabBar","!tabBarContainer","!tabBarItem","!topSection","!applicationCommand","!auditLog","!autoModerationBlockMessage","!autoModerationRule","!avatar","!change","!changeDetails","!changeStr","!colorHook","!dash","!detail","!discrim","!expand","!expandForeground","!header","!headerClickable","!headerDefault","!headerExpanded","!icon","!onboardingChangeLogContainer","!onboardingChangeLogItemChanges","!onboardingChangeLogItemTitle","!overflowEllipsis","!prefix","!subListItem","!targetAll","!targetBan","!targetChannel","!targetEmoji","!targetGuild","!targetGuildHome","!targetGuildScheduledEvent","!targetGuildSoundboard","!targetIntegration","!targetInvite","!targetMember","!targetMemberRole","!targetMessage","!targetOnboarding","!targetPermission","!targetRole","!targetStageInstance","!targetSticker","!targetVanityUrl","!targetWebhook","!targetWidget","!themeOverrideDark","!themeOverrideLight","!thread","!timeWrap","!timestamp","!title","!typeCreate","!typeDelete","!typeUpdate","!userHook","!body","!description","!expiringStatusIcon","!expiringStatusMenuItem","!focusModeIcon","!focusModeItem","!focusModeTitle","!icon","!mainStatusIcon","!menu","!menuItemFocused","!menus","!modal","!popoutContainer","!status","!statusItem","!statusPickerModalMenu","!subMenuIcon","!themeContainer","!username","!actionIcon","!actionText","!betaTag","!description","!developerPortalCta","!developerPortalCtaText","!developerPortalCtaWrapper","!dividerInline","!guildAnalyticsDivider","!insightAction","!insightsActions","!insightsHeader","!insightsIcon","!insightsTitle","!insightsTooltip","!insightsTooltipIcon","!link","!memberInsightsContainer","!notEnoughMembersError","!overviewData","!placeholderImage","!ratingBad","!ratingGood","!ratingNeutral","!ratingVeryGood","!tips","!title","!container","!content","!contentContainer","!contentScroll","!footerDescription","!headerContainer","!headerContent","!headerDescription","!headerImage","!headerText","!scroller","!sidebar","!sidebarScroll","!viewWrapper","!amount","!compact","!copiableContainer","!date","!description","!descriptionIcon","!downloadInvoice","!downloadRefundInvoice","!expand","!expandInfo","!expandedInfo","!giftIcon","!guildDescriptionIcon","!guildProductBenefitLabel","!guildProductBenefits","!guildProductDetail","!hoverablePayment","!payment","!paymentBreakdown","!paymentDetail","!paymentHeader","!paymentInfo","!paymentText","!price","!refundActions","!refundCriteria","!refundCriteriaIcon","!refundIconContainer","!refundRules","!refundSelect","!refundSubHeader","!sectionDivider","!shopIcon","!statusTag","!statusTagGreen","!statusTagGrey","!statusTagRed","!summaryInfo","!warningBlock","!avatar","!avatarWrapper","!customIcon","!editIcon","!editIconColor","!helpText","!icon","!iconGroup","!iconWidget","!iconsContainer","!newBadge","!onboarding","!optionButton","!options","!outline","!popout","!popoutBackground","!popoutWrapper","!selectedWidget","!setCustomButton","!statusButtonRegion","!statusIcon","!statusWidget","!title","!advancedToggle","!browserRow","!caret","!category","!channel","!channelIcon","!channelList","!channelName","!chattableIndicator","!container","!emptyState","!emptyStateIcon","!extraChannels","!header","!help","!voiceIcon","!voiceRow","!addBenefit","!addBenefitIcon","!card","!cardActionButton","!cardActionButtonIcon","!cardActions","!cardDragging","!cardText","!channelIcon","!container","!disabled","!dragIcon","!dragIconWrapper","!emoji","!emojiWrapper","!isDragging","!achievementGrid","!backContainer","!bottomPadding","!headerContainer","!headerIcon","!headerTextContainer","!icon","!charterScroll","!charterScrollContainer","!close","!content","!dividerResponsive","!elevatedNavigationContainer","!errorIcon","!errorLink","!errorText","!hidden","!modal","!navigation","!navigationContainer","!panel","!scroll","!scroller","!sequencer","!sidebar","!sidebarContent","!sidebarLeftDecoration","!sidebarLeftDecorationContainer","!sidebarResponsive","!sidebarRightDecoration","!sidebarRightDecorationContainer","!signButton","!stepsContainer","!submit","!tooltip","!tooltipContents","!arrow","!progressBar","!progressBarContainer","!progressBarText","!rightContainer","!rightText","!description","!descriptionColumn","!firstSection","!formTitle","!selectColumn","!twoColumnFormSection","!upsellButton","!upsellClose","!upsellContainer","!upsellContent","!upsellFooter","!upsellHeader","!upsellImage","!description","!error","!formColumnLeft","!formColumnRight","!formDescription","!formSelect","!formTitle","!guildCard","!imageUploaderInnerSquare","!imageUploaderWrapper","!noDividerFormSection","!twoColumnFormSection","!benefit","!benefitsContainer","!container","!header","!button","!buttonContainer","!descriptionBox","!descriptionIcon","!descriptionRow","!descriptionSection","!lastSync","!rightButtonContainer","!infoItem","!infoWrapper","!spacing","!boostButton","!boostUpsell","!button","!buttonIcon","!buttons","!channelName","!channelNameWrapper","!chatButtonContainer","!chatButtonShowing","!chatOpen","!eventsButton","!icon","!notNowButton","!participantCountContainer","!participants","!raisedHandButtonContainer","!settingsButton","!sidebarOpen","!speakerCount","!text","!title","!buildOverrideGroup","!buildOverrideList","!buttonsContainer","!codebox","!item","!key","!removeBuildOverride","!removeBuildOverrideDisabled","!row","!surveyOverride","!surveyOverrideInput","!container","!contentRegion","!coverImageUploader","!coverImageUploaderIcon","!coverImageUploaderIconWrapper","!coverImageUploaderInner","!formDescription","!formatOptionRadioBar","!formatOptionRadioItem","!formatOptionRadioItemIcon","!formatRadioIcon","!formatRadioIconWrapper","!radioGroupHorizontal","!allowSelection","!avatar","!channelItem","!channelName","!graph","!item","!itemValue","!kvContainer","!sectionHeader","!title","!username","!valueIcon","!videoPreview","!videoWrapper","!heading","!row","!activityDetailsContainer","!activityImage","!backButtonContainer","!backButtonIcon","!detailItem","!detailItemText","!detailsDescription","!detailsDetails","!detailsInnerContainer","!detailsInnerInnerContainer","!detailsOuterContainer","!detailsTitle","!header","!headerImage","!headerImageOverlay","!imagesContainer","!innerContainer","!launcherInnerContainer","!launcherOuterContainer","!outerContainer","!rocketIcon","!scroller","!titleContainer","!appSlide","!buttons","!carousel","!commandList","!content","!contentContainer","!contentDivider","!description","!descriptionClamp","!descriptionClampSafari","!detailedDescription","!dividerContainer","!emptyContainer","!emptyImage","!errorImage","!hasContent","!header","!headerBanner","!headerContent","!headerIcon","!headerNameAndButtons","!headerNameAndIcon","!headerSidebar","!iconInteractive","!name","!overflow","!partnerBadge","!premiumIcon","!premiumIconTooltip","!relatedHeader","!section","!sectionHeader","!separator","!showMoreButton","!showMoreButtonIcon","!showMoreButtonInner","!showMoreButtonText","!sidebar","!spinner","!animation","!icon","!listContainer","!listItem","!modalContent","!modalFooter","!robotIcon","!smileIcon","!subheader","!wandIcon","!caret","!container","!content","!description","!header","!headerWithDescription","!empty","!emptyForum","!messageGroupBlocked","!messages","!messagesWrapper","!navigationDescription","!scroller","!scrollerContent","!scrollerInner","!scrollerSpacer","!scrollerWrap","!description","!expiringStatusIcon","!expiringStatusMenuItem","!focusModeIcon","!focusModeItem","!focusModeTitle","!icon","!mainStatusIcon","!menu","!menuItemFocused","!modal","!popoutContainer","!status","!statusItem","!statusPickerModalMenu","!subMenuIcon","!themeContainer","!card","!channelContainer","!channelContainerDisabled","!channelContainerEnabled","!channelLocation","!dot","!externalLocation","!footer","!guildIcon","!icon","!inline","!isRecurring","!joined","!label","!live","!lurking","!padding","!spacing","!betaTag","!checklist","!container","!deleteButtonHiddenMax","!deleteButtonHiddenMin","!deleteButtonMax","!deleteButtonMin","!description","!error","!formColumnLeft","!formColumnRight","!formDescription","!formSelect","!formTitle","!guildCard","!imageUploaderInnerSquare","!mainContent","!noDividerFormSection","!reasonEditButton","!reasonToJoin","!settingsColumn","!settingsContainer","!settingsContent","!settingsScroller","!socialLinksContainer","!socialLinksDropdownMax","!socialLinksDropdownMin","!socialLinksMax","!socialLinksMin","!switchDescription","!tabMainDescription","!textArea","!twoColumnFormSection","!validationButtonMax","!validationButtonMin","!viewPageButton","!animation","!box","!textContainer","!achievementContainer","!achievementIconContainer","!achievementTextContainer","!enableAnimation","!enableAnimationOverlay","!enableAnimationOverlayHidden","!enableAnimationOverlayVisible","!formItem","!hideButton","!rightCaretIcon","!slideAnimator","!sliderDescription","!title","!content","!disclaimer","!checklist","!checklistIcon","!checklistItem","!checklistItemName","!container","!doesNot","!eligibilityActionButton","!eligibilityActionContainer","!header","!headerIcon","!ineligibleRow","!backButton","!backButtonColor","!backButtonSize","!buyButtonTooltipTarget","!buyButtonTooltipWrapper","!checkboxLabel","!choosePaymentSourceType","!content","!errorBlock","!form","!formTitle","!giftToggle","!invalidIcon","!modal","!modalContent","!planSelector","!purchaseTerms","!guildBoostingGracePeriodTitle","!titleBlurb","!addChannelButton","!addChannelSubtext","!channelDescriptionWrapper","!channelIcon","!channelTitleIcon","!channelWarning","!descriptionInput","!descriptionWrapper","!dragging","!flowerStar","!headerGuildBadge","!icon","!notice","!noticeIcon","!previewContainer","!warningIcon","!welcomeChannel","!welcomeChannels","!welcomeHeader","!welcomeTitle","!background","!checklist","!description","!disableDiscoveryButton","!discoverySettings","!header","!image","!focusedRow","!grid","!header","!scroller","!spacer","!charterBodyText","!charterHeaderText","!chatPreview","!clanTagChiplet","!content","!ctaButton","!ctaButtonInner","!ctaButtonSigned","!establishedDate","!fakeMessage","!gameSection","!infoSide","!modal","!previewSection","!previewText","!scrollContentsContainer","!scrollMainContainer","!settingSection","!subtitle","!title","!titlesContainer","!userName","!bottomDivider","!channelList","!channelRow","!contentPadding","!emptyStateContainer","!friendsList","!icon","!radioIcon","!searchBar","!subtitle","!title","!topDivider","!userRow","!username","!avatar","!content","!customHeader","!discriminator","!empty","!formTitle","!loadMore","!quickSelect","!row","!scroller","!selectFilterPopout","!debugButton","!debugTitle","!description","!emptyState","!experimentDate","!group","!pre","!title","!active","!adminWarning","!cardFolder","!cardIcon","!disabledRemoveIcon","!easyModeContainer","!folderHeader","!folderTitle","!memberRow","!removeIcon","!removeIconContainer","!roleMemberList","!rowBotTag","!rowHeight","!rowLabel","!rowLabelSubText","!sectionTitle","!settingCard","!shield","!annualDiscountValues","!annualPlanDiscountPriceSection","!annualPlanOptionDiscount","!dividerExtended","!entitlementDiscountRow","!finePrint","!header","!negativeMarginBottom","!negativeMarginTop","!row","!rowAmount","!rowBase","!rowDiscountOriginalPrice","!rowLabel","!rowPercentDiscount","!table","!totalAmount","!totalLabel","!totalRow","!addItemButton","!addItemContainer","!body","!button","!cancelButton","!characterCount","!clearButton","!clearIcon","!close","!description","!disabled","!dragContainer","!dragIcon","!draggableInputContainer","!dragging","!errorText","!exampleRule","!inputWrapper","!modal","!modalContent","!radioIconEmpty","!radioIconEmptyContainer","!rulesInputNumber","!rulesTextAreaInput","!spacedItem","!termsExampleRulePairContainer","!termsExampleRulesContainer","!gameIcon","!gameName","!installButton","!installSize","!premiumIcon","!premiumTerms","!selector","!splash","!terms","!archivedDivider","!archivedDividerRow","!card","!clear","!columnsSpan","!container","!content","!countContainer","!countText","!emptyMainCard","!emptyStateRow","!enterIcon","!filterIcon","!grid","!gridViewBanner","!header","!headerRow","!headerWithMatchingPosts","!key","!keyboardShortcut","!label","!list","!loadingCard","!loadingCard-0","!loadingCard-1","!loadingCard-2","!mainCard","!matchingPosts","!matchingPostsRow","!missingReadHistoryPermission","!newMemberBanner","!newPostsButton","!noForm","!noListContainer","!optInNotice","!outOfDate","!placeholder","!searchIcon","!sort","!sortContainer","!sortDropdown","!sortDropdownInner","!sortDropdownText","!sortPopout","!startPostHelp","!tag","!tagList","!tagListInner","!tagsButton","!tagsButtonInner","!tagsButtonPlaceholder","!tagsButtonWithCount","!tagsContainer","!tagsSpacer","!uploadArea","!warnIcon","!bottomOfPageVisibilitySensor","!giftButtonCTA","!giftCard","!giftCardButton","!giftCardButtonColor","!giftCardSeasonal","!giftImage","!giftInfo","!giftText","!giftTitle","!image","!managePlanButton","!rimGlowTier2","!seasonalColor","!seasonalGiftImage","!tier2PlanComparisonTableBackground","!tierCard","!tierCardButton","!tierCardButtonCTA","!tierImage","!tierInfo","!tierTitle","!topRimPill","!trialHeader","!withTier2Rim"][2].divider {display: none;}
+.["mutualGuildsList"].mutualGuildsList,
+.["mutualFriendsList"].mutualFriendsList {
+	background-color: var(--profile-body-background-color);
+	padding: var(--spacing);
+	margin: 0 var(--spacing) var(--spacing);
+	border-radius: var(--border);
+	border: none;
+	width: unset;
+}
+.["collapseBtn"].collapseBtn {
+	padding: 0;
+	height: min-content;
+}
+.["profilePanelConnections"].profilePanelConnections {margin: 0;}
+.["dotSpacer","mainContainer"].mainContainer {
+	margin: 0 var(--spacing);
+	padding: 0 var(--spacing);
+	background-color: var(--profile-body-background-color);
+}
+.["userPopoutOverlayBackground"].userPopoutOverlayBackground .["underlineOnHover","mainContainer"].mainContainer {	margin:  0 0 0 var(--spacing);}
+/* Profile Popout */
+.["bannerSVGWrapper"].bannerSVGWrapper mask {display: none;}
+.["userPopoutInner"].userPopoutInner {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	.["lastSection","section"].section {
+		background-color: var(--profile-body-background-color);
+		border-radius: var(--border);
+		padding: var(--spacing);
+		margin: 0 var(--spacing) var(--spacing);
+		width: 320px;
+		&:has(.["markup"].markup) {
+			margin-bottom: 0;
+			border-radius: var(--border) var(--border) 0 0;
+		}
+		&:has(.["clydeMoreInfo","body"].body) {border-radius: 0 0 var(--border) var(--border);}
+	}
+	.["profileMutuals","scrollerSeparator","customStatusSection","usernameSection"].usernameSection {
+		height: 80px !important;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		position: absolute;
+		top: calc((var(--spacing) * 2 + 80px) * -1);
+		left: calc(var(--spacing) * 3 + 80px);
+		padding: 0 var(--spacing);
+		margin: var(--spacing);
+		width: calc(100% - (var(--spacing) * 7 + 80px));
+	}
+	&:has(.["profileBadges"].profileBadges *) .["divider","scrollerSeparator","scroller","usernameSection"].usernameSection {
+		left: calc(var(--spacing) * 6 + 80px + 22px);
+		width: calc(100% - (var(--spacing) * 10 + 80px + 22px))
+	}
+	&:has(.["profileBadges"].profileBadges *:nth-child(4)) .["customStatusSection","usernameSection","scroller"].usernameSection {
+		left: calc(var(--spacing) * 6 + 80px + 44px);
+		width: calc(100% - (var(--spacing) * 10 + 80px + 44px))
+	}
+	&:has(.profileBadges__1f2aba :nth-child(7)) .["divider","usernameSection","lastEditedByContainer"].usernameSection {
+		left: calc(var(--spacing) * 6 + 80px + 66px);
+		width: calc(100% - (var(--spacing) * 10 + 80px + 66px))
+	}
+}
+.["avatarPositionPomelo","avatarWrapper"].avatarWrapper {
+	position: relative;
+	left: 0;
+	top: 0;
+	margin: var(--spacing);
+	margin-right: calc(var(--spacing)*3);
+	width: 80px;
+	height: 80px;
+}
+.["profileBadges"].profileBadges {
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	align-content: start;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	height: 80px;
+	top: 0;
+	right: 0;
+	margin: var(--spacing) 0;
+	padding: 0;
+	border-radius: var(--border);
+	&:has(*) {padding: 0 var(--spacing);}
+	&:has(*:nth-child(4)) {width: 44px;}
+	&:has(*:nth-child(7)) {width: 66px;}
+}
+.["userPopoutOverlayBackground"].userPopoutOverlayBackground {
+	margin: 0;
+	overflow: visible;
+	width: 100%;
+	border-radius: var(--border);
+	background: transparent;
+}
+.["divider","scrollerSeparator","customStatusSection","scroller"].scroller {padding: 0 !important;}
+.["headerBotTag","nickname"].nickname {font-size: 18px;}
+
+/* Avatars */
+.["avatarStack","svg","wrapper"].wrapper foreignObject,
+.["avatarHint"].avatarHint foreignObject,
+.["avatarDecorationHint"].avatarDecorationHint foreignObject,
+.["wrapper","!toastButton","!modeUnreadImportant","!wrapperActive","!iconColorYellow","!contentWrapperExpanded","!dismissButton","!tier0Card","!innerWrapper","!footerButtons","!headerHeading","!icon","!extraLong","!forceLightTheme","!inviteRowName","!isFailed","!resizeSouthWest","!image","!premiumIcon","!learnMoreLink","!questTitle","!partyMemberBackground","!clear","!video","!buttonsContainer","!target","!contentWrapper","!forceVisible","!avatar","!repliedMessage","!obscure","!accountIdentifier","!childWrapperNoHoverBg","!replyLink","!swipe","!iconWrapper","!instructions","!replyAvatar","!embeddedActivityTopRow","!optionalCount","!wrapperAudio","!minimizeContainer","!headerFull","!headerRow","!applicationStreamingHoverWrapper","!icon","!rewardTile","!hasRoleIcon","!headerSimple","!guildIconExpired","!withGuildIcon","!ripple0","!value","!sticker","!black","!option","!searchBarFullRow","!voiceChannelEffectsContainer","!listWrapper","!image","!viewAsRolesWarningText","!blockedIcon","!image","!resultGuildName","!user","!header","!buildDetails","!collapsed","!card","!image","!submenuIcon","!gradient","!toggleMute","!heading","!wrapperSimple","!last","!item","!icon","!children","!guildTagContainer","!selectPositionTop","!statusOnline","!ageGatedImage","!unreadMentionsIndicatorBottom","!alt","!iconColorBlue","!builtInSeparator","!attachmentContainer","!voiceChannelEffectsLayerContainer","!buttons","!audio","!selectedIcon","!perkDescription","!upperBadge","!callContainer","!voiceUsers","!audioMetadata","!buttonColor","!mobileCloseWrapper","!channel","!closeButton","!beta","!communicationDisabledOpacity","!perkLabel","!barTitle","!rightSplit","!title","!notches","!children","!isBurstReactionPicker","!headerAvatar","!avatar","!cardHeaderImg","!threadMessageAccessoryContentLeadingIcon","!folder","!path","!inviteSplashBadge","!krispLink","!buttonContainer","!heading","!multiSelectCheck","!multi","!subheading","!headerChannelContainer","!source","!streamHidden","!title","!installationPathEditing","!searchableSelect","!reload","!contentFill","!noChat","!roleIcon","!poppedOut","!disabled","!text","!childWrapper","!infoIcon","!inviteButton","!linkBottom","!modeSelected","!contentWrapper","!smallImage","!minimizeIcon","!edited","!partyMemberUnknown","!lookFilled","!subheaderText","!percentCompleteLabel","!noResults","!folderTarget","!link","!previewButton","!pointer","!helpIcon","!centerTarget","!icon","!typeDefault","!utils","!inviteRowEmptyState","!container","!divider","!buttonActive","!channelIcon","!countdown","!separator","!applicationStreamingHoverText","!headerCloseButtonSpacing","!actions","!burstToggle","!title","!infoWrapper","!loadingWrapper","!replyIcon","!iconColorPink","!defaultLocationCheckbox","!loading","!noResults","!subscriptionDetails","!resizeSouth","!avatarDecoration","!content","!connection","!button","!guildBadge","!messageEditorCompact","!root","!cta","!iconColorGreen","!iconWrapperActive","!container","!rejectionReason","!acronym","!leaveButtonContainer","!voiceSectionIcon","!videoWrapper","!durationTimeSeparator","!content","!isHighlighted","!guildBoostBadge","!actionButtons","!clanTagChiplet","!ringing","!cta","!image","!content","!right","!markupRtl","!embeddedActivityImageOverlay","!headerLabel","!badge","!newMosaicStyle","!boostIcon","!repliedTextContentTrailingIcon","!streamUnavailableText","!confetti","!header","!subtitle","!boostDescriptionContainer","!metadataSize","!originalPrice","!twitchSectionSimple","!containerDragBefore","!logos","!welcomeImage","!perkAvailabilityIcon","!guildInfo","!icon","!loadingSpinner","!percentCompleteLabelOffset","!modeUnreadLessImportant","!relatedEmoji","!dismissIcon","!blocked","!previewImage","!selectable","!linkTop","!errorIcon","!partyMembers","!noiseCancellationTooltip","!timestampTooltip","!guildIcon","!wrapperMediaMosaic","!collapsed","!streamHiddenEmptyState","!selected","!voiceChannelEffect","!productSection","!contentOnly","!errorMessage","!containerDragAfter","!infoLink","!iconApproved","!operation","!logo","!searchInput","!header","!loadingIndicator","!settingsFooter","!tier","!streamUnavailable","!submenuWrapper","!normal","!userAvatars","!listWrapper","!disabled","!botTagCozy","!rightTrayIcon","!optionalHeader","!iconMask","!error","!unreadWithHangStatus","!headerOverlay","!tipWithSearch","!circularButton","!videoContain","!categoryList","!highlight","!header","!ctas","!actionedByUser","!footerActions","!description","!compact","!resizeWest","!subscriptionContainer","!headerDetailsWrapper","!borderRadius0","!placeholder","!perkAvailable","!folderEndWrapper","!pollBadgeDefault","!closeButton","!repliedTextContentLeadingIcon","!videoButton","!boostInnerContainer","!guestSendInviteLinkHeader","!mobileWave","!repliedTextContent","!header","!bottomLeft","!progressBarFill","!cursorDefault","!spinnerWrapper","!subText","!barLoader","!headingWithSubmenu","!heroImageWithTrialOffer","!guildInfoContainer","!wrapperVisible","!resultUsername","!count","!premiumIcon","!backgroundImages","!copyInput","!stepContainer","!systemMessageAccessories","!preview","!iconPlay","!contents","!acronym","!wrapperDisabled","!timestamp","!completed","!resizeEWCursor","!guestSelectChannelHeader","!wrapperStatic","!durationTimeDisplay","!shopDivider","!optionPillWrapper","!inviteRowAvatar","!copyButton","!focused","!streamHiddenCTA","!noContain","!metadataDownload","!icon","!compactTimestamp","!wrapperOver","!authorizedSuccessWrapper","!defaultIcon","!viewAsRolesWarningButton","!icon","!threadMessageAccessoryPreview","!boostDescriptionInnerContainer","!option","!chatSidebarOpen","!compact","!specialHeader","!nitroBadgeSvg","!dangerous","!applicationStreamingPreviewWrapper","!roleDot","!tier0Button","!hangStatusContainer","!xboxSection","!foreground","!stepStatus","!container","!toastContainerInner","!resizeNWSECursor","!durationTimeWrapper","!optionPillBtn","!avatar","!embeddedActivityIcon","!guildDetail","!overlayContentHidden","!embeddedActivityTimeElapsed","!searchBar","!appLauncherOnboardingCommandName","!iconInteractive","!scroller","!twitchSectionPreview","!overlayTitleText","!fixedDiscoveryIcon","!rowTitle","!scroller","!copy","!header","!wrapperAccepted","!iconColorPurple","!videoIcon","!iconColorLightBlue","!nitroBadgeSvgRepliedMessage","!unreadImportant","!contentWrapper","!results","!icon","!title","!iconColorDarkBlue","!iconColorYellow","!settingsButton","!open","!usageWrapper","!headingTier1","!replyBadge","!rewardTileWrapper","!info","!tierVertical","!embeddedActivityName","!guildIconUnavailable","!nitroAuthorBadgeTootip","!nonEmbeddedLeftSplit","!emptyState","!threadMessageAccessoryAvatar","!content","!iconExternalMargins","!prefix","!usageWrapper","!footer","!inviteSplashImage","!voicePanelIntroductionText","!hubHeader","!categoryHeader","!appliedBoostContainer","!overflow","!blob","!warningIcon","!subtitle","!perks","!icon","!shine","!container","!wrapperPaused","!button","!total","!detailsIcon","!voiceSectionNoGuildImage","!previewChannelHeader","!separator","!topPerksCard","!badge","!leaveActivityIcon","!expandedFolderIconWrapper","!optionPillItem","!footer","!select","!addButton","!footer","!separator","!mainSeparator","!iconWithGuildIcon","!optionPill","!channelName","!sticker","!selectable","!icons","!name","!copyLinkIcon","!icon","!hidden","!isUnsupported","!cozy","!noiseCancellationPopout","!boostSlotMenuIcon","!disableInteractions","!headerSubtext","!hubInviteTitle","!avatarMask","!authorizedSuccessSubtext","!unappliedGuildBoostSlot","!noBorder","!heading","!inspector","!selectedIcon","!premiumIcon","!rolesList","!userAvatar","!actionButton","!flex","!communicationDisabled","!icon","!inset","!svg","!minimum","!icon","!hasThread","!upsell","!nitroWheel","!tierLogo","!header","!navPrev","!button","!activityContainer","!appsIcon","!animation","!spinner","!heading","!resizeHandle","!hidden","!selected","!headerContentPrimary","!autoPointerEvents","!topRight","!obscureContainer","!embeddedActivityImage","!activityContainerNoMargin","!tierHorizontal","!icon","!hidden","!button","!details","!outerWrapper","!disabledSelected","!iconColorBlue","!partyMemberEmpty","!subHead","!videoCover","!checkBoxLabel","!statusCounts","!micTestButton","!topLeft","!stepDescription","!disableClick","!tile","!tree","!section","!videoControls","!cards","!header","!button","!suffix","!overlayTop","!guildName","!twitchSectionPreviewWrapper","!buttonContainer","!header","!icon","!searchSuggestions","!header","!guildClanTag","!guestBody","!applicationStreamingPreviewSize","!gameTile","!dismissButton","!icon","!footer","!fullSize","!topPerksCards","!defaultIndicator","!wrapperCommon","!twitchSectionHeader","!guildIcon","!questionIcon","!svg","!video","!content","!closeButton","!noScroll","!detailsWrapper","!authBoxWhenMobileWebHandoffIsVisible","!navNext","!featureHeading","!slide","!partyMemberOverflow","!image","!bodyWrapper","!partyMemberOverflow","!lighten","!partyMemberUnknownIcon","!addCTA","!content","!timestampVisibleOnHover","!inner","!expandedFolderBackground","!buttonIcon","!packHeaderShop","!twitchOverlay","!activeWrapper","!timestampInline","!rail","!resizeEast","!heading","!loadingIndicator","!resizeSouthEast","!body","!iconWrapper","!multiSelectCheckbox","!selectable","!controlIcon","!channelChatWrapper","!text","!content","!heading","!resizeNorthEast","!pill","!fullscreenWrapper","!sectionOverlay","!root","!repliedTextPreview","!centerControls","!footer","!cozy","!username","!infoWrapper","!latin12CompactTimeStamp","!label","!topPerksCardImage","!positionTracker","!voicePanelIntroductionWrapper","!asianCompactTimeStamp","!perk","!selected","!partyMembers","!guildBoostStatsContainer","!icon","!guildIconImageJoined","!voiceSectionAssets","!ripple1","!videoWrapper","!iframe","!assetTile","!result","!title","!base","!input","!image","!leftTrayIcon","!top","!circularButton","!metadata","!innerWrapper","!list","!threadMessageAccessoryContentTrailingIcon","!modeMuted","!header","!iconColorGreen","!resolving","!unappliedGuildBoostSlotCta","!hasBadges","!iconColorPurple","!wrapperPlaying","!emptyPreviewWrapper","!button","!popoutPositionTop","!rewardTileWithInstructions","!header","!buttonForNonMember","!moreGuildsSmall","!help","!resultWrapper","!users","!gadientHighlight","!disabled","!background","!headerBoostGem","!saturation","!gameSectionIcon","!metadataIcon","!largeImageMask","!list","!hasTrialOffer","!content","!content","!gameSection","!channelGuildIcon","!icons","!headerWrapper","!voiceSection","!unreadMentionsBar","!previewWrapper","!action","!welcomeSubheading","!installationPath","!voicePanelIntroductionHeader","!pointerEvents","!twitchSectionAvatar","!hangStatusSmall","!folderIconWrapper","!emojiPickerListWrapper","!background","!interactive","!closeButton","!left","!simpleFocused","!voicePanelIntroductionButton","!pollBadgeReplied","!closedFolderIconWrapper","!guildBoostGem","!applicationStreamingSection","!headingCopy","!emojiPicker","!icon","!controlButton","!header","!overlayBottom","!hover","!rewardTile","!ctaActionWrapper","!cta","!measurement","!emptyGuildUpsell","!modal","!selected","!interactive","!spinnerItem","!searchBar","!inline","!header","!loading","!scrolling","!content","!xboxSectionIcon","!progressBar","!subtitle","!ripple","!resizeNorthWest","!heroImage","!ticketIcon","!metadataName","!unreadMentionsFixedFooter","!headerCollapseIconCollapsed","!body","!heading","!button","!action","!inviteRow","!threadMessageAccessoryPlaceholder","!applicationName","!invisible","!closeButton","!infoIcon","!modeLocked","!unreadMentionsIndicatorTop","!folderIconPreview","!closeIcon","!partyMember","!imgWrapper","!numberBadge","!imgUnderlay","!video","!copied","!avatarStack","!title","!headerContentSecondary","!actionRemove","!hotspot","!betaTag","!mask","!perks","!listItem","!fullScreen","!productList","!resizeNorth","!boostContainer","!inviteDestination","!mirror","!containerDefault","!tier0Heading","!header","!iconWrapper","!copyLink","!headerText","!subheaderText","!contentWrapperAccepted","!clickableIcon","!container","!notInteractive","!stickerName","!text","!selectedScreen","!stopStreamIcon","!actions","!buttonContents","!premiumTrialBadge","!copy","!optionPillContainer","!ellipsis","!icon","!buttonRowWrapper","!text","!controlsOffset","!resolvingFakeButton","!icon","!lowerBadge","!name","!bodyText","!disabled","!iconExternal","!addStreamIcon","!cardPrice","!section","!topPerksCardDescription","!nitroAuthorBadgeContainer","!tileChild","!heading1","!legalText","!content","!container","!viewAsRolesWarning","!wrapperInvisible","!wrapperControlsHidden","!panel","!resultAvatar","!packHeaderShopActions","!banner","!overlayContainer","!modeConnected","!voiceSectionText","!blockedAvatar","!guildIconContainer","!gridNoticeWrapper","!voiceSectionGuildImage","!boostContainerSeparator","!questionWrapper","!playPausePopIcon","!percentCompleteWrapper","!guildInfo","!unchecked","!ctaButton","!icon","!temporaryMembershipContainerBackground","!shinyButton","!warningContainer","!welcomeHeading","!unread","!gameTile","!voiceChannelsToggleIcon","!inviteBannerPreview","!packHeaderShopWrapper","!botTagCompact","!muted","!guildBoostGemWrapper","!titleGroup","!activitySection","!hidden","!header","!voiceSectionNoGuildImageWrapper","!video","!content","!unappliedGuildBoostSlotIcon","!nav","!cta","!videoWrapperForHelper","!twitchSection","!channel","!mask","!optionals","!uppercase","!svg","!closeButton","!disabledButtonOverride","!headerText","!indicators","!embedded","!temporaryMembershipContainer","!activitySectionAssets","!inviteSplashImageLoaded","!hue","!iconColorOrange","!popout","!deleteOptionIcon","!ctaButton","!tier0Container","!statusContainer","!hangStatusIcon","!childWrapperHoverScale","!iconLarge","!resizeNESWCursor","!ctas","!optionalNames","!compactCommunicationDisabled","!errorLink","!hasReply","!guildIcon","!emptyPreview","!questionWrapperExpanded","!mainChannelInfo","!container","!resultText","!embeddedActivityPlayerContainer","!container","!inviteRowInfo","!checklist","!separator","!gray","!badge","!voiceSectionIconWrapper","!small","!previewRoot","!partyMemberUnknown","!icon","!question","!background","!headerText","!headerWithoutSpecialHeader","!focusStroke","!iconVisibility","!helpText","!scroller","!unappliedGuildBoostSlotContentSecondary","!itemWrapper","!headerBoostGems","!emojiPickerHasTabWrapper","!focusFill","!playPausePop","!resultWrapperSelected","!flexWrapper","!dragOver","!miniPlaceholder","!submenuIcon","!leaveActivityButton","!categorySection","!perkUnavailable","!isSystemMessage","!icon","!inviteDestinationExpired","!basicChannelRowLink","!innerButton","!absoluteFill","!buildInfo","!description","!inviteLink","!categorySectionLast","!commandName","!eventPromptsContainer","!inviteBannerUpsell","!audioControls","!containerUserOver","!userJoinSystemMessageIcon","!avatar","!topPerksCardHeading","!iconsContainer","!krispLogo","!button","!partyMemberKnown","!ripple2","!progress","!noInteraction","!buttonLoader","!hiddenInput","!content","!description","!header","!viewersButton","!handle","!playCenter","!iconRejected","!headingGameTile","!subtitleText","!avatar","!wave","!localMuteStrikethrough","!moreGuildsLarge","!repliedTextPlaceholder","!multipleIconWrapper","!partyMember","!cancel","!disabled","!content","!selected","!disabled","!obscureWrapper","!source","!unappliedGuildBoostSlotContentPrimary","!avatarDecoration","!noPadding","!guildIconJoined","!headerContainer","!headingSecondary","!newBadge","!icon","!acronym","!messageContent","!answer","!leftSplit","!headerLearnMoreLink","!title","!rowBody","!promotedTag","!commandIcon","!visibilityInfo","!guildContainer","!popout","!headerFailure","!searchable","!videoWrapper","!copied","!isSending","!resolvingBackground","!iconContainer","!volumeSliderWrapper","!statusWrapper","!muted","!wrapperQuestAccepted","!sadImage","!statusOffline","!heading","!centerTargetTooltip","!chatToasts","!channelIcon","!focused","!metadataContent","!note","!contents","!threadMessageAccessoryContent","!separator","!biteSize","!guildIconImage","!buttonSize","!searchSuggestion","!headerIcon","!focused","!resultCategoryName","!headerTitle","!packHeader","!downloadLink","!inviteRowButton","!spinner","!headerSuccess","!iconSmall","!activityPanelContainer","!header","!idle","!liveIndicator","!content","!latin24CompactTimeStamp","!customStatusContainer","!resolvingWrapper","!twitchSectionPlayButton","!emptyState","!error","!favoritesSuggestion","!zalgo","!unappliedBoostSlots","!headerIcon","!contentRemoving","!titleIcon","!noScrollbar","!text","!voiceChannelsButton","!buttonContainer","!subtitle","!stopStreamForeground","!partyMemberBackground","!badgesContainer","!textContent","!disabledIcon","!applicationStreamingAvatar","!dropdownIcon","!streamPreview","!body","!invite-button-resolving","!heroImage","!voiceSectionDetails","!list","!footerText","!iconImage","!body","!resultIcon","!recommendedServerCard","!header","!content","!video","!resultIconBackground","!twitchSectionFull","!withText","!tiersList","!animated","!spotifySection","!partyMemberUnknownIcon","!diversitySelector","!moreGuilds","!headerCollapseIcon","!bottomRight","!noChat","!typeThread","!attachment","!executedCommandAvatar","!inviteSplash","!rolePill","!instructions","!typeVoice","!twitchSectionIcon","!headerWithBoost","!stepName","!heading","!videoDisabledTitle","!dismissWrapper","!guildName","!checked","!inviteDestinationJoined","!guildNameWrapper","!header","!noSearchResults","!previewCamera","!buttonSize","!option","!multipleIcon","!topContent","!swipeWrapper","!icon","!volumeSlider","!dismiss","!content","!overlayTitle","!addButtonIcon","!usageInfo","!iconContainerWithGuildIcon","!hubFriendSearch","!botTag","!listContainer","!applicationIcon","!desktopTooltip","!header","!executedCommand","!embeddedActivityJoinWrapper","!mainContent","!ctaActionWrapper","!inner","!titleRegion","!secondaryHeader","!closeButton","!avatarSpeaking","!darkCircle","!largeImage","!content","!close","!streamPreviewOpacity","!statusWithPopout","!resizable","!image","!hovered","!heading","!threadMessageAccessory","!iconsCenter","!step","!icon","!fauxDisabled","!editing","!resizeNSCursor"].wrapper foreignObject {
+	mask: none;
+}
+.["pointerEvents","svg","wrapper"].wrapper img, .["executedCommand","avatar"].avatar, .["avatarHint"].avatarHint,
+.["avatarDecorationHint"].avatarDecorationHint, .["draggable","audienceIconContainer","audienceIcon","userAvatar"].userAvatar, .["border","!videoWrapper","!tile","!streamPreviewOpacity","!idle","!hangStatusContainer","!unappliedGuildBoostSlotContentSecondary","!interactive","!statusContainer","!ripple1","!ripple2","!streamPreview","!blockedIcon","!hangStatusSmall","!unappliedGuildBoostSlot","!noInteraction","!overlayTop","!localMuteStrikethrough","!addStreamIcon","!streamUnavailable","!hidden","!blocked","!noBorder","!headerWithBoost","!headerBoostGems","!unappliedGuildBoostSlotCta","!ripple","!stopStreamForeground","!overlayTitleText","!overlayBottom","!selectedIcon","!hangStatusIcon","!overlayContainer","!absoluteFill","!streamHiddenEmptyState","!streamHidden","!voiceChannelEffectsContainer","!ringing","!liveIndicator","!header","!overlayTitle","!tileChild","!darkCircle","!stopStreamIcon","!blockedAvatar","!toggleMute","!ripple0","!unappliedGuildBoostSlotContentPrimary","!small","!voiceChannelEffect","!headerContentPrimary","!content","!addCTA","!content","!videoDisabledTitle","!headerContentSecondary","!streamUnavailableText","!unappliedGuildBoostSlotIcon","!headerWithoutSpecialHeader","!specialHeader","!titleIcon","!unappliedBoostSlots","!headerLearnMoreLink","!headerHeading","!selectedScreen","!indicators","!streamHiddenCTA","!headerBoostGem","!pill"].border,
+.["status","avatarStack","avatarSpeaking"].avatarSpeaking, .["voiceAvatar"].voiceAvatar {
+	border-radius: var(--border) !important;
+	overflow: hidden;
+}
+/* Profile Modal */
+.["overlay","body","tabBar","divider"].body ::-webkit-scrollbar-track-piece {
+	background: transparent !important;
+	border: none !important;
+}
+.["body","topSection","overlay","root"].body ::-webkit-scrollbar-thumb {
+	background: var(--brand-500) !important;
+	border: none !important;
+	border-radius: var(--border) !important;
+}
+.["tabBarItem","overlay","body"].body ::-webkit-scrollbar {width: var(--spacing) !important;}
+.scroller-2TZvBN::-webkit-scrollbar,
+.["scrolling","scroller"].scroller::-webkit-scrollbar {
+	width: 0 !important;
+}
+.["userProfileModalOuter"].userProfileModalOuter, .["userProfileModalInner"].userProfileModalInner {
+	width: 700px;
+	height: 450px;
+	border-radius: var(--border);
+}
+.["userProfileModalInner"].userProfileModalInner {
+	display: grid;
+	grid-template-columns: 200px auto;
+}
+/*Avatar Section */
+.["userProfileModalInner"].userProfileModalInner .["warningCircleIcon","badgeList","header","relationshipButtons"].header {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	justify-items: center;
+	height: 450px;
+	width: 200px;
+	pointer-events: none;
+}
+.["relationshipButtons","avatar"].avatar foreignObject {
+	mask: none;
+}
+.["headerTop","avatar"].avatar img {
+	border-radius: var(--border);
+	overflow: hidden;
+}
+.["userProfileInnerThemedNonPremium"].userProfileInnerThemedNonPremium .["badgeList","applicationInstallButton","header","relationshipButtons"].header,
+.["userProfileInnerThemedPremiumWithoutBanner"].userProfileInnerThemedPremiumWithoutBanner .["relationshipButtons","warningCircleIcon","avatar","header"].header {
+	margin-top: -106px;
+}
+.["warningCircleIcon","applicationInstallButton","avatar","additionalActionsIcon"].avatar,
+.["avatar","warningCircleIcon","headerTop","badgeList"].headerTop {
+	position: relative;
+	left: unset;
+	top: unset;
+	right: unset;
+	align-self: center;
+	justify-self: center;
+	margin: var(--spacing);
+	pointer-events: all;
+}
+.["headerTop","badgeList","applicationInstallButton","avatar"].headerTop {
+	margin-top: calc(var(--spacing) * 2);
+	box-sizing: border-box;
+	width: 150px;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+.["relationshipButtons","badgeList"].badgeList {
+	margin: 0;
+	padding: var(--spacing);
+	border-radius: var(--border);
+}
+.["relationshipButtons"].relationshipButtons {
+	position: absolute;
+	top: -270px;
+	left: unset;
+	right: -520px;
+}
+/* Banner (Non themed profile) */
+.["bannerSVGWrapper"].bannerSVGWrapper {
+	contain: unset;
+	overflow: visible;
+}
+.["pencilContainer"].pencilContainer {
+	pointer-events: all;
+	border-radius: var(--border);
+}
+.["bannerSVGWrapper"].bannerSVGWrapper foreignObject {mask: unset;}
+.["userProfileInnerThemedNonPremium"].userProfileInnerThemedNonPremium.["userProfileModalInner"].userProfileModalInner .["bannerSVGWrapper"].bannerSVGWrapper,
+.["userProfileInnerThemedPremiumWithoutBanner"].userProfileInnerThemedPremiumWithoutBanner.["userProfileModalInner"].userProfileModalInner .["bannerSVGWrapper"].bannerSVGWrapper {
+	pointer-events: none;
+}
+.["userProfileModalInner"].userProfileModalInner .["premiumIconTooltipContent","banner"].banner:not([style*="image"]),
+.["userProfileInnerThemedNonPremium"].userProfileInnerThemedNonPremium.["userProfileModalInner"].userProfileModalInner .["bannerSVGWrapper"].bannerSVGWrapper foreignObject,
+.["userProfileInnerThemedPremiumWithoutBanner"].userProfileInnerThemedPremiumWithoutBanner.["userProfileModalInner"].userProfileModalInner .["bannerSVGWrapper"].bannerSVGWrapper foreignObject {
+	height: 450px;
+	width: 200px;
+	border-radius: var(--border);
+}
+/* Banner (Themed profile) */
+.["body","root","tabBarItem","tabBarContainer"].root:has(.["userProfileInnerThemedWithBanner"].userProfileInnerThemedWithBanner) {
+	margin-top: 180px;
+	overflow: visible;
+}
+.["topSection","tabBar","tabBarItem","root"].root>div {
+	overflow: visible;
+}
+.["divider","body","tabBarContainer","root"].root .["userProfileInnerThemedWithBanner"].userProfileInnerThemedWithBanner .["bannerSVGWrapper"].bannerSVGWrapper {
+	position: absolute;
+	width: 700px;
+	top: calc(-250px - var(--spacing)*2);
+	border-radius: var(--border);
+	padding: var(--spacing);
+	margin: calc(var(--spacing) * -1);
+	background: linear-gradient(var(--profile-gradient-primary-color), var(--profile-gradient-primary-color) 120px, var(--profile-gradient-secondary-color));
+}
+/* Modal Contents */
+.["tabBarContainer","root"].root .["userProfileOuter","overlayBackground"].overlayBackground,
+.["topSection","body"].body,
+.["userInfoSection"].userInfoSection {
+	background-color: transparent;
+	margin: 0;
+	padding: 0;
+	flex: 1;
+}
+.["customStatusText","nameTag","discriminator","container"].container, .["topSection","divider","tabBarContainer","body"].tabBarContainer {
+	padding: var(--spacing);
+	margin: var(--spacing) var(--spacing) 0 var(--spacing);
+	border-radius: var(--border);
+}
+.["tabBarContainer","topSection","body","tabBar"].tabBarContainer {margin-right: calc(var(--border) + var(--spacing));}
+.["infoScroller"].infoScroller {
+	margin: var(--spacing);
+	padding: 0;
+}
+.["customStatusEmoji","container"].container, .["userInfoSectionHeader"].userInfoSectionHeader, .["userInfoSectionHeader"].userInfoSectionHeader+div {
+	background-color: var(--profile-body-background-color);
+	padding: var(--spacing);
+}
+.["tabBarContainer","tabBar","body"].body:has(.["body","overlay","tabBarContainer","topSection"].tabBarContainer) {
+	display: grid;
+	grid-template-rows: calc(80px + var(--spacing) * 4) calc(30px + var(--spacing)) auto;
+}
+.["userInfoSectionHeader"].userInfoSectionHeader {
+	border-radius: var(--border) var(--border) 0 0;
+	margin: 0;
+}
+.["userInfoSectionHeader"].userInfoSectionHeader+div {
+	border-radius: 0 0 var(--border) var(--border);
+	overflow: hidden;
+	margin-bottom: var(--spacing);
+}
+.["recentGames","note","userInfoSection"].note {margin: unset;}
+
+/* Username Section */
+.["nameTagSmall","customStatusText","container"].container, .["nameTag","botTag","customStatusEmoji","container"].container>div:has(.text-lg-semibold__84aef, .["username","pronouns"].pronouns) {
+	max-width: 275px;
+	width: fit-content;
+	min-width: 150px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.["header","relationshipButtons","warningCircleIcon","avatar"].header:has(.["relationshipButtons"].relationshipButtons button+button) {max-width: 200px;}
+.text-lg-semibold__84aef {margin: 0 !important;}
+.["tabBarContainer","body","tabBar","overlay"].body:has(.["body","tabBarContainer"].tabBarContainer .["selected","topPill"].selected:not([aria-controls="user_info-tab"])) .["nameTag","pronouns","container"].container>div~div:has(.["pronouns","nameTag","customStatus"].customStatus) {
+	display: none;
+}
+.["customStatusText","container"].container {height: 90px;}
+.["discriminator","botTag","container"].container>div~div:has(.["username","container","customStatus"].customStatus) {
+	position: absolute;
+	top: calc(80px + var(--spacing) * 2);
+	left: 5px;
+	background-color: var(--profile-body-background-color);
+	z-index: 2000;
+	padding: var(--spacing);
+	border-radius: var(--border);
+	min-width: calc(500px - var(--spacing) * 5);
+	max-width: calc(500px - var(--spacing) * 4);
+	height: 48px;
+	overflow: scroll;
+	overflow-x: hidden;
+}
+.["body","tabBar","topSection"].body:has(.["tabBar","tabBarContainer","topSection","root"].tabBarContainer) .["customStatusSoloEmoji","container"].container>div~div:has(.["customStatus","username","pronouns"].customStatus) {
+	top: calc(80px + 30px + var(--spacing) * 6);
+}
+.["pronouns","customStatusSoloEmoji","container"].container>div~div:has(.["botTag","username","customStatus"].customStatus img ~ span, .["username","customStatus"].customStatus span) {
+	height: 20px;
+}
+.["botTag","customStatusSoloEmoji","customStatus"].customStatus {margin: 0;}
+.["root","divider","body"].body:has(.["botTag","nameTag","customStatus"].customStatus img) .["infoScroller"].infoScroller {padding-top: calc(48px + var(--spacing) * 4);}
+.["topSection","body"].body:has(.["botTag","container","customStatus","customStatusEmoji","customStatusSoloEmoji","customStatusText","discriminator","nameTag","nameTagSmall","pronouns","username"][0].customStatus span) .["infoScroller"].infoScroller {
+	padding-top: calc(20px + var(--spacing) * 4);
+	max-height: 300px;
+}
+
+/* Tab Bars (user info/activities/mutual servers stuff*/
+.["divider","body","tabBarContainer"].tabBarContainer {
+	padding: var(--spacing) var(--spacing) 0;
+	border: none;
+	margin-bottom: calc(-1 * var(--spacing));
+	height: 30px;
+}
+.["overlay","tabBarItem","topSection","tabBarContainer"].tabBarContainer, .["body","tabBarContainer","tabBar"].tabBar {
+	display: flex;
+	align-items: end;
+	justify-content: end;
+	gap: var(--spacing);
+	min-width: 250px
+}
+.["root","topSection","tabBarItem"].tabBarItem {
+	height: 25px;
+	padding: 0 var(--spacing);
+
+}
+.["themed","top"].top .["top","selected"].selected.["disabled","themed"].themed.["side","item"].item {
+	background-color: var(--brand-500);
+	border-radius: var(--border) var(--border) 0 0;
+}
+
+/* Connected Accounts */
+.["connectedAccounts"].connectedAccounts {
+	border: none !important;
+	align-content: center;
+	justify-content: center;
+}
+.["connectedAccountsColumn"].connectedAccountsColumn {
+	flex-direction: row;
+	margin: 0 !important;
+	width: unset;
+}
+.["connectedAccountContainer"].connectedAccountContainer {
+	width: 24px;
+	height: 24px;
+	margin: var(--spacing);
+	padding: var(--spacing);
+	background-color: var(--profile-body-background-color);
+	border-radius: var(--border);
+	.text-md-semibold__8664f {
+		opacity: 0;
+		position: absolute;
+		margin-left: calc(24px + var(--spacing) * 2);
+		background-color: var(--profile-body-background-color);
+		padding: var(--spacing);
+		border-radius: var(--border);
+		z-index: 2000;
+		pointer-events: none;
+	}
+	&:hover .text-md-semibold__8664f {opacity: 1;}
+}
+.["connectedAccount"].connectedAccount {
+	width: 24px;
+	height: 24px;
+	& img {	position: absolute;}
+	.text-xs-normal__46d75 {display: none;}
+}
+.["connectedAccountVerifiedIcon"].connectedAccountVerifiedIcon {left: 24px;}
+.["connectedAccountName"].connectedAccountName a {
+	opacity: 0;
+	margin-left: -6px;
+}
+
+/* Activity */
+.["userProfileActivity"].userProfileActivity {
+	margin: var(--spacing);
+	padding: var(--spacing);
+	background-color: var(--brand-500);
+	border-radius: var(--border);
+	&:has(.["voiceChannelInfo","platformIcon"].platformIcon) {background-color: #1DB954;}
+}
+/* Mutual Servers/Friends */
+.["emptyIconGuilds","listScroller"].listScroller {
+	padding: 0;
+}
+.["listName","emptyText","emptyIconGuilds","listRow"].listRow {
+	background-color: var(--profile-body-background-color);
+	border-radius: var(--border);
+	margin: var(--spacing);
+	padding: var(--spacing);
+}
+
+/* Data Access (Bots) */
+.["emptyIcon","listScroller"].listScroller .["heading","row"].row {
+	background-color: var(--profile-body-background-color);
+	border-radius: var(--border);
+	margin: var(--spacing);
+	padding: var(--spacing);
+}
+.["listRow","empty","listScroller"].listScroller .["divider","heading","row"][0].divider {padding: 0 var(--spacing);}
+
+/* Text box and user area */
+.["hidden","panels"].panels>div:not(.["krispLogo","wrapper"].wrapper) {
+	margin: 0 var(--spacing) var(--spacing);
+	border-radius: var(--border);
+	overflow: hidden;
+	max-height: 44px;
+}
+.["withTagAsButton"].withTagAsButton .["avatarWrapper","nameTag"].nameTag, .["withTagless"].withTagless .["hasBuildOverride","panelSubtextContainer","nameTag"].nameTag {
+	padding: var(--spacing) 0;
+	margin: 0;
+}
+.["buttonColor","container"].container {
+	display: flex;
+	flex-direction: column-reverse;
+	padding: 0 var(--spacing) var(--spacing);
+	box-sizing: border-box;
+	border: none;
+}
+.["voicePanelIntroductionHeader","connection"].connection, .["viewAsRolesWarningText","voiceUsers"].voiceUsers {
+	background-color: var(--background-secondary-alt);
+	margin: var(--spacing) 0 0;
+	border-radius: var(--border);
+	overflow: hidden;
+	height: 44px;
+}
+.["noiseCancellationPopout","actionButtons"].actionButtons {padding: 0;}
+.["guilds","panels"].panels, .["connection","statusWithPopout","container"].container {background: transparent;}
+.["guildBreadcrumbIcon","form"].form {
+	display: flex;
+	flex-direction: column-reverse;
+	padding: 0 var(--spacing);
+	&::before {display: none;}
+}
+.["typing","base"].base {	
+	position: absolute;
+	top: -22px;
+	bottom: 0;
+}
+.["threadSidebarFloating","channelTextArea"].channelTextArea {margin-bottom: var(--spacing);}
+.["titleWrapper","channelTextArea"].channelTextArea, .["scrollableContainer"].scrollableContainer {border-radius: var(--border);}
+.["redIcon","avatarWrapper"].avatarWrapper {margin: 0;}
+.["panelSubtextContainer","container"].container, .["voicePanelIntroductionHeader","connection"].connection, .["micTestButton","voiceUsers"].voiceUsers, .["liveIndicator","panel"].panel {
+	padding: var(--spacing);
+	box-sizing: border-box;
+	border: none;
+}
+.["voicePanelIntroductionWrapper","button"].button .["beta","buttonColor"].buttonColor:hover, .["buttonActive","button"].button.["voicePanelIntroductionText","buttonColor"].buttonColor:hover, .["colorGreen","lookFilled"].lookFilled.["colorTransparent","colorBrand"].colorBrand:active {
+	background-color: var(--brand-500);
+}
+.["connection","button"].button .["voicePanelIntroductionButton","buttonColor"].buttonColor, .["krispLink","button"].button.["channel","buttonColor"].buttonColor {
+	border-radius: var(--border);
+}
+
+/* Server List */
+.["isHighlighted","wrapper"].wrapper foreignObject {mask: none;}
+.["iconInactive"].iconInactive {border-radius: var(--border);}
+.["noContain","wrapper"].wrapper, .["folderIconWrapper"].folderIconWrapper {
+	border-radius: var(--border);
+	overflow: hidden;
+}
+
+/* Settings */
+/* Try nesting this when possible*/
+.["side"].side .["header","brand"].header, .["side"].side .["selected","top","topPill","item"].item, .bd-sidebar-header {
+	background-color: var(--background-secondary-alt);
+	margin: 0;
+	padding: var(--spacing);
+	border-radius: 0;
+}
+.["side"].side .["brand","disabled","header","headerText","item","selected","separator","side","themed","top","topPill"][0].header, .bd-sidebar-header {border-radius: var(--border) var(--border) 0 0;}
+.["side"].side .["side","item"].item:has(+.["topPill","brand","separator"].separator) {	border-radius: 0 0 var(--border) var(--border);}
+.["top","separator"].separator+.["headerText","item"].item {border-radius: var(--border) var(--border) 0 0;}
+.["topPill","separator"].separator+.["top","item"].item:has(+.["top","topPill","separator"].separator) {border-radius: var(--border);}
+.["side"].side .["disabled","themed","separator"].separator {
+	background-color: transparent;
+	margin: var(--spacing) 0 0;
+}
+.["contentColumnDefault"].contentColumnDefault {max-width: 100%;}
+.["sidebarRegion"].sidebarRegion, .["sidebarRegionScroller"].sidebarRegionScroller {
+	max-width: fit-content;
+}
+
+/* My account settings */
+.["fieldButtonList","userInfo"].userInfo {
+	padding: var(--spacing);
+	height: calc(80px + var(--spacing));
+	justify-content: flex-start;
+	margin: var(--spacing);
+}
+.["discriminator","background","avatar"].avatar {position: static;}
+.["avatarError","overflowMenuIcon","avatar"].avatar+div {
+	display: flex;
+	flex-direction: row-reverse;
+}
+.["avatarUploaderInner","userTag"].userTag, .["overflowMenuButton","badgeList"].badgeList {
+	height: 80px;
+	background-color: var(--background-secondary);
+	padding: var(--spacing);
+	margin: 0 0 0 var(--spacing);
+	border-radius: var(--border);
+}
+.["usernameRow","badgeList"].badgeList {flex-direction: column;}
+.["avatarError","background"].background {
+	padding: var(--spacing);
+	margin: var(--spacing);
+	border-radius: var(--border);
+}
+.["removeButton","userInfo"].userInfo .["sizeXlarge","button"].button {
+	position: absolute;
+	right: var(--spacing);
+}
+.["overflowMenuButton"].overflowMenuButton {
+	display: flex;
+	align-items: center;
+}
+.["discriminator","overflowMenuIcon"].overflowMenuIcon {transform: rotate(90deg);}
+
+/* Statuses */
+.["pointerEvents","wrapper"].wrapper {
+	&:has([mask*="online"], [fill="#23a55a"])::after {--status: #23a55a;}
+	&:has([mask*="idle"], [fill="#f0b232"])::after {--status: #f0b232;}
+	&:has([mask*="dnd"], [fill="#f23f43"])::after {--status: #f23f43;}
+	&:has([mask*="offline"], [fill="#80848e"])::after {--status: #80848e;}
+	&:has([fill="#593695"])::after {--status: #593695;}
+	&::after {
+	content: "";
+	width: var(--spacing);
+	height: 100%;
+	border-radius: var(--border);
+	position: absolute;
+	left: calc(var(--spacing) + 100%);
+	top: 0;
+	background-color: var(--status);
+	pointer-events: none;
+	}
+}
+.["status","cursorDefault","wrapper"].wrapper.["warningCircleIcon","relationshipButtons","avatar"].avatar:after {
+	content: "";
+	width: 100%;
+	height: var(--spacing);
+	left: 0;
+	top: calc(var(--spacing) + 100%);
+}
+
+svg.["pointerEvents","avatar","mask"].mask.["mask","svg"].svg, .["highlighted","selected","clickable","wrappedName","avatar"].avatar, .["avatar","svg","wrapper"].wrapper {overflow: visible !important;}
+.["avatarStack","pointer","pointerEvents","wrapper"].wrapper rect {
+	z-index: 3;
+	mask: none !important;
+	fill: transparent;
+	width: var(--spacing);
+	height: 100%;
+	x: calc(100% - var(--spacing));
+	y: 0;
+}
+.["headerTop","avatar"].avatar rect {
+	width: 100%;
+	height: var(--spacing);
+	x: 0;
+	y: calc(100% - var(--spacing) * 3);
+}
+.["avatarStack","wrapper"].wrapper circle {
+	r: 40;
+	cx: 40;
+	cy: 40;
+	fill: transparent;
+}
+.["withTagless","avatar"].avatar /* User Area*/, .["clickable","avatar","container","selected","muted"].avatar,
+.["avatar","!progressWithSubscriptions","!avatarStack","!globalName","!discordTag","!edited","!headerTop","!parentChannelName","!premiumWheel","!messageContentWrapper","!icon","!tierHeaderContent","!guildSidebar","!emojiInput","!user","!removeButton","!compactTimestamp","!center","!profileEffectContainer","!messageContent","!emojiSettings","!divider","!threadMessageAccessoryPlaceholder","!description","!blockedIcon","!dotOffline","!pillIconOnline","!description","!party","!header","!loading","!pomeloWarning","!redIcon","!username","!listingRoleRow","!channelStatusClickable","!userPreview","!cardHeader","!subListItem","!toastContainerInner","!discriminator","!userName","!alignRight","!icon","!attachmentContainer","!nickname","!start","!darkCardBackground","!divider","!asianCompactTimeStamp","!additionalActionsIcon","!clanTag","!sticker","!wrapper","!discriminator","!overflow","!applicationCommand","!activityCount","!timestamp","!columnLabel","!description","!iconGroup","!applicationLargeImage","!toast","!fieldSpacer","!icon","!outline","!directInviteSubTitle","!fadeIn","!fadeIn","!shyButton","!timestamp","!priceTag","!bullet","!message","!container","!guildIcon","!avatarContainer","!userContainer","!pillMessage","!pillFlat","!timeBar","!joiningAs","!memberCount","!tagContainer","!modalContent","!inviteDisabledTip","!welcomeMessageProfileContainer","!botTag","!namePlaceholder","!userInfo","!title","!uploadArea","!title","!participants","!countdown","!iconWidget","!mobileContainer","!user","!themeOverrideDark","!overflowMenuIcon","!emojiImage","!customIcon","!timeWrap","!container","!scroller","!inviteDisabledContainer","!channelName","!tierDefaultUnlockedDescription","!welcomeMessageContent","!memberCount","!iconPriortySpeakerSpeaking","!guildContainer","!targetIntegration","!activityContainer","!pollBadgeDefault","!appIn","!bodyLink","!userPreview","!tierHeaderUnlocked","!iconGroup","!titleWrapper","!description","!perkTitle","!tileBaseContainer","!contents","!header","!tierCloseMechaWumpus","!constrainedRow","!activityPanelContainer","!systemMessageAccessories","!size56","!guildInfo","!popoutBackground","!badgesContainer","!badge","!guildIcon","!foreground","!cardHeader","!avatarContainer","!channelName","!hasBadges","!popout","!pencilIcon","!toastButton","!appIconSize","!timestampWithPreview","!emojiDisabled","!videoWrapper","!unavailableHeader","!attachment","!selectFilterPopout","!timestamp","!emoji","!chatContent","!userTag","!memberCount","!joinButton","!tiers","!flipped","!fieldTitle","!promoText","!intangibleBenefitRow","!expandForeground","!textAlignRight","!button","!themePrimary","!shopCardAnimation","!mobileButtons","!container","!lightningCheckout","!header","!emojiAliasPlaceholderContent","!user","!benefitTypeHeader","!panelTitleContainer","!subtitleContainer","!onboardingChangeLogItemTitle","!emptyUser","!discordTag","!activityContainerNoMargin","!userText","!disabled","!more","!code","!invited","!background","!footerButtons","!selected","!container","!contentContainer","!container","!withTagAsButton","!dotOnline","!verifiedCheck","!inviterIconWrapper","!mounted","!nameTag","!account","!targetWidget","!avatarContainer","!members","!hasThread","!image","!tierIcon","!graph","!tierUnlocked","!noticeButton","!popout","!popoutWrapper","!faded","!nameWrapper","!image","!targetAll","!tooltip","!progress","!memberInfo","!icon","!hintText","!noImageTitle","!changeStr","!avatarUploaderInner","!headerTitle","!marketingButtonImage","!welcomeMessageContainer","!countdownColumn","!icons","!flex","!messagePreview","!rect","!button","!mobileMutualGuilds","!marketingButtonImageHovered","!emoji","!perkIcon","!wrapper","!splashImage","!username","!threadMessageAccessoryContentLeadingIcon","!typeDelete","!pillIcon","!iconMask","!activityCount","!splashImage","!latin12CompactTimeStamp","!customStatus","!actions","!divider","!iconContainer","!editEmojiRolesIcon","!actionButtons","!mask","!userTag","!innerHover","!description","!header","!canCopy","!mobileHide","!overflowEllipsis","!clickable","!shopMarketingTooltipText","!headerExpanded","!blob","!textContainer","!roleDot","!marketingBadgeTooltip","!grid","!listeners","!hasSplash","!guildName","!userColumn","!botTag","!threadMessageAccessoryContent","!assetsLargeImage","!targetMemberRole","!timestamp","!tagContainer","!dotOnline","!badgeList","!dismissIcon","!withCounter","!forumPostTitle","!messagePreview","!hasBuildOverride","!isSystemMessage","!emojiAliasPlaceholder","!checkmark","!inviteLargeIcon","!targetSticker","!avatarContainer","!mutualGuildsContainer","!adminUsernameContainer","!clickShield","!channelName","!nicknames","!pill","!verifiedCheckContainer","!keybindMessage","!headerLink","!iconServer","!splash","!changeDetails","!avatars","!tierTitleActive","!revokeInvite","!modalFooter","!startedByName","!facepile","!discriminator","!splash","!nitroBadgeSvg","!innerBlur","!unavailableIcon","!options","!iconPriortySpeaker","!selectedWidget","!threadMessageAccessoryPreview","!perkText","!usernameSpeaking","!header","!headerText","!iframe","!participants","!divider","!title","!playingText","!previousPerks","!title","!avatarIconRed","!colorHeaderSecondary","!tag","!clanTagBadgeContainer","!placeholder","!friend","!overflow","!username","!title","!avatarLarge","!change","!inviteSmallIcon","!memberInfo","!isFailed","!actionButtonsContainer","!iconWithSplash","!pollBadgeReplied","!spinner","!button","!accountProfilePopoutWrapper","!blockedNotice","!memberInfo","!emojiColumn","!container","!cardPlaceholder","!hovered","!card","!keybind","!emojiAliasInputDisabled","!memberInfoPlaceholder","!editIcon","!speakers","!outline","!buttonContainer","!close","!inviteDisabledRow","!linkButton","!emojiRow","!splashImage","!details","!authorName","!itemValue","!executedCommandAvatar","!memberText","!kvContainer","!previewButtonInner","!userAvatars","!avatarWrapper","!emojiHeader","!inviteJoinText","!title","!gradientContainer","!expandButton","!appsIcon","!targetInvite","!empty","!formTitle","!isSending","!compact","!threadMessageAccessory","!cancelButton","!username","!overflowIcon","!roleColor","!divider","!relationshipButtons","!buttonsContainer","!column","!cozy","!userPreview","!headerClickable","!clanTagChiplet","!text","!summary","!card","!tierCloseCloseIcon","!body","!textContainer","!verifiedIcon","!tagContainer","!sectionHeader","!discriminator","!tileContainer","!username","!emojiUploadContainer","!headerDivider","!submitting","!item","!dismissButton","!text","!background","!channelBenefitText","!resizable","!channelTextArea","!messagePreview","!targetMember","!splash","!channelInfo","!text","!textInGrid","!speakers","!dotOnline","!iconMask","!loadMore","!listingInfoRow","!userJoinSystemMessageIcon","!expand","!strikethrough","!textRow","!scroller","!autoModerationRule","!messageContentLeadingIcon","!guildIconContainer","!downloadButtonSubtext","!details","!wrapper","!communicationDisabledOpacity","!loader","!checkmarkWrapper","!tierBody","!threadSidebarFloating","!hintSubtleText","!latin24CompactTimeStamp","!spinner","!repliedTextContent","!circularButton","!perk","!divider","!usagePill","!headerTextSize","!popout","!match","!repliedTextPreview","!moreAvatars","!container","!guildBreadcrumbContainer","!iconTooltipContainer","!avatarMasked","!link","!appGuildName","!bodyText","!fadeInAvatarImg","!avatarBackground","!perks","!optionButton","!size32","!username","!shopCard","!contents","!detailsInner","!placeholderPulse","!row","!repliedTextContentLeadingIcon","!userContainerWithTimestamp","!messageEditorCompact","!leaveButtonContainer","!statusIcon","!card","!wrapper","!channelBenefitTagline","!description","!guildClanTag","!commandIcon","!joinButton","!emojiTable","!dash","!discordLogo","!friendWrapper","!iconMask","!description","!panelSubtextContainer","!minimizeIcon","!headerTitle","!quickSelect","!errorImg","!statusDot","!avatarDecoration","!icon","!footer","!avatarSmall","!guildIcon","!accountIdentifier","!inner","!backdrop","!header","!targetBan","!userHook","!inviteCode","!newBadge","!targetMessage","!iconMicrophone","!targetRole","!title","!headerSection","!separator","!liveIconSpacing","!guildBadge","!profileCardUsernameRow","!accountProfileCard","!countdown","!targetPermission","!checkbox","!embed","!avatarContainer","!hidden","!statusGroup","!tierClose","!channelBenefitIcon","!avatarContainer","!avatarWrapper","!newBadge","!text","!guildPopout","!userListOverflow","!clanTagBadge","!avatarIconOverlay","!username","!selected","!repliedMessage","!separator","!userPreview","!botTag","!threadMessageAccessoryAvatar","!guildIcon","!title","!thread","!cursorPointer","!tierName","!forceButtonsShow","!dotOffline","!moreSubscribers","!cardDisabled","!replyLink","!guildBreadcrumbIcon","!badgeList","!appIcon","!fieldButtonList","!memberDot","!hasReply","!cozy","!previewButton","!discriminator","!discriminator","!actionButtons","!dotOffline","!innerText","!timestampWithPreview","!splashContainerWithTags","!statusButtonRegion","!subscribersPopoutUsername","!spinnerVideo","!guildName","!usernameFont","!memberListItemTag","!markupRtl","!iconTooltip","!timestampWithPreview","!cardLowOpacity","!contentWithTags","!button","!title","!wrapper","!strikethrough","!zalgo","!verifiedIcon","!dot","!guildBadge","!appGuildName","!botTagCozy","!shopMarketingTooltipContent","!moreUsers","!leaveActivityIcon","!placeholderSkeleton","!tierCloseClose","!appLauncherOnboardingCommandName","!executedCommand","!voiceUsers","!title","!pillIconTotal","!placeholderPulse","!guildName","!header","!accountIdentifier","!valueIcon","!headerDefault","!container","!popout","!title","!title","!tierBottomMargin","!premiumWheelTooltipContent","!intangibleBenefitIcon","!icon","!withTagless","!subscriberMask","!toastWrapper","!profile","!joiningAsUsername","!title","!placeholderPulse","!voiceUser","!alignStart","!inviteJoinContainer","!notice","!colorHook","!userContainerWithPreview","!limitedTimeBadge","!username","!clickable","!splash","!setCustomButton","!detail","!svg","!loadingLottie","!listDefault","!submitting","!defaultIcon","!list","!textInGridContainer","!userLarge","!activityIcon","!location","!fieldList","!userList","!container","!selected","!staffBadge","!verifiedNameContainer","!roleIcon","!colorHeaderPrimary","!noChat","!avatarError","!username","!cardBackground","!icon","!popoutWrapper","!container","!mutualGuilds","!voiceUserList","!usernameContainer","!form","!contentOnly","!timestampWithPreview","!footer","!button","!loaded","!popoutDisabled","!timestampVisibleOnHover","!themeOverrideLight","!speaker","!inviteIcon","!statusText","!auditLog","!mentioned","!targetChannel","!inputError","!guestSuffix","!bodyTextSize","!speaking","!avatars","!avatarDecoration","!newBadge","!autoModerationBlockMessage","!memberInfo","!bottomOverlay","!container","!avatarBorder","!tierHeaderUnlockedBackground","!pillOnline","!boostZIndex","!listeningAlong","!tierHeader","!avatarBackground","!accessories","!addServerText","!flexRow","!dotOffline","!onboarding","!timestampInline","!authBoxExpanded","!roleIcon","!headerName","!targetGuild","!editIconColor","!container","!icon","!spotifyLargeImage","!small","!dotSeparator","!messageContentLeadingIcon","!emojiContainer","!threadNameLine","!allowSelection","!avatarBackground","!tierCloseHint","!header","!revokeInvite","!subscriberCount","!perksHeader","!guildInfo","!guildContainer","!userContainerWithPreview","!iconsContainer","!singleIcon","!chat","!splashImageHeight","!live","!usersSummary","!groupContainer","!appIn","!profileEffectShopPreview","!discrimClass","!typeUpdate","!medium","!container","!empty","!uploader","!container","!discriminator","!applicationName","!avatarContainer","!isOverlay","!targetStageInstance","!authBox","!container","!leaveActivityButton","!marginBottom20","!scroller","!userSmall","!clickable","!avatarPurchased","!botTagCompact","!header","!userInfo","!pointerEvents","!dotOnline","!userTooltip","!imageContainer","!buttonContainer","!icon","!row","!speakerCount","!inviteResolvingGuildName","!splashLoaded","!channelBenefitRow","!giftMainAnimationWrapper","!menu","!username","!placeholderPulse","!nitroBadgeSvgRepliedMessage","!modalFooterActions","!status","!locationContainer","!flexColumn","!button","!header","!purchaseButton","!cursorDefault","!compactCommunicationDisabled","!replyAvatar","!godlike","!guildNameWrapper","!username","!unknown","!splashPlaceholder","!discrim","!typeCreate","!container","!channelIcon","!clickable","!editPartyIcon","!title","!noAvatarIcon","!akaBadge","!joiningAsAvatar","!hoverUpsellContainer","!memberItem","!cardPlaceholder","!targetGuildSoundboard","!pill","!messageContent","!alt","!memberCount","!children","!userContainerWithPreview","!expanded","!tierRequirement","!block","!field","!tierTitle","!eventStatusText","!popoutWrapper","!promo","!messageContent","!compactAvatar","!guild","!container","!footer","!directInviteSubTitle","!icon","!tierDescription","!avatarContainer","!inviteSettingsInviteRow","!cardTextBlur","!guildInfo","!action","!emojiAliasInput","!fieldSpacerBottom","!memberInfo","!themeBrand","!size16","!customHeader","!pointer","!spinner","!description","!guildBadge","!fadeInAvatarImg","!targetWebhook","!gradientContainerDark","!iframe","!centeringWrapper","!guildName","!discriminator","!tierIconLocked","!discriminator","!hasRoleIcon","!emojiCounter","!onboardingChangeLogContainer","!ellipsisRow","!memberCount","!moreUsers","!plusIcon","!actions","!repliedTextPlaceholder","!fieldButton","!mutualGuilds","!liveIcon","!title","!subtext","!replyIcon","!avatarSpeaking","!timestampTooltip","!truncatedReply","!size24","!speakerContainer","!discriminator","!actionButtonsContainer","!subheader","!userInfo","!live","!avatarPurchased","!emojiUploadUploadRequirementsHeading","!container","!memberListItem","!friendSelected","!appIcon","!nitroAuthorBadgeContainer","!guildIcon","!splashImage","!tierLock","!subscribersPopoutUser","!boost","!guildIcon","!iconPlaceholder","!hovered","!closeIcon","!buildOverrideButton","!detailsWrapper","!positionTracker","!iconMask","!commandName","!guildTagContainer","!viewButtonPlaceholder","!nitroAuthorBadgeTootip","!parentName","!avatarWrapper","!avatarWrapper","!targetVanityUrl","!themeDanger","!container","!cardWithTags","!avatarSize","!userTag","!usernameInnerRow","!username","!messageContentTrailingIcon","!timestamp","!targetGuildScheduledEvent","!container","!repliedTextContentTrailingIcon","!subtext","!username","!tagContainer","!container","!messageContent","!noticeUnderlineButton","!cardHeader","!row","!guildBadge","!spacer","!statusTooltip","!innerMask","!header","!threadSidebarOpen","!statusIcon","!subscribersPopout","!iconSpacing","!templateIcon","!typing","!subscribers","!container","!userInfo","!replyBadge","!end","!card","!appIconSize","!confettiCanvas","!clickBlocker","!avatarMask","!tier","!hover","!subtitleContainer","!followButton","!isUnsupported","!hidden","!hangStatusIcon","!uploadButton","!targetGuildHome","!iconGroup","!overflowMenuButton","!username","!header","!pillIcon","!splashContainer","!lightCardBackground","!subtitle","!copySuccess","!prefix","!tierHeaderLocked","!tierHeaderWithoutCardBody","!noChat","!targetEmoji","!listCollapse","!header","!ownerIcon","!channelItem","!threadName","!closeButton","!doubleIcon","!cta","!premiumWheelBadge","!container","!detailsAndAvatarsContainer","!left","!editEmojiRolesButton","!pillLabel","!cardText","!channelName","!shaker","!emojiRemove","!container","!clickable","!perkDescription","!emojiRowText","!selfHangStatus","!guildInfo","!cardSmall","!productName","!helpText","!header","!splashImage","!indicator","!status","!warningCircleIcon","!overflowCount","!bullet","!divider","!header","!splashImage","!userContainer","!ticketIcon","!channelStatus","!dot","!emojiUploadUploadRequirementsList","!avatarContainerMasked","!hoverable","!newBadge","!communicationDisabled","!alignPomelo","!flex","!onboardingChangeLogItemChanges","!description","!locationIcon","!messageContentTrailingIcon","!guildBadge","!overlap","!acronym","!threadMessageAccessoryContentTrailingIcon","!clickableAvatar","!addEntryCard","!videoPreview","!overflowContainer","!divider","!targetOnboarding","!emptyUser","!header","!body","!applicationInstallButton","!icon","!container","!tierDefaultUnlocked","!compact","!icons","!avatarSpeaking","!username","!minimizeContainer","!buttons","!profileEffectBackground","!avatarMask","!marketingBadgeTooltipContent","!usernameRow","!statusWidget"].avatar, .["usernameContainer","avatar"].avatar, .["chat","avatar"].avatar,
+.["discordTag","alignPomelo","avatar"].avatar, .["autocompleteRowIcon"].autocompleteRowIcon, .["listRow","emptyIconGuilds","listAvatar"].listAvatar {
+	margin-right: calc(3 * var(--spacing));
+}
+/* Call */
+.["controlButton"].controlButton foreignObject {mask: none;}
+.["poppedOut","callContainer"].callContainer, .["video","volumeSlider","wrapper"].wrapper.["headerWrapper","minimum"].minimum .["headerWrapper","callContainer"].callContainer {background: var(--background-tertiary);}
+.["animated","centerControls","wrapper"].wrapper.["centerControls","normal"].normal, .["minimum","iconWrapper","wrapper"].wrapper.["badge","minimum"].minimum {
+	border-radius: var(--border);
+	overflow: hidden;
+}
+.["avatarStack","avatarSpeaking"].avatarSpeaking, .["border","!pill","!blocked","!streamUnavailable","!blockedAvatar","!addStreamIcon","!localMuteStrikethrough","!overlayTitle","!interactive","!selectedIcon","!hidden","!voiceChannelEffectsContainer","!darkCircle","!ripple2","!headerContentSecondary","!content","!headerBoostGem","!absoluteFill","!hangStatusIcon","!unappliedGuildBoostSlotCta","!headerLearnMoreLink","!headerHeading","!streamHiddenCTA","!content","!stopStreamIcon","!headerWithBoost","!ripple0","!toggleMute","!headerContentPrimary","!headerWithoutSpecialHeader","!ripple","!selectedScreen","!small","!tile","!blockedIcon","!indicators","!unappliedGuildBoostSlotIcon","!streamPreview","!streamHiddenEmptyState","!unappliedBoostSlots","!addCTA","!overlayTop","!voiceChannelEffect","!hangStatusSmall","!header","!hangStatusContainer","!noInteraction","!unappliedGuildBoostSlotContentPrimary","!streamPreviewOpacity","!titleIcon","!streamHidden","!videoWrapper","!idle","!ripple1","!overlayBottom","!videoDisabledTitle","!streamUnavailableText","!tileChild","!unappliedGuildBoostSlotContentSecondary","!noBorder","!liveIndicator","!statusContainer","!specialHeader","!unappliedGuildBoostSlot","!headerBoostGems","!overlayContainer","!overlayTitleText","!stopStreamForeground"].border.["speaking","!avatarIconRed","!hangStatusContainer","!avatar","!overlayBottom","!streamPreviewOpacity","!userSettingsVoice","!expandButton","!manual","!ripple","!stopStreamIcon","!tile","!voiceChannelEffectsContainer","!titleIcon","!voiceUsers","!overlayTitleText","!content","!hangStatusIcon","!noBorder","!fill","!videoDisabledTitle","!indicators","!noInteraction","!ringing","!inputDisabledWarning","!interactive","!toggleMute","!streamUnavailableText","!tileChild","!blockedAvatar","!ripple2","!small","!voiceChannelEffect","!overlayContainer","!statusContainer","!streamUnavailable","!avatarContainer","!scroller","!addCTA","!inputSensitivitySlider","!overlayTop","!absoluteFill","!idle","!ripple1","!selectedIcon","!sliderBar","!selectedScreen","!streamHidden","!inputSensitivityBarFill","!inputSensitivityToggle","!liveIndicator","!sensitivity","!streamHiddenEmptyState","!blocked","!localMuteStrikethrough","!addStreamIcon","!expanded","!hangStatusSmall","!videoWrapper","!overlayTitle","!ripple0","!inputSensitivityBar","!microphone","!darkCircle","!stopStreamForeground","!streamPreview","!hidden","!blockedIcon"].speaking {
+	box-shadow: inset 0 0 0 3px var(--brand-500);
+}
+/* Chat */
+.["replyBadge","avatar"].avatar {left: var(--spacing);}
+.["threadMessageAccessoryContentTrailingIcon","avatarDecoration"].avatarDecoration {
+	left: calc(var(--spacing) - var(--custom-message-avatar-decoration-size)/2 + var(--custom-message-avatar-size)/2)
+}
+.["wrapper","hasBadges","threadMessageAccessoryAvatar","cozy"].cozy.["contentOnly","wrapper"].wrapper {padding-left: calc(40px + var(--spacing) * 2);}
+.["isSystemMessage","hasBadges","cozy"].cozy .["pollBadgeReplied","timestamp"].timestamp.["markupRtl","alt"].alt {
+	text-align: center;
+	padding: 0 var(--spacing);
+	max-width: calc(40px + var(--spacing) * 2);
+	box-sizing: border-box;
+}
+.["communicationDisabled","hasRoleIcon","systemMessageAccessories","cozy"].cozy .["markupRtl","messageContent"].messageContent {
+	padding: 0;
+	margin: 0;
+}
+.["systemMessage","message"].message.["channelTextArea","mentioned"].mentioned.["automodMessage","selected"].selected, .mouse-mode.full-motion .["highlightContainer","mentioned"].mentioned:hover, .["beforeGroup","mentioned"].mentioned {
+	background: transparent!important;
+	&::before {display: none}
+	.["hasReply","contents"].contents>.["badgesContainer","messageContent"].messageContent {
+		background-color: var(--background-mentioned);
+		border-radius: var(--border);
+	}
+}
